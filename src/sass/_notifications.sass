@@ -1,0 +1,76 @@
+.notifications
+  position: fixed
+  right: 15px
+  bottom: 15px
+  z-index: 100
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  &__item
+    display: flex
+    align-items: center
+    border: 1px solid
+    border-radius: 7px
+    border-color: $cl-grey-6
+    background-color: $cl-grey-7
+    max-width: 600px
+    min-height: 70px
+    padding: 12px 16px 12px 72px
+    background-repeat: no-repeat
+    background-position: 14px center
+    background-size: 45px 45px
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25)
+    &:not(:last-child)
+      margin-bottom: 15px
+    &.warning
+      background-image: url(./assets/icons/notifications/message-warning.svg)
+      background-color: rgb(244,240,230)
+      color: $cl-warning
+    &.success
+      background-image: url(./assets/icons/notifications/message-success.svg)
+      background-color: rgb(231,240,232)
+      color: $cl-success
+    &.error
+      background-image: url(./assets/icons/notifications/message-error.svg)
+      background-color: rgb(237,220,221)
+      color: $cl-error
+    &.info
+      background-image: url(./assets/icons/notifications/message-info.svg)
+      background-color: rgb(220,230,242)
+      color: $cl-info
+  &__text
+    margin-right: 15px
+    font-size: 16px
+    font-weight: 400
+    line-height: 24px
+  &__btn
+    position: relative
+    display: block
+    width: 24px
+    height: 24px
+    margin-right: 0
+    margin-left: auto
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      top: 11px
+      left: 3px
+      width: 18px
+      height: 2px
+      transform: rotate(45deg)
+      .warning &
+        background-color: $cl-warning
+      .error &
+        background-color: $cl-error
+      .info &
+        background-color: $cl-info
+      .success &
+        background-color: $cl-success
+    &::after
+      transform: rotate(-45deg)
+    &:hover
+      opacity: 0.6
+    &:active,
+    &:focus
+      opacity: 0.8
