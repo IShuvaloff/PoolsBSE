@@ -68,7 +68,7 @@ const modules = (env) => ({
       },
     },
     {
-      // ? обработка файлов стилей
+      // ? обработка файлов стилей sass/scss
       test: /\.s[ac]ss$/i, // ! только файлы .sass, причем в конце имени
       use: [
         // 'style-loader', // #4... (Creates `style` nodes from JS strings)
@@ -76,6 +76,16 @@ const modules = (env) => ({
         'css-loader', // ! #3... (Translates CSS into CommonJS)
         'postcss-loader', // ! #2... (добавляет пост-обработку для разных браузеров)
         'sass-loader', // ! #1 в очереди (Compiles Sass to CSS)
+      ],
+    },
+    {
+      // ? обработка файлов стилей css
+      test: /\.css$/i,
+      use: [
+        // 'style-loader', // #4... (Creates `style` nodes from JS strings)
+        env.prod ? MiniCssExtractPlugin.loader : 'style-loader', // ! #4... (создает минифицированный блок стилей в отдельном файле .css для development)
+        'css-loader', // ! #3... (Translates CSS into CommonJS)
+        'postcss-loader', // ! #2... (добавляет пост-обработку для разных браузеров)
       ],
     },
     {
