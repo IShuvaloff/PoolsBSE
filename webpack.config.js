@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'); // ! для взяти
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // ! для извлечения стилей css из общего js-бандла в отдельный файл .css
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin'); // ! для оптимизации изображений
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin'); // ! установка иконки favicon
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin'); // ! для извлечения данных из созданного спрайта
 const path = require('path'); // ! глобальный системный путь к корневой папке (может различаться между разными ОС)
 
 // ! источник входных файлов .js и других
@@ -34,7 +35,7 @@ const plugins = [
 
   // ? формирование favicon
   new FaviconsWebpackPlugin({
-    logo: './src/assets/icons/favicon.svg',
+    logo: './src/assets/img/favicon.png',
     mode: 'webapp',
     devMode: 'webapp',
     prefix: 'assets/',
@@ -46,6 +47,9 @@ const plugins = [
       // ); // ! если нужно задать разные иконки для разных html-страниц, которые следует разместить в отдельной папке pages
     },
   }),
+
+  // ? работа с SVG-спрайтом
+  new SpriteLoaderPlugin(),
 ];
 
 // ! обработка файлов проекта
@@ -62,10 +66,21 @@ const modules = (env) => ({
     {
       // ? обработка векторных изображений
       test: /\.svg$/i,
-      type: 'asset/resource',
-      generator: {
-        filename: path.join('icons', '[name].[contenthash][ext]'), // ! изменить папку и имя файла для .svg-картинок
-      },
+      use: [
+        {
+          loader: 'svg-sprite-loader', // ! создание SVG-спрайта
+          options: {
+            publicPath: 'icons/',
+            spriteFilename: (svgPath) =>
+              `sprite.[contenthash]${svgPath.substr(-4)}`,
+          },
+        },
+        'svgo-loader',
+      ],
+      // type: 'asset/resource',
+      // generator: {
+      //   filename: path.join('icons', '[name].[contenthash][ext]'), // ! изменить папку и имя файла для .svg-картинок
+      // },
     },
     {
       // ? обработка файлов стилей sass/scss
@@ -128,7 +143,7 @@ const optimization = {
 // ! сервер Webpack
 const devServer = {
   watchFiles: path.join(__dirname, 'src'), // ! наблюдатель за изменениями для авто-релодинга
-  port: 9000,
+  port: 8000,
   hot: true,
   historyApiFallback: true,
 };

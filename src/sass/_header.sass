@@ -1,0 +1,225 @@
+@import './_animations'
+
+.header
+  position: relative
+  &__bg
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: -1
+    background-image: url(./assets/img/bg-wave.jpg)
+    background-position: left bottom
+    background-repeat: repeat-x
+    background-size: auto 575px
+    width: 100vw
+    height: 565px
+  &__top
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding-top: 53px
+    padding-bottom: 51px
+  &__burger
+    flex-shrink: 0
+    margin-right: 102px
+    border: none
+    width: 40px
+    height: 28px
+    svg
+      stroke: #FFFFFF
+      transition: stroke .2s ease-in-out
+    &:hover
+      svg
+        stroke: #89bcf6
+  &__logo
+    padding-left: 90px
+    width: 147px
+    height: 64px
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 600
+    font-size: 32px
+    line-height: 44px
+    color: #FFFFFF
+    cursor: pointer
+  &__contacts
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    margin-left: auto
+    &--socials
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      margin-right: 133px
+      .contact-social
+        display: inline-block
+        border-radius: 30%
+        width: 41px
+        height: 42px
+        overflow: hidden
+        &:not(:last-child)
+          margin-right: 40px
+        &:hover
+          animation: wink 0.2s ease-in-out
+    &--phones
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+      margin-right: 82px
+      :not(:last-child)
+        margin-bottom: 14px
+      .contact-phone
+        display: flex
+        align-items: center
+        height: 20px
+        width: 210px
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        color: #FFFFFF
+        svg
+          margin-bottom: 0
+          margin-right: 14px
+        &:hover
+          svg
+            animation: wink 0.2s ease-in-out
+    &--btn
+      background-color: transparent
+      border: 3px solid #46FFAD
+      border-radius: 10px
+      width: 241px
+      height: 56px
+      font-family: 'Montserrat'
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.02em
+      color: #FFFFFF
+      transition: background-color .2s ease-in-out, border-color .2s ease-in-out
+      &:focus, &:hover
+        background-color: #89bcf6
+        border-color: #89bcf6
+  &__main
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: "title photo" "menu photo" "calculate photo"
+  &__title
+    grid-area: title
+    margin-bottom: 95px
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 600
+    font-size: 40px
+    line-height: 54px
+    letter-spacing: 0.02em
+    color: #FFFFFF
+  &__menu
+    grid-area: menu
+  &__calculate
+    grid-area: calculate
+  &__photo
+    grid-area: photo
+    position: relative
+    width: 100%
+    height: 100%
+    &-img
+      position: absolute
+      top: 25px
+      right: 0
+      background-image: url('./assets/img/photo-pool-main.jpg')
+      width: 924px
+      height: 590px
+  &__icon
+    position: absolute
+    bottom: -116px
+    right: 75px
+    background-image: url(./assets/icons/icon-swimming-pool.svg)
+    width: 145px
+    height: 169px
+
+.menu
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+  flex-wrap: wrap
+  margin-bottom: 135px
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    width: 127px
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 500
+    font-size: 13px
+    line-height: 16px
+    text-align: center
+    letter-spacing: 0.02em
+    color: #000000
+    &--icon
+      margin-bottom: 22px
+      border-radius: 10px
+      width: 104px
+      height: 104px
+      background-size: 104px 104px
+      background-position: center center
+      border: 0 solid #FFFFFF
+      transition: border-width .1s linear
+      &:focus, &:hover
+        border-width: 5px
+
+.calculate
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  margin-right: 100px
+  &__params
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    gap: 45px
+    margin-bottom: 55px
+  &__param
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+  &__label
+    margin-bottom: 19px
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.02em
+    color: #000000
+  &__input
+    padding-bottom: 10px
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid #000000
+  &__btn
+    border: 3px solid #66FFBB
+    border-radius: 10px
+    background-color: #66FFBB
+    width: 276px
+    height: 51px
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 0.02em
+    color: #000000
+    transition: background-color .2s ease-in-out, border-color .2s ease-in-out
+    &:focus, &:hover
+      background-color: #89bcf6
+      border-color: #89bcf6

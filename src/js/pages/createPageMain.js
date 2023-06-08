@@ -1,18 +1,20 @@
-import { el, setChildren } from 'redom';
-import { router } from '../routing';
+// import { router } from '../routing';
 import updatePageContent from './updatePage';
+import elementHeaderBackground from '../elements/elementHeaderBackground';
+import elementContainer from '../elements/elementContainer';
+import panelHeaderTop from '../panels/panelHeaderTop';
+import panelHeaderMain from '../panels/panelHeaderMain';
+import { el } from 'redom';
 
 export default function createPageMain() {
-  const text = el('p.dynamic-text', 'Проект собран на Webpack');
+  // const btn = el('button.btn-unknown', 'НАЖМИ МЕНЯ');
+  // btn.addEventListener('click', () => {
+  //   router.navigate('/abcdefg');
+  // });
+  const background = elementHeaderBackground();
+  const container = elementContainer([panelHeaderTop(), panelHeaderMain()]);
 
-  const btn = el('button.btn-unknown', 'НАЖМИ МЕНЯ');
-  btn.addEventListener('click', () => {
-    router.navigate('/abcdefg');
-  });
+  const page = el('header.header', [background, container]);
 
-  const wrapper = el('.main-wrapper');
-
-  setChildren(wrapper, [text, btn]);
-
-  updatePageContent(wrapper);
+  updatePageContent(page);
 }

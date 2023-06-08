@@ -1,9 +1,7 @@
 import Navigo from 'navigo';
-const router = new Navigo('/');
-import { el, mount, setChildren } from 'redom';
 import createPage from './pages/createPage';
 
-const mainApp = document.getElementById('main-app');
+const router = new Navigo('/');
 
 router
   .on('/', () => createPage('main'))
