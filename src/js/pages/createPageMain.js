@@ -11,10 +11,14 @@ export default function createPageMain() {
   // btn.addEventListener('click', () => {
   //   router.navigate('/abcdefg');
   // });
+  // ? шапка
   const background = elementHeaderBackground();
   const container = elementContainer([panelHeaderTop(), panelHeaderMain()]);
+  const header = el('header.header', [background, container]);
 
-  const page = el('header.header', [background, container]);
+  // ? тело
+
+  const page = el('.page', [header]);
 
   updatePageContent(page);
 }

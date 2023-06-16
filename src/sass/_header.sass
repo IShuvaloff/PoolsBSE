@@ -18,7 +18,7 @@
     display: flex
     justify-content: flex-start
     align-items: center
-    padding-top: 53px
+    padding-top: 27px
     padding-bottom: 51px
   &__burger
     flex-shrink: 0
@@ -107,11 +107,12 @@
         border-color: #89bcf6
   &__main
     display: grid
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 45% 1fr
     grid-template-areas: "title photo" "menu photo" "calculate photo"
+    grid-gap: 0 40px
   &__title
     grid-area: title
-    margin-bottom: 95px
+    margin-bottom: 101px
     font-family: 'Open Sans'
     font-style: normal
     font-weight: 600
@@ -125,16 +126,16 @@
     grid-area: calculate
   &__photo
     grid-area: photo
-    position: relative
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    padding-top: 25px
+    overflow: hidden
     width: 100%
     height: 100%
     &-img
-      position: absolute
-      top: 25px
-      right: 0
-      background-image: url('./assets/img/photo-pool-main.jpg')
-      width: 924px
-      height: 590px
+      width: 100%
+      border-radius: 10px
   &__icon
     position: absolute
     bottom: -116px
@@ -163,17 +164,30 @@
     text-align: center
     letter-spacing: 0.02em
     color: #000000
-    &--icon
+    &-icon
+      position: relative
       margin-bottom: 22px
       border-radius: 10px
+      box-sizing: border-box
       width: 104px
       height: 104px
       background-size: 104px 104px
       background-position: center center
-      border: 0 solid #FFFFFF
       transition: border-width .1s linear
-      &:focus, &:hover
-        border-width: 5px
+      &--border
+        position: absolute
+        top: 0
+        left: 0
+        border: 0 solid transparent
+        border-radius: 10px
+        width: 100%
+        height: 100%
+        &-selected
+          border-width: 5px
+          border-color: #ffffff
+        &:focus, &:hover
+          border-width: 5px
+          border-color: #ffffff
 
 .calculate
   display: flex

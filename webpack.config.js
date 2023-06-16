@@ -143,7 +143,7 @@ const optimization = {
 // ! сервер Webpack
 const devServer = {
   watchFiles: path.join(__dirname, 'src'), // ! наблюдатель за изменениями для авто-релодинга
-  port: 8000,
+  port: 9000,
   hot: true,
   historyApiFallback: true,
 };

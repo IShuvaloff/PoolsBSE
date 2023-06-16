@@ -6,7 +6,9 @@
   "scripts": {
     "serve": "webpack serve --open --mode development",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Шувалов И.А.",
   "license": "ISC",
@@ -21,6 +23,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "favicons": "^7.1.2",
     "favicons-webpack-plugin": "^6.0.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.1",
     "image-minimizer-webpack-plugin": "^3.8.2",
     "imagemin": "^8.0.1",
