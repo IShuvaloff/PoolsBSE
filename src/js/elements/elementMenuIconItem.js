@@ -6,10 +6,17 @@ import { updateHeaderPhoto } from './elementHeaderPhoto';
 function updateHeaderMenuSelected(el) {
   const classSelected = 'menu__item-icon--border-selected';
   document.querySelectorAll('.menu__item-icon--border').forEach((item) => {
-    console.log(item);
     item.classList.remove(classSelected);
   });
   el.classList.add(classSelected);
+}
+
+function updateHeaderTitleSelected(id) {
+  const title = document.querySelector('.header__title');
+  const text = `Предлагаем для вас<br>${
+    MENU_ITEMS.find((value) => value.id === id)?.caption
+  }`;
+  title.innerHTML = text;
 }
 
 function menuIconClicked() {
@@ -17,6 +24,7 @@ function menuIconClicked() {
 
   updateHeaderMenuSelected(this);
   updateHeaderPhoto(this.id);
+  updateHeaderTitleSelected(this.id);
 }
 
 export default function elementMenuIconItem(id) {

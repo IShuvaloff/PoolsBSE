@@ -9,7 +9,6 @@ function getPhoto(id) {
 export default function elementHeaderPhoto(id) {
   const img = el('img.header__photo-img');
   img.setAttribute('src', getPhoto(id));
-  console.log(img);
 
   return el('.header__photo', [img]);
 }

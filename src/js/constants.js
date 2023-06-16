@@ -10,6 +10,7 @@ import photoFontains from '../assets/img/photos/photo-fontains.jpg';
 import photoDewatering from '../assets/img/photos/photo-dewatering.jpg';
 import photoWatering from '../assets/img/photos/photo-watering.jpg';
 import photoLandscaping from '../assets/img/photos/photo-landscaping.jpg';
+import iconSwimmingPool from '../assets/icons/pageIcons/icon-swimming-pool.svg';
 
 export const DOCTITLE = 'BSE';
 
@@ -68,3 +69,5 @@ export const MENU_ITEMS = [
     photoMain: photoLandscaping,
   },
 ];
+
+export const PAGE_ICONS = [{ id: 'swimming-pool', svg: iconSwimmingPool }];

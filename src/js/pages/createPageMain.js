@@ -2,6 +2,7 @@
 import updatePageContent from './updatePage';
 import elementHeaderBackground from '../elements/elementHeaderBackground';
 import elementContainer from '../elements/elementContainer';
+import elementIcon from '../elements/elementIcon';
 import panelHeaderTop from '../panels/panelHeaderTop';
 import panelHeaderMain from '../panels/panelHeaderMain';
 import { el } from 'redom';
@@ -13,7 +14,11 @@ export default function createPageMain() {
   // });
   // ? шапка
   const background = elementHeaderBackground();
-  const container = elementContainer([panelHeaderTop(), panelHeaderMain()]);
+  const container = elementContainer([
+    panelHeaderTop(),
+    panelHeaderMain(),
+    elementIcon('swimming-pool'),
+  ]);
   const header = el('header.header', [background, container]);
 
   // ? тело
