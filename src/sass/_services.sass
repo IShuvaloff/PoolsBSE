@@ -1,0 +1,73 @@
+.container--services
+  padding: 135px 0
+  overflow-y: auto
+
+.services
+  display: flex
+  justify-content: stretch
+  align-items: stretch
+  min-width: 1720px
+  &__container
+    overflow-y: auto
+  &__title
+    margin-bottom: 85px
+    text-align: center
+    color: #000000
+
+.service
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  flex: 1 1 0px
+  padding: 57px 30px 46px
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  height: 504px
+  max-width: 456px
+  transition: flex-basis .2s ease-in-out, padding .2s ease-in-out, opacity .2s ease-in-out
+  cursor: pointer
+  &:not(:last-child)
+    margin-right: 28px
+  &:focus:not(&--checked), &:hover:not(&--checked) // осветлять при наведении мышкой, но если только он уже не развернут (checked)
+    opacity: 0.8
+  &--checked
+    padding-left: 45px
+    padding-right: 45px
+    flex-basis: 456px
+    .service__title
+      font-weight: 700
+      font-size: 20px
+      color: #FFFFFF
+    .service__text
+      visibility: visible
+    .service__btn
+      visibility: visible
+  &__title
+    margin-bottom: 20px
+    height: 80px
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 600
+    font-size: 17px
+    line-height: 133%
+    letter-spacing: 0.06em
+    color: #000000
+    transition: font-weight .2s ease-in-out, font-size .2s ease-in-out, color .2s ease-in-out
+  &__text
+    margin-bottom: auto
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 500
+    font-size: 15px
+    line-height: 18px
+    letter-spacing: 0.02em
+    color: #FFFFFF
+    visibility: hidden
+    transition: visibility .2s ease-in-out
+  &__btn
+    width: 143px
+    height: 44px
+    visibility: hidden

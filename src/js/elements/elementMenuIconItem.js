@@ -1,6 +1,5 @@
 import { el, mount } from 'redom';
-import { MENU_ITEMS } from '../constants';
-import { getSvgHtml } from '../utils';
+import { getMenuItem, getSvgHtml } from '../utils';
 import { updateHeaderPhoto } from './elementHeaderPhoto';
 
 function updateHeaderMenuSelected(el) {
@@ -13,9 +12,7 @@ function updateHeaderMenuSelected(el) {
 
 function updateHeaderTitleSelected(id) {
   const title = document.querySelector('.header__title');
-  const text = `Предлагаем для вас<br>${
-    MENU_ITEMS.find((value) => value.id === id)?.caption
-  }`;
+  const text = `Предлагаем для вас<br>${getMenuItem(id)?.caption}`;
   title.innerHTML = text;
 }
 
@@ -28,7 +25,7 @@ function menuIconClicked() {
 }
 
 export default function elementMenuIconItem(id) {
-  const item = MENU_ITEMS.find((value) => value.id === id);
+  const item = getMenuItem(id);
   if (!item) return;
 
   // ? иконка с возможностью выделения

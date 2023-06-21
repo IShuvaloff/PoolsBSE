@@ -4,3 +4,51 @@
 
 .icon-logo
   background: url(./assets/img/logo.png) left center / contain no-repeat
+
+
+
+@function serviceLinearGradientLight()
+  @return linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7))
+
+@function serviceLinearGradientDark()
+  @return linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))
+
+@function servicePhotoBcg($id)
+  @if $id == pools
+    @return url(./assets/img/services/services-building-pools.jpg)
+  @else if $id == artificial
+    @return url(./assets/img/services/services-artificial.jpg)
+  @else if $id == fontains
+    @return url(./assets/img/services/services-dewatering.jpg)
+  @else if $id == dewatering
+    @return url(./assets/img/services/services-dewatering.jpg)
+  @else if $id == watering
+    @return url(./assets/img/services/services-watering.jpg)
+  @else if $id == landscaping
+    @return url(./assets/img/services/services-landscaping.jpg)
+
+.service
+  &--building-pools
+    background-image: serviceLinearGradientLight(), servicePhotoBcg(pools)
+    &.service--checked
+      background-image: serviceLinearGradientDark(), servicePhotoBcg(pools)
+  &--artificial
+    background-image: serviceLinearGradientLight(), servicePhotoBcg(artificial)
+    &.service--checked
+      background-image: serviceLinearGradientDark(), servicePhotoBcg(artificial)
+  &--building-fontains
+    background-image: serviceLinearGradientLight(), servicePhotoBcg(fontains)
+    &.service--checked
+      background-image: serviceLinearGradientDark(), servicePhotoBcg(fontains)
+  &--dewatering
+    background-image: serviceLinearGradientLight(), servicePhotoBcg(dewatering)
+    &.service--checked
+      background-image: serviceLinearGradientDark(), servicePhotoBcg(dewatering)
+  &--watering
+    background-image: serviceLinearGradientLight(), servicePhotoBcg(watering)
+    &.service--checked
+      background-image: serviceLinearGradientDark(), servicePhotoBcg(watering)
+  &--landscaping
+    background-image: serviceLinearGradientLight(), servicePhotoBcg(landscaping)
+    &.service--checked
+      background-image: serviceLinearGradientDark(), servicePhotoBcg(landscaping)

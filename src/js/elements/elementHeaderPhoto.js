@@ -1,9 +1,9 @@
 import { el } from 'redom';
 import photoMain from '../../assets/img/photo-main.jpg';
-import { MENU_ITEMS } from '../constants';
+import { getMenuItem } from '../utils';
 
 function getPhoto(id) {
-  return MENU_ITEMS.find((value) => value.id === id)?.photoMain || photoMain;
+  return getMenuItem(id)?.photoMain || photoMain;
 }
 
 export default function elementHeaderPhoto(id) {

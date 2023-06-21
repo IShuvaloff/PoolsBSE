@@ -1,4 +1,9 @@
 import { PAGES, DOCTITLE } from './constants';
+import { MENU_ITEMS } from './constants';
+
+export function getMenuItem(id) {
+  return MENU_ITEMS.find((value) => value.id === id);
+}
 
 // поиск данных страницы по имени
 export function getPageByName(name) {
