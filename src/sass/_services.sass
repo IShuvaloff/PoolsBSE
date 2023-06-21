@@ -1,18 +1,12 @@
-.container--services
-  padding: 135px 0
-  overflow-y: auto
-
 .services
   display: flex
   justify-content: stretch
   align-items: stretch
-  min-width: 1720px
+  // min-width: 1720px
   &__container
     overflow-y: auto
   &__title
     margin-bottom: 85px
-    text-align: center
-    color: #000000
 
 .service
   position: relative
@@ -25,10 +19,12 @@
   background-size: cover
   background-position: center center
   background-repeat: no-repeat
+  border-radius: 10px
   height: 504px
   max-width: 456px
   transition: flex-basis .2s ease-in-out, padding .2s ease-in-out, opacity .2s ease-in-out
   cursor: pointer
+  // filter: blur(7.5px)
   &:not(:last-child)
     margin-right: 28px
   &:focus:not(&--checked), &:hover:not(&--checked) // осветлять при наведении мышкой, но если только он уже не развернут (checked)

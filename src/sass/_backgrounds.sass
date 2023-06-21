@@ -5,8 +5,6 @@
 .icon-logo
   background: url(./assets/img/logo.png) left center / contain no-repeat
 
-
-
 @function serviceLinearGradientLight()
   @return linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7))
 
@@ -19,7 +17,7 @@
   @else if $id == artificial
     @return url(./assets/img/services/services-artificial.jpg)
   @else if $id == fontains
-    @return url(./assets/img/services/services-dewatering.jpg)
+    @return url(./assets/img/services/services-building-fontains.jpg)
   @else if $id == dewatering
     @return url(./assets/img/services/services-dewatering.jpg)
   @else if $id == watering
@@ -29,26 +27,41 @@
 
 .service
   &--building-pools
+    background-size: auto 120% !important
     background-image: serviceLinearGradientLight(), servicePhotoBcg(pools)
     &.service--checked
+      background-size: cover !important
       background-image: serviceLinearGradientDark(), servicePhotoBcg(pools)
   &--artificial
+    background-size: auto 120% !important
     background-image: serviceLinearGradientLight(), servicePhotoBcg(artificial)
     &.service--checked
+      background-size: cover !important
       background-image: serviceLinearGradientDark(), servicePhotoBcg(artificial)
   &--building-fontains
+    background-size: auto 120% !important
     background-image: serviceLinearGradientLight(), servicePhotoBcg(fontains)
     &.service--checked
+      background-size: cover !important
       background-image: serviceLinearGradientDark(), servicePhotoBcg(fontains)
   &--dewatering
+    background-size: auto 120% !important
     background-image: serviceLinearGradientLight(), servicePhotoBcg(dewatering)
     &.service--checked
+      background-size: cover !important
       background-image: serviceLinearGradientDark(), servicePhotoBcg(dewatering)
   &--watering
+    background-size: auto 120% !important
     background-image: serviceLinearGradientLight(), servicePhotoBcg(watering)
     &.service--checked
+      background-size: cover !important
       background-image: serviceLinearGradientDark(), servicePhotoBcg(watering)
   &--landscaping
+    background-size: auto 120% !important
     background-image: serviceLinearGradientLight(), servicePhotoBcg(landscaping)
     &.service--checked
+      background-size: cover !important
       background-image: serviceLinearGradientDark(), servicePhotoBcg(landscaping)
+
+.gradient-bg
+  background: linear-gradient(180deg, #0984E2 0%, rgba(255, 255, 255, 0.54) 151.82%)

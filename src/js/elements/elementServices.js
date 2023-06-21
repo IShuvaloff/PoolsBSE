@@ -42,6 +42,7 @@ export default function elementServices() {
     card.addEventListener('keyup', serviceCardKeyPress);
 
     mount(list, card);
+    return list;
   });
 
   // const scrollbar = el('.services__swiper-scrollbar');

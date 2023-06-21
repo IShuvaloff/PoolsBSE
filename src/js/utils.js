@@ -1,8 +1,12 @@
-import { PAGES, DOCTITLE } from './constants';
+import { PAGES, DOCTITLE, FEATURES } from './constants';
 import { MENU_ITEMS } from './constants';
 
 export function getMenuItem(id) {
   return MENU_ITEMS.find((value) => value.id === id);
+}
+
+export function getFeatureItem(id) {
+  return FEATURES.find((item) => item.id === id);
 }
 
 // поиск данных страницы по имени
@@ -30,4 +34,9 @@ export function getSvgHtml(svg) {
 export function getPhoneNumber(phone) {
   let onlyNums = phone.replace(/\D/g, '');
   return `+${onlyNums}`;
+}
+
+// проверка на нечетное число
+export function isOdd(num) {
+  return num % 2;
 }

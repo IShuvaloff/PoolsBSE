@@ -17,6 +17,12 @@ import iconSwimmingPool from '../assets/icons/pageIcons/icon-swimming-pool.svg';
 // import servicesDewatering from '../assets/img/services/services-dewatering.jpg';
 // import servicesWatering from '../assets/img/services/services-watering.jpg';
 // import servicesLandscaping from '../assets/img/services/services-landscaping.jpg';
+import featuresTechno from '../assets/icons/features/techno.svg';
+import featuresWork from '../assets/icons/features/work.svg';
+import featuresFull from '../assets/icons/features/full.svg';
+import featuresPrice from '../assets/icons/features/price.svg';
+import featuresService from '../assets/icons/features/service.svg';
+import featuresGarantee from '../assets/icons/features/garantee.svg';
 
 export const DOCTITLE = 'BSE';
 
@@ -98,3 +104,48 @@ export const MENU_ITEMS = [
 ];
 
 export const PAGE_ICONS = [{ id: 'swimming-pool', svg: iconSwimmingPool }];
+
+export const FEATURES = [
+  {
+    id: 'techno',
+    title: 'Соблюдение технологических норм',
+    descr:
+      'Мы используем только качественные строительные, ландшафтные и растительные материалы.',
+    svg: featuresTechno,
+  },
+  {
+    id: 'work',
+    title: 'Высокую культуру производства работ',
+    descr:
+      'Своевременная уборка и поддержание чистоты при монтаже оборудования и строительстве объекта.',
+    svg: featuresWork,
+  },
+  {
+    id: 'full',
+    title: 'Полный цикл работ "Под Ключ"',
+    descr:
+      'Выполнение всех работ от первоначальной идеи, до конечного воплощения проекта- «под ключ». При реализации проекта мы берем на себя выполнение всех сопутствующих работ.',
+    svg: featuresFull,
+  },
+  {
+    id: 'price',
+    title: 'Гибкую ценовую политику',
+    descr:
+      'Подберём решение которое подходит именно Вам, при комплексных решениях предоставляем скидки и подарки.',
+    svg: featuresPrice,
+  },
+  {
+    id: 'service',
+    title: 'Гарантийное и сервисное обслуживание',
+    descr:
+      'Осуществляем гарантийное и постгарантийное обслуживание, воевременная замена оборудования, мониторинг работы систем.',
+    svg: featuresService,
+  },
+  {
+    id: 'garantee',
+    title: 'Гарантию на все работы',
+    descr:
+      'Наша компания предоставляет гарантию 1-год на посаженные нами растения и проделанные работы.',
+    svg: featuresGarantee,
+  },
+];

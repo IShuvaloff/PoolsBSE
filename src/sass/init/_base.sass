@@ -9,14 +9,41 @@ body
 
 .main
   background-color: #F8F8F8
+  *
+    position: relative
+    z-index: 2
+  &__services
+    padding-top: 135px
+    margin-bottom: 135px
+    overflow: auto
+  &__features
+    position: relative
+    padding: 107px 0 274px
+
+
+.gradient
+  position: absolute
+  top: 0
+  right: 0
+  width: 73%
+  height: 100%
 
 .subtitle
+  text-align: center
   font-family: 'Open Sans'
   font-style: normal
   font-weight: 600
   font-size: 40px
   line-height: 54px
   letter-spacing: 0.02em
+  color: #000
+  &--light
+    color: #fff
+  &--left
+    text-align: left
+  &--left-light
+    color: #fff
+    text-align: left
 
 .btn
   border: 3px solid #66FFBB
