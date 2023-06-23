@@ -30,5 +30,4 @@ export default function createPageMain() {
   const page = el('.page', [header, main]);
 
   updatePageContent(page);
-  // runElementServicesFunctions();
 }

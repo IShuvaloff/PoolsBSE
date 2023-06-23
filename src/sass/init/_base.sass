@@ -7,9 +7,16 @@ body
   padding: 0 100px
   max-width: 1920px
 
+.gradient
+  position: absolute
+  top: 0
+  // right: 0 -----> указывать отдельно для каждого элемента!
+  width: 73%
+  height: 100%
+
 .main
   background-color: #F8F8F8
-  *
+  *:not(.gradient)
     position: relative
     z-index: 2
   &__services
@@ -19,14 +26,8 @@ body
   &__features
     position: relative
     padding: 107px 0 274px
-
-
-.gradient
-  position: absolute
-  top: 0
-  right: 0
-  width: 73%
-  height: 100%
+    &-gradient
+      left: 0
 
 .subtitle
   text-align: center
