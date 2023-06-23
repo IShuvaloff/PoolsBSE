@@ -1,10 +1,16 @@
 .features
+  position: relative
+  padding: 107px 0 274px
+  &__gradient
+    right: 0
+  &__title
+    margin-bottom: 113px
+
+.features-grid
   display: grid
   grid-template-columns: 1fr 1fr
   grid-template-rows: repeat(3, 1fr)
   background-color: #D4EBFF
-  &__title
-    margin-bottom: 113px
 
 .feature
   display: flex
@@ -42,7 +48,7 @@
     letter-spacing: 0.02em
     color: #000000
   &__border-right-up-dot
-    position: absolute
+    position: absolute !important
     top: -7px
     right: -7px
     border-radius: 50%

@@ -1,4 +1,4 @@
-import { PAGES, DOCTITLE, FEATURES } from './constants';
+import { PAGES, DOCTITLE, FEATURES, PROJECTS, SWIPERS } from './constants';
 import { MENU_ITEMS } from './constants';
 
 export function getMenuItem(id) {
@@ -7,6 +7,14 @@ export function getMenuItem(id) {
 
 export function getFeatureItem(id) {
   return FEATURES.find((item) => item.id === id);
+}
+
+export function getProjectItem(id) {
+  return PROJECTS.find((item) => item.id === id);
+}
+
+export function getSwiperItem(id) {
+  return SWIPERS.find((item) => item.id === id);
 }
 
 // поиск данных страницы по имени

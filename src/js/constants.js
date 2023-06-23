@@ -23,6 +23,15 @@ import featuresFull from '../assets/icons/features/full.svg';
 import featuresPrice from '../assets/icons/features/price.svg';
 import featuresService from '../assets/icons/features/service.svg';
 import featuresGarantee from '../assets/icons/features/garantee.svg';
+import projectPool1 from '../assets/img/projects/projects-pool-1.jpg';
+import projectPool2 from '../assets/img/projects/projects-pool-2.jpg';
+import projectPool3 from '../assets/img/projects/projects-pool-3.jpg';
+import projectPool4 from '../assets/img/projects/projects-pool-4.jpg';
+import projectPool5 from '../assets/img/projects/projects-pool-5.jpg';
+import projectPool6 from '../assets/img/projects/projects-pool-6.jpg';
+import projectPool7 from '../assets/img/projects/projects-pool-7.jpg';
+import iconBtnProjPrev from '../assets/icons/projects/swiper-projects-prev.svg';
+import iconBtnProjNext from '../assets/icons/projects/swiper-projects-next.svg';
 
 export const DOCTITLE = 'BSE';
 
@@ -148,4 +157,18 @@ export const FEATURES = [
       'Наша компания предоставляет гарантию 1-год на посаженные нами растения и проделанные работы.',
     svg: featuresGarantee,
   },
+];
+
+export const PROJECTS = [
+  { id: 'pool-1', photo: projectPool1 },
+  { id: 'pool-2', photo: projectPool2 },
+  { id: 'pool-3', photo: projectPool3 },
+  { id: 'pool-4', photo: projectPool4 },
+  { id: 'pool-5', photo: projectPool5 },
+  { id: 'pool-6', photo: projectPool6 },
+  { id: 'pool-7', photo: projectPool7 },
+];
+
+export const SWIPERS = [
+  { id: 'projects', btnSvgPrev: iconBtnProjPrev, btnSvgNext: iconBtnProjNext },
 ];
