@@ -2517,7 +2517,7 @@ module.exports = __webpack_require__.p + "fonts\\Worksans-Semibold.2f885f6aac37f
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "/PoolsBSE/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -13289,7 +13289,7 @@ function createPage(name) {
 
 
 const routing_router = new (navigo_min_default())('/');
-routing_router.on('/', () => createPage('main'))
+routing_router.on('/PoolsBSE/', () => createPage('main'))
 // .on('/page/:id', (data) => {
 //   // ? страница с параметрами
 //   mainApp.innerHTML = '';
