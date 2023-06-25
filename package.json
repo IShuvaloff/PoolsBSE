@@ -1,12 +1,16 @@
 {
   "name": "memo",
   "version": "1.0.0",
-  "description": "Игра МЕМО",
+  "repository": {
+    "url": "git+https://github.com/IShuvaloff/PoolsBSE.git"
+  },
+  "description": "Бассейны BSE",
   "main": "index.js",
   "scripts": {
     "serve": "webpack serve --open --mode development",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Шувалов И.А.",
   "license": "ISC",
