@@ -11,6 +11,7 @@ import photoDewatering from '../assets/img/photos/photo-dewatering.jpg';
 import photoWatering from '../assets/img/photos/photo-watering.jpg';
 import photoLandscaping from '../assets/img/photos/photo-landscaping.jpg';
 import iconSwimmingPool from '../assets/icons/pageIcons/icon-swimming-pool.svg';
+import iconChairs from '../assets/icons/pageIcons/icon-chairs.svg';
 // import servicesPools from '../assets/img/services/services-building-pools.jpg';
 // import servicesArtificial from '../assets/img/services/services-artificial.jpg';
 // import servicesFontains from '../assets/img/services/services-building-fontains.jpg';
@@ -112,7 +113,10 @@ export const MENU_ITEMS = [
   },
 ];
 
-export const PAGE_ICONS = [{ id: 'swimming-pool', svg: iconSwimmingPool }];
+export const PAGE_ICONS = [
+  { id: 'swimming-pool', svg: iconSwimmingPool },
+  { id: 'chairs', svg: iconChairs },
+];
 
 export const FEATURES = [
   {

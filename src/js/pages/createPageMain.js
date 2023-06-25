@@ -11,6 +11,7 @@ import panelMainFeatures from '../panels/panelMainFeatures';
 import panelMainProjects, {
   projectsRunSwiper,
 } from '../panels/panelMainProjects';
+import panelMainAbout from '../panels/panelMainAbout';
 
 export default function createPageMain() {
   // const btn = el('button.btn-unknown', 'НАЖМИ МЕНЯ');
@@ -22,7 +23,7 @@ export default function createPageMain() {
   const container = elementContainer([
     panelHeaderTop(),
     panelHeaderMain(),
-    elementIcon('swimming-pool'),
+    elementIcon('swimming-pool', 'header'),
   ]);
   const header = el('header.header', [background, container]);
 
@@ -31,6 +32,7 @@ export default function createPageMain() {
     panelMainServices(),
     panelMainFeatures(),
     panelMainProjects(),
+    panelMainAbout(),
   ]);
 
   // ? страница
