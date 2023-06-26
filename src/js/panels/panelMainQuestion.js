@@ -6,7 +6,7 @@ export default function panelMainQuestion() {
 
   const question = elementQuestionBlock();
 
-  const container = el('.question-bg', [darken, question]);
+  const container = el('.question-wrapper', [darken, question]);
 
   return container;
 }
