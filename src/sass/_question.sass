@@ -1,0 +1,61 @@
+.question-bg
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  background: url(./assets/img/photos/photo-question.jpg) no-repeat center center / cover
+  min-height: 802px
+  width: 100%
+  &-darken
+    position: absolute !important
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    z-index: 0
+    background-color: #000
+    opacity: 0.4
+    height: 100%
+
+.question
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  padding: 47px 45px 65px 64px
+  border-radius: 16px
+  background-color: #D4EBFF
+  opacity: 86%
+  max-width: 695px
+  height: 532px
+  &__title
+    margin-bottom: 61px
+    font-family: Montserrat
+    font-size: 30px
+    line-height: 37px
+    letter-spacing: 0.02em
+    color: #000
+    &--special
+      font-weight: 600
+      color: #0085FF
+  &__input
+    padding: 0
+    padding-bottom: 15px
+    border: none
+    border-bottom: 1px solid #FFFFFF
+    background-color: transparent
+    max-width: 298px
+    width: 100%
+    min-height: 33px
+    &:not(:last-child)
+      margin-bottom: 63px
+    &:last-child
+      margin-bottom: 65px
+  &__btn
+    padding-left: 41px
+    padding-right: 41px
+    min-height: 54px
+    font-family: Montserrat
+    font-size: 18px
+    font-weight: 500
+    line-height: 22px
+    letter-spacing: 0.02em

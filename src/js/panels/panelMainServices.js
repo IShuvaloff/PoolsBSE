@@ -1,4 +1,3 @@
-import { el } from 'redom';
 import elementServices from '../elements/elementServices';
 import { elementSubtitleServices } from '../elements/elementSubtitle';
 import elementContainer from '../elements/elementContainer';
@@ -9,6 +8,7 @@ export default function panelMainServices() {
     elementServices(),
   ]);
   container.classList.add('container--services');
+  container.classList.add('services');
 
-  return el('.main__services', [container]);
+  return container;
 }

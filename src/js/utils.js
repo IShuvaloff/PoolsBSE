@@ -1,5 +1,18 @@
-import { PAGES, DOCTITLE, FEATURES, PROJECTS, SWIPERS } from './constants';
+import {
+  PAGES,
+  DOCTITLE,
+  FEATURES,
+  PROJECTS,
+  SWIPERS,
+  REPONAME,
+  PARAMS,
+} from './constants';
 import { MENU_ITEMS } from './constants';
+
+// ! добавление к имени страницы исходного репозитория проекта! ОБЯЗАТЕЛЬНО ИСПОЛЬЗОВАТЬ в router.navigate!!!
+export function getPagePath(page) {
+  return `/${REPONAME}/${page.trim()}`;
+}
 
 export function getMenuItem(id) {
   return MENU_ITEMS.find((value) => value.id === id);
@@ -15,6 +28,10 @@ export function getProjectItem(id) {
 
 export function getSwiperItem(id) {
   return SWIPERS.find((item) => item.id === id);
+}
+
+export function getParamItem(id) {
+  return PARAMS.find((item) => item.id === id);
 }
 
 // поиск данных страницы по имени

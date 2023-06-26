@@ -1,4 +1,5 @@
 // import { router } from '../routing';
+// import { getPagePath } from '../utils';
 import updatePageContent from './updatePage';
 import elementHeaderBackground from '../elements/elementHeaderBackground';
 import elementContainer from '../elements/elementContainer';
@@ -12,11 +13,12 @@ import panelMainProjects, {
   projectsRunSwiper,
 } from '../panels/panelMainProjects';
 import panelMainAbout from '../panels/panelMainAbout';
+import panelMainQuestion from '../panels/panelMainQuestion';
 
 export default function createPageMain() {
   // const btn = el('button.btn-unknown', 'НАЖМИ МЕНЯ');
   // btn.addEventListener('click', () => {
-  //   router.navigate('/abcdefg');
+  // router.navigate(getPagePath('/abcdefg'));
   // });
   // ? шапка
   const background = elementHeaderBackground();
@@ -33,6 +35,7 @@ export default function createPageMain() {
     panelMainFeatures(),
     panelMainProjects(),
     panelMainAbout(),
+    panelMainQuestion(),
   ]);
 
   // ? страница

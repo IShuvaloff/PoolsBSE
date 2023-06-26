@@ -15,7 +15,7 @@ const entry = [
 const output = {
   path: path.join(__dirname, 'dist'), // ! результирующий файл в папку dist/main.js
   filename: 'index.[contenthash].js',
-  publicPath: '/',
+  publicPath: '/PoolsBSE/',
   clean: true, // ! очистить папку перед сборкой
   assetModuleFilename: path.join('assets', '[name].[contenthash][ext]'), // ! общее место сохранения файлов (если для типа файла не назначен generator)
 };

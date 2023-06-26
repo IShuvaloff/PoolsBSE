@@ -35,6 +35,7 @@ import iconBtnProjPrev from '../assets/icons/projects/swiper-projects-prev.svg';
 import iconBtnProjNext from '../assets/icons/projects/swiper-projects-next.svg';
 
 export const DOCTITLE = 'BSE';
+export const REPONAME = 'PoolsBSE';
 
 export const PAGES = [
   {
@@ -175,4 +176,42 @@ export const PROJECTS = [
 
 export const SWIPERS = [
   { id: 'projects', btnSvgPrev: iconBtnProjPrev, btnSvgNext: iconBtnProjNext },
+];
+
+export const PARAMS = [
+  {
+    id: 'length',
+    name: 'length',
+    caption: 'Длина бассейна',
+    placeholder: 'например, 5 метров',
+    type: 'number',
+  },
+  {
+    id: 'depth',
+    name: 'depth',
+    caption: 'Глубина бассейна',
+    placeholder: 'например, 1.5 метра',
+    type: 'number',
+  },
+  {
+    id: 'width',
+    name: 'width',
+    caption: 'Ширина бассейна',
+    placeholder: 'например, 6 метров',
+    type: 'number',
+  },
+  {
+    id: 'city',
+    name: 'city',
+    caption: 'Город',
+    placeholder: 'Москва, Уфа',
+    type: 'text',
+  },
+  {
+    id: 'phone',
+    name: 'phone',
+    caption: 'Номер телефона',
+    placeholder: '+7 (911) 642-32-99',
+    type: 'tel',
+  },
 ];

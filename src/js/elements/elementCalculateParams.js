@@ -1,12 +1,11 @@
 import { el, mount } from 'redom';
 import elementCalculateParam from '../elements/elementCalculateParam';
-
-const paramsNames = ['length', 'depth', 'width', 'city', 'phone'];
+import { PARAMS } from '../constants';
 
 export default function elementCalculateParams() {
   const params = el('.calculate__params');
-  paramsNames.forEach((value) => {
-    const param = elementCalculateParam(value);
+  PARAMS.forEach((value) => {
+    const param = elementCalculateParam(value.id);
     mount(params, param);
   });
 

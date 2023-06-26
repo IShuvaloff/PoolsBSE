@@ -7,7 +7,7 @@
   "description": "Бассейны BSE",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack serve --open --mode development",
+    "serve": "webpack serve --open /PoolsBSE/ --mode development",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
