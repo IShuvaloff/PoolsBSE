@@ -1,26 +1,14 @@
 import { el } from 'redom';
-import { getSvgHtml } from '../utils';
-import whatsapp from '../../assets/icons/contacts/whatsapp.svg';
-import vk from '../../assets/icons/contacts/vk.svg';
+import { getContactItem, getSvgHtml } from '../utils';
 
-function getSocial(id) {
-  switch (id) {
-    case 'whatsapp':
-      return { name: 'WhatsApp', href: 'https://whatsapp.com', svg: whatsapp };
-    case 'vk':
-      return { name: 'vk', href: 'https://vk.com', svg: vk };
-    default:
-      return undefined;
-  }
-}
-
-export default function elementSocialLink(id) {
-  const social = getSocial(id);
+export default function elementSocialLink(id, className) {
+  const social = getContactItem(id);
 
   const link = el('a.contact-social.icon-bg', {
-    href: social.href,
-    target: '_blank',
+    href: social.value,
+    target: social.target,
   });
+  link.classList.add(className);
   link.innerHTML = getSvgHtml(social.svg);
 
   return link;

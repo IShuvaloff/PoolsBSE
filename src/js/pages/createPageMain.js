@@ -14,6 +14,7 @@ import panelMainProjects, {
 } from '../panels/panelMainProjects';
 import panelMainAbout from '../panels/panelMainAbout';
 import panelMainQuestion from '../panels/panelMainQuestion';
+import panelMainContacts from '../panels/panelMainContacts';
 
 export default function createPageMain() {
   // const btn = el('button.btn-unknown', 'НАЖМИ МЕНЯ');
@@ -36,6 +37,7 @@ export default function createPageMain() {
     panelMainProjects(),
     panelMainAbout(),
     panelMainQuestion(),
+    panelMainContacts(),
   ]);
 
   // ? страница

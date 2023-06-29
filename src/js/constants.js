@@ -33,6 +33,8 @@ import projectPool6 from '../assets/img/projects/projects-pool-6.jpg';
 import projectPool7 from '../assets/img/projects/projects-pool-7.jpg';
 import iconBtnProjPrev from '../assets/icons/projects/swiper-projects-prev.svg';
 import iconBtnProjNext from '../assets/icons/projects/swiper-projects-next.svg';
+import contactVK from '../assets/icons/contacts/vk.svg';
+import contactWA from '../assets/icons/contacts/whatsapp.svg';
 
 export const DOCTITLE = 'BSE';
 export const REPONAME = 'PoolsBSE';
@@ -213,5 +215,45 @@ export const PARAMS = [
     caption: 'Номер телефона',
     placeholder: '+7 (911) 642-32-99',
     type: 'tel',
+  },
+];
+
+export const CONTACTS = [
+  {
+    id: 1,
+    value: '+7 (111) 123-45-55',
+    text: '',
+    type: 'tel',
+    target: '_self',
+  },
+  {
+    id: 2,
+    value: '+7 (222) 321-23-55',
+    text: 'Сочи',
+    type: 'tel',
+    target: '_self',
+  },
+  {
+    id: 3,
+    value: '+7 (333) 456-78-22',
+    text: 'Севастополь',
+    type: 'tel',
+    target: '_self',
+  },
+  {
+    id: 4,
+    value: 'https://whatsapp.com',
+    text: 'WhatsApp',
+    type: 'link',
+    target: '_blank',
+    svg: contactWA,
+  },
+  {
+    id: 5,
+    value: 'https://vk.com',
+    text: 'VK',
+    type: 'link',
+    target: '_blank',
+    svg: contactVK,
   },
 ];

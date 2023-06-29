@@ -6,6 +6,7 @@ import {
   SWIPERS,
   REPONAME,
   PARAMS,
+  CONTACTS,
 } from './constants';
 import { MENU_ITEMS } from './constants';
 
@@ -32,6 +33,10 @@ export function getSwiperItem(id) {
 
 export function getParamItem(id) {
   return PARAMS.find((item) => item.id === id);
+}
+
+export function getContactItem(id) {
+  return CONTACTS.find((item) => item.id === id);
 }
 
 // поиск данных страницы по имени

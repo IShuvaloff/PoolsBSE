@@ -2,7 +2,8 @@ import elementHeaderBurger from '../elements/elementHeaderBurger';
 import elementLogo from '../elements/elementLogo';
 import elementSocialLink from '../elements/elementSocialLink';
 import elementPhoneLink from '../elements/elementPhoneLink';
-import { el } from 'redom';
+import { el, mount } from 'redom';
+import { CONTACTS } from '../constants';
 
 export default function panelHeaderTop() {
   // бургер
@@ -10,10 +11,11 @@ export default function panelHeaderTop() {
   const logo = elementLogo();
 
   // соцсети
-  const socials = el('.header__contacts--socials', [
-    elementSocialLink('whatsapp'),
-    elementSocialLink('vk'),
-  ]);
+  const socials = el('.header__contacts--socials');
+  CONTACTS.filter((item) => item.type === 'link').forEach((item) => {
+    const link = elementSocialLink(item.id, 'header__contact');
+    mount(socials, link);
+  });
 
   // телефоны
   const phones = el('.header__contacts--phones', [
