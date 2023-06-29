@@ -4,6 +4,7 @@ import panelContacts from './panelContacts';
 import panelSchedule from './panelSchedule';
 import elementMap from '../elements/elementMap';
 import { el } from 'redom';
+import elementIcon from '../elements/elementIcon';
 
 export default function panelMainContacts() {
   const title = elementSubtitleLeft('Наши контакты');
@@ -17,7 +18,9 @@ export default function panelMainContacts() {
 
   const content = el('.contacts__content', [contacts, map]);
 
-  const container = elementContainer([title, content], 'contacts');
+  const icon = elementIcon('street-pool', 'contacts');
+
+  const container = elementContainer([title, content, icon], 'contacts');
   container.classList.add('contacts');
 
   return container;
