@@ -22,7 +22,7 @@ export default function elementMap() {
 
         // maps.geoObjects.remove(...);
 
-        let myPoints = [{ lat: 54.796527, lon: 56.058781 }];
+        const myPoints = [{ lat: 54.796527, lon: 56.058781 }];
 
         myPoints.forEach((point) => {
           const placemark = new maps.GeoObject(
@@ -30,14 +30,14 @@ export default function elementMap() {
               geometry: { type: 'Point', coordinates: [point.lat, point.lon] },
               properties: {
                 // контент метки
-                iconContent: 'Я тащусь', // ! отображается, если не указана кастомная иконка (см. опции ниже)
-                hintContent: 'Ну давай уже тащи', // ! хинт, всплывающий при наведении мышкой
+                iconContent: 'BSE', // ! отображается, если не указана кастомная иконка (см. опции ниже)
+                hintContent: 'BSE - Бассейны и водоемы', // ! хинт, всплывающий при наведении мышкой
               },
             },
             {
               // Опции.
               // Иконка метки будет растягиваться под размер ее содержимого.
-              preset: 'islands#blackStretchyIcon', // ! актуально для текста внутри иконки (см. iconContent выше)
+              // preset: 'islands#blackStretchyIcon', // ! актуально для текста внутри иконки (см. iconContent выше)
               // // Метку можно перемещать.
               // draggable: true,
               // Необходимо указать данный тип макета.
@@ -56,5 +56,5 @@ export default function elementMap() {
     })
     .catch((error) => console.log('Ошибка загрузки Яндекс-карт', error));
 
-  return el('.maps', [/*placemarkBlock,*/ map]);
+  return el('.maps', [map]);
 }
