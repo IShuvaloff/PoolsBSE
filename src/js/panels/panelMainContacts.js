@@ -16,11 +16,11 @@ export default function panelMainContacts() {
 
   const map = elementMap();
 
-  const content = el('.contacts__content', [contacts, map]);
-
   const icon = elementIcon('street-pool', 'contacts');
 
-  const container = elementContainer([title, content, icon], 'contacts');
+  const content = el('.contacts__content', [contacts, map, icon]);
+
+  const container = elementContainer([title, content], 'contacts');
   container.classList.add('contacts');
 
   return container;

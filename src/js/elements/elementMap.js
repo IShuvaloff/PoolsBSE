@@ -13,38 +13,48 @@ export default function elementMap() {
     .then((maps) => {
       maps.ready(async () => {
         const myMap = new maps.Map(map.id, {
-          center: [54.79538, 56.058593],
+          center: [54.79238, 56.062593],
           zoom: 15,
-          controls: ['searchControl', 'zoomControl'],
+          controls: [], //'searchControl', 'zoomControl'],
         });
 
         // myMap.behaviors.disable('scrollZoom');
 
-        // maps.geoObjects.removeAll();
+        // maps.geoObjects.remove(...);
+
         let myPoints = [{ lat: 54.796527, lon: 56.058781 }];
 
         myPoints.forEach((point) => {
-          const placemark = new maps.Placemark([point.lat, point.lon], {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: placemarkIcon, // ! не подтягивается новая иконка
-            // Размеры метки.
-            iconImageSize: [30, 42],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-5, -38],
-          });
+          const placemark = new maps.GeoObject(
+            {
+              geometry: { type: 'Point', coordinates: [point.lat, point.lon] },
+              properties: {
+                // контент метки
+                iconContent: 'Я тащусь', // ! отображается, если не указана кастомная иконка (см. опции ниже)
+                hintContent: 'Ну давай уже тащи', // ! хинт, всплывающий при наведении мышкой
+              },
+            },
+            {
+              // Опции.
+              // Иконка метки будет растягиваться под размер ее содержимого.
+              preset: 'islands#blackStretchyIcon', // ! актуально для текста внутри иконки (см. iconContent выше)
+              // // Метку можно перемещать.
+              // draggable: true,
+              // Необходимо указать данный тип макета.
+              iconLayout: 'default#image',
+              // Своё изображение иконки метки.
+              iconImageHref: placemarkIcon,
+              // Размеры метки.
+              iconImageSize: [50, 64],
+              // Смещение левого верхнего угла иконки относительно её "ножки" (точки привязки).
+              iconImageOffset: [10, 0],
+            }
+          );
           myMap.geoObjects.add(placemark);
         });
       });
     })
     .catch((error) => console.log('Ошибка загрузки Яндекс-карт', error));
-
-  // // ! тест - изображения корректно выводится
-  // const placemarkBlock = el('img.placemark');
-  // placemarkBlock.setAttribute('src', placemarkIcon);
 
   return el('.maps', [/*placemarkBlock,*/ map]);
 }
