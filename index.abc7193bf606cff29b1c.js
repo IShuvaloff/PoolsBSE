@@ -418,6 +418,7 @@ var ___CSS_LOADER_URL_IMPORT_22___ = new URL(/* asset import */ __webpack_requir
 var ___CSS_LOADER_URL_IMPORT_23___ = new URL(/* asset import */ __webpack_require__(9805), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_24___ = new URL(/* asset import */ __webpack_require__(544), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_25___ = new URL(/* asset import */ __webpack_require__(6316), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_26___ = new URL(/* asset import */ __webpack_require__(4054), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_node_modules_normalize_css_normalize_css__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_0___);
@@ -446,8 +447,9 @@ var ___CSS_LOADER_URL_REPLACEMENT_22___ = _node_modules_css_loader_dist_runtime_
 var ___CSS_LOADER_URL_REPLACEMENT_23___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_23___);
 var ___CSS_LOADER_URL_REPLACEMENT_24___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_24___);
 var ___CSS_LOADER_URL_REPLACEMENT_25___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_25___);
+var ___CSS_LOADER_URL_REPLACEMENT_26___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_26___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `@font-face{font-family:"Work Sans";src:local("Worksans-Light");src:url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_1___}) format("woff");font-display:swap;font-weight:300;font-style:normal}@font-face{font-family:"Work Sans";src:local("Worksans-Regular");src:url(${___CSS_LOADER_URL_REPLACEMENT_2___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_3___}) format("woff");font-display:swap;font-weight:400;font-style:normal}@font-face{font-family:"Work Sans";src:local("Worksans-Medium");src:url(${___CSS_LOADER_URL_REPLACEMENT_4___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_5___}) format("woff");font-display:swap;font-weight:500;font-style:normal}@font-face{font-family:"Work Sans";src:local("Worksans-Semibold");src:url(${___CSS_LOADER_URL_REPLACEMENT_6___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_7___}) format("woff");font-display:swap;font-weight:600;font-style:normal}@font-face{font-family:"Work Sans";src:local("Worksans-Bold");src:url(${___CSS_LOADER_URL_REPLACEMENT_8___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_9___}) format("woff");font-display:swap;font-weight:700;font-style:normal}@font-face{font-family:"Ubuntu";src:local("Ubuntu-Light");src:url(${___CSS_LOADER_URL_REPLACEMENT_10___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_11___}) format("woff");font-display:swap;font-weight:300;font-style:normal}@font-face{font-family:"Ubuntu";src:local("Ubuntu-Regular");src:url(${___CSS_LOADER_URL_REPLACEMENT_12___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_13___}) format("woff");font-display:swap;font-weight:400;font-style:normal}@font-face{font-family:"Ubuntu";src:local("Ubuntu-Medium");src:url(${___CSS_LOADER_URL_REPLACEMENT_14___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_15___}) format("woff");font-display:swap;font-weight:500;font-style:normal}@font-face{font-family:"Ubuntu";src:local("Ubuntu-Bold");src:url(${___CSS_LOADER_URL_REPLACEMENT_16___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_17___}) format("woff");font-display:swap;font-weight:700;font-style:normal}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit;outline:none;outline-color:red}a{color:inherit;text-decoration:none}img,svg{max-width:100%;max-height:100%}body{min-width:320px;font-family:"Ubuntu",Arial,Verdana,sans-serif;color:#000}h1,h2,h3,h4,h5,h6,p,ul,ol,figure{margin:0}ul{margin:0;padding:0;list-style:none}button{padding:0;border:none;background-color:rgba(0,0,0,0);cursor:pointer}dl,dt,dd{margin:0}.none{display:none !important}.hidden{visibility:hidden !important}body{background-color:#fff}.container{position:relative;margin:0 auto;padding:0 100px;max-width:1920px}.gradient{position:absolute;top:0;width:73%;height:100%}.main{background-color:#f8f8f8}.main *:not(.gradient){position:relative;z-index:2}.main__services{padding-top:135px;margin-bottom:135px;overflow:auto}.subtitle{text-align:center;font-family:"Open Sans";font-style:normal;font-weight:600;font-size:40px;line-height:54px;letter-spacing:.02em;color:#000}.subtitle--light{color:#fff}.subtitle--left{text-align:left}.subtitle--left-light{color:#fff;text-align:left}.btn{border:3px solid #6fb;border-radius:10px;background-color:#6fb;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:18px;line-height:22px;letter-spacing:.02em;color:#000;transition:background-color .2s ease-in-out,border-color .2s ease-in-out}.btn:focus,.btn:hover{background-color:#89bcf6;border-color:#89bcf6}.icon-bg{background-repeat:no-repeat;background-position:center top}.icon-logo{background:url(${___CSS_LOADER_URL_REPLACEMENT_18___}) left center/contain no-repeat}.service--building-pools{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_19___})}.service--building-pools.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_19___})}.service--artificial{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_20___})}.service--artificial.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_20___})}.service--building-fontains{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_21___})}.service--building-fontains.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_21___})}.service--dewatering{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_22___})}.service--dewatering.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_22___})}.service--watering{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_23___})}.service--watering.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_23___})}.service--landscaping{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_24___})}.service--landscaping.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_24___})}.gradient-bg{background:linear-gradient(180deg, #0984E2 0%, rgba(255, 255, 255, 0.54) 151.82%)}.notifications{position:fixed;right:15px;bottom:15px;z-index:100;display:flex;flex-direction:column;align-items:flex-end}.notifications__item{display:flex;align-items:center;border:1px solid;border-radius:7px;border-color:#d1d5db;background-color:#f3f4f6;max-width:600px;min-height:70px;padding:12px 16px 12px 14px;box-shadow:0px 5px 20px rgba(0,0,0,.25)}.notifications__item:not(:last-child){margin-bottom:15px}.notifications__item.warning{background-color:#f4f0e6;color:#d29718}.notifications__item.success{background-color:#e7f0e8;color:#76ca66}.notifications__item.error{background-color:#eddcdd;color:#ba0000}.notifications__item.info{background-color:#dce6f2;color:#649dff}.notifications__img{margin-right:13px;width:45px;height:45px}.notifications__text{margin-right:15px;font-size:16px;font-weight:400;line-height:24px}.notifications__btn{position:relative;display:block;width:24px;height:24px;margin-right:0;margin-left:auto}.notifications__btn::before,.notifications__btn::after{content:"";position:absolute;top:11px;left:3px;width:18px;height:2px;transform:rotate(45deg)}.warning .notifications__btn::before,.warning .notifications__btn::after{background-color:#d29718}.error .notifications__btn::before,.error .notifications__btn::after{background-color:#ba0000}.info .notifications__btn::before,.info .notifications__btn::after{background-color:#649dff}.success .notifications__btn::before,.success .notifications__btn::after{background-color:#76ca66}.notifications__btn::after{transform:rotate(-45deg)}.notifications__btn:hover{opacity:.6}.notifications__btn:active,.notifications__btn:focus{opacity:.8}@keyframes wink{0%{transform:scale(1);opacity:1}50%{transform:scale(1.15);opacity:.4}100%{transform:scale(1);opacity:1}}.header{position:relative}.header__bg{position:absolute;top:0;left:0;right:0;z-index:-1;background-image:url(${___CSS_LOADER_URL_REPLACEMENT_25___});background-position:left bottom;background-repeat:repeat-x;background-size:auto 575px;width:100vw;height:565px}.header__top{display:flex;justify-content:flex-start;align-items:center;padding-top:53px;padding-bottom:51px}.header__burger{flex-shrink:0;margin-right:102px;border:none;width:40px;height:28px}.header__burger svg{stroke:#fff;transition:stroke .2s ease-in-out}.header__burger:hover svg{stroke:#89bcf6}.header__logo{padding-left:90px;width:147px;height:64px;font-family:"Open Sans";font-style:normal;font-weight:600;font-size:32px;line-height:44px;color:#fff;cursor:pointer}.header__contacts{display:flex;justify-content:flex-end;align-items:center;margin-left:auto}.header__contacts--socials{display:flex;justify-content:flex-start;align-items:center;margin-right:133px}.header__contacts--socials .contact-social{display:inline-block;border-radius:30%;width:41px;height:42px;overflow:hidden}.header__contacts--socials .contact-social:not(:last-child){margin-right:40px}.header__contacts--socials .contact-social:hover{animation:wink .2s ease-in-out}.header__contacts--phones{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;margin-right:82px}.header__contacts--phones :not(:last-child){margin-bottom:14px}.header__contacts--phones .contact-phone{display:flex;align-items:center;height:20px;width:210px;font-family:"Montserrat";font-style:normal;font-weight:600;font-size:18px;line-height:22px;color:#fff}.header__contacts--phones .contact-phone svg{margin-bottom:0;margin-right:14px}.header__contacts--phones .contact-phone:hover svg{animation:wink .2s ease-in-out}.header__contacts--btn{background-color:rgba(0,0,0,0);border:3px solid #46ffad;border-radius:10px;width:241px;height:56px;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:16px;line-height:20px;letter-spacing:.02em;color:#fff;transition:background-color .2s ease-in-out,border-color .2s ease-in-out}.header__contacts--btn:focus,.header__contacts--btn:hover{background-color:#89bcf6;border-color:#89bcf6}.header__main{display:grid;grid-template-columns:45% 1fr;grid-template-areas:"title photo" "menu photo" "calculate photo";grid-gap:0 40px}.header__title{grid-area:title;min-height:153px;font-family:"Open Sans";font-style:normal;font-weight:600;font-size:40px;line-height:54px;letter-spacing:.02em;color:#fff}.header__menu{grid-area:menu}.header__calculate{grid-area:calculate}.header__photo{grid-area:photo;display:flex;justify-content:flex-end;align-items:flex-start;padding-top:25px;overflow:hidden;width:100%;height:100%}.header__photo-img{width:100%;border-radius:10px}.header__icon{position:absolute;bottom:-115px;right:75px;width:145px;height:169px}.menu{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;margin-bottom:135px}.menu__item{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;width:127px;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:13px;line-height:16px;text-align:center;letter-spacing:.02em;color:#000}.menu__item-icon{position:relative;margin-bottom:22px;border-radius:10px;box-sizing:border-box;width:104px;height:104px;background-size:104px 104px;background-position:center center;transition:border-width .1s linear}.menu__item-icon--border{position:absolute;top:0;left:0;border:0 solid rgba(0,0,0,0);border-radius:10px;width:100%;height:100%}.menu__item-icon--border-selected{border-width:5px;border-color:#fff}.menu__item-icon--border:focus,.menu__item-icon--border:hover{border-width:5px;border-color:#fff}.calculate{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;margin-right:100px}.calculate__params{display:grid;grid-template-columns:repeat(3, 1fr);grid-template-rows:repeat(2, 1fr);gap:45px;margin-bottom:55px}.calculate__param{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start}.calculate__label{margin-bottom:19px;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:16px;line-height:20px;letter-spacing:.02em;color:#000}.calculate__input{padding-bottom:10px;background-color:rgba(0,0,0,0);border:none;border-bottom:1px solid #000}.calculate__btn{margin-bottom:53px;width:276px;height:51px}.services{display:flex;justify-content:stretch;align-items:stretch}.services__container{overflow-y:auto}.services__title{margin-bottom:85px}.service{position:relative;display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;flex:1 1 0px;padding:57px 30px 46px;background-size:cover;background-position:center center;background-repeat:no-repeat;border-radius:10px;height:504px;max-width:456px;transition:flex-basis .2s ease-in-out,padding .2s ease-in-out,opacity .2s ease-in-out;cursor:pointer}.service:not(:last-child){margin-right:28px}.service:focus:not(.service--checked),.service:hover:not(.service--checked){opacity:.8}.service--checked{padding-left:45px;padding-right:45px;flex-basis:456px}.service--checked .service__title{font-weight:700;font-size:20px;color:#fff}.service--checked .service__text{visibility:visible}.service--checked .service__btn{visibility:visible}.service__title{margin-bottom:20px;height:80px;font-family:"Montserrat";font-style:normal;font-weight:600;font-size:17px;line-height:133%;letter-spacing:.06em;color:#000;transition:font-weight .2s ease-in-out,font-size .2s ease-in-out,color .2s ease-in-out}.service__text{margin-bottom:auto;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:15px;line-height:18px;letter-spacing:.02em;color:#fff;visibility:hidden;transition:visibility .2s ease-in-out}.service__btn{width:143px;height:44px;visibility:hidden}.features{position:relative;padding:107px 0 274px}.features__gradient{right:0}.features__title{margin-bottom:113px}.features-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3, 1fr);background-color:#d4ebff}.feature{display:flex;justify-content:stretch;align-items:flex-start;padding-top:62px;padding-left:75px;padding-right:150px;border:1px solid #0984e2;min-height:245px}.feature__icon{display:flex;justify-content:flex-end;align-items:flex-start;flex-grow:0;flex-shrink:0;margin-right:20px;width:37px;height:37px}.feature__title{margin-bottom:33px;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:25px;line-height:30px;letter-spacing:.02em;color:#000}.feature__descr{font-family:"Montserrat";font-style:normal;font-weight:400;font-size:16px;line-height:20px;letter-spacing:.02em;color:#000}.feature__border-right-up-dot{position:absolute !important;top:-7px;right:-7px;border-radius:50%;border:none;background-color:#0085ff;width:12px;height:12px}.projects{position:relative;padding:107px 0 135px;margin-bottom:135px}.projects__gradient{left:0}.projects__title{margin-bottom:85px}.projects__swiper{position:relative}.projects__navigation{position:absolute !important;top:calc(50% - 38px);right:0;display:flex;flex-direction:column}.projects__navigation-btn{display:inline-flex;align-items:center;justify-content:flex-start;width:48px;height:26px}.projects__navigation-btn svg{stroke:#000;transition:stroke .2s ease-in-out}.projects__navigation-btn:not(:last-child){margin-bottom:24px}.projects__navigation-btn:last-child{margin-left:4px}.projects__navigation-btn:focus:not(.swiper-button-disabled) svg,.projects__navigation-btn:hover:not(.swiper-button-disabled) svg{stroke:#7effc6}.projects__navigation-btn.swiper-button-disabled{opacity:.5 !important}.projects__pagination{position:absolute !important;top:0 !important;left:0 !important;display:flex;flex-direction:column;justify-content:center;height:100%;width:100px !important}.projects__pagination .swiper-pagination-bullet{margin-bottom:24px !important;background-color:#fff !important;border-radius:0;opacity:1;width:41px;height:3px}.projects__pagination .swiper-pagination-bullet-active{background-color:#7effc6 !important;width:79px}.project{display:flex;justify-content:center;align-items:stretch;width:100%;height:100%}.project__img{height:663px;width:1413px;object-fit:cover}.about{padding-bottom:179px}.about__title{margin-bottom:85px;font-family:Open Sans;font-size:40px;font-weight:600;line-height:54px;letter-spacing:.02em;text-align:left}.about__content{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr;gap:100px}.about__text-wrapper{padding-top:54px}.about__text{margin-bottom:15px;font-family:Montserrat;font-size:15px;font-weight:400;line-height:18px;letter-spacing:0em;text-align:left}.about__photo{max-width:906px;max-height:522px}.about__icon{position:absolute !important;bottom:-37px;left:0;width:227px;height:153px}`, ""]);
+___CSS_LOADER_EXPORT___.push([module.id, `@font-face{font-family:"Work Sans";src:local("Worksans-Light");src:url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_1___}) format("woff");font-display:swap;font-weight:300;font-style:normal}@font-face{font-family:"Work Sans";src:local("Worksans-Regular");src:url(${___CSS_LOADER_URL_REPLACEMENT_2___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_3___}) format("woff");font-display:swap;font-weight:400;font-style:normal}@font-face{font-family:"Work Sans";src:local("Worksans-Medium");src:url(${___CSS_LOADER_URL_REPLACEMENT_4___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_5___}) format("woff");font-display:swap;font-weight:500;font-style:normal}@font-face{font-family:"Work Sans";src:local("Worksans-Semibold");src:url(${___CSS_LOADER_URL_REPLACEMENT_6___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_7___}) format("woff");font-display:swap;font-weight:600;font-style:normal}@font-face{font-family:"Work Sans";src:local("Worksans-Bold");src:url(${___CSS_LOADER_URL_REPLACEMENT_8___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_9___}) format("woff");font-display:swap;font-weight:700;font-style:normal}@font-face{font-family:"Ubuntu";src:local("Ubuntu-Light");src:url(${___CSS_LOADER_URL_REPLACEMENT_10___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_11___}) format("woff");font-display:swap;font-weight:300;font-style:normal}@font-face{font-family:"Ubuntu";src:local("Ubuntu-Regular");src:url(${___CSS_LOADER_URL_REPLACEMENT_12___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_13___}) format("woff");font-display:swap;font-weight:400;font-style:normal}@font-face{font-family:"Ubuntu";src:local("Ubuntu-Medium");src:url(${___CSS_LOADER_URL_REPLACEMENT_14___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_15___}) format("woff");font-display:swap;font-weight:500;font-style:normal}@font-face{font-family:"Ubuntu";src:local("Ubuntu-Bold");src:url(${___CSS_LOADER_URL_REPLACEMENT_16___}) format("woff2");src:url(${___CSS_LOADER_URL_REPLACEMENT_17___}) format("woff");font-display:swap;font-weight:700;font-style:normal}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit;outline:none;outline-color:red}a{color:inherit;text-decoration:none}img,svg{max-width:100%;max-height:100%}body{min-width:320px;font-family:"Ubuntu",Arial,Verdana,sans-serif;color:#000}h1,h2,h3,h4,h5,h6,p,ul,ol,figure{margin:0}ul{margin:0;padding:0;list-style:none}button{padding:0;border:none;background-color:rgba(0,0,0,0);cursor:pointer}dl,dt,dd{margin:0}.none{display:none !important}.hidden{visibility:hidden !important}body{background-color:#fff}.container{position:relative;margin:0 auto;padding:0 100px;max-width:1920px}.gradient{position:absolute;top:0;width:73%;height:100%}.main{background-color:#f8f8f8}.main *:not(.gradient){position:relative;z-index:2}.subtitle{text-align:center;font-family:"Open Sans";font-style:normal;font-weight:600;font-size:40px;line-height:54px;letter-spacing:.02em;color:#000}.subtitle--light{color:#fff}.subtitle--left{text-align:left}.subtitle--left-light{color:#fff;text-align:left}.btn{border:3px solid #6fb;border-radius:10px;background-color:#6fb;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:18px;line-height:22px;letter-spacing:.02em;color:#000;transition:background-color .2s ease-in-out,border-color .2s ease-in-out}.btn:focus,.btn:hover{background-color:#89bcf6;border-color:#89bcf6}.icon-bg{background-repeat:no-repeat;background-position:center top}.icon-logo{background:url(${___CSS_LOADER_URL_REPLACEMENT_18___}) left center/contain no-repeat}.service--building-pools{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_19___})}.service--building-pools.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_19___})}.service--artificial{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_20___})}.service--artificial.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_20___})}.service--building-fontains{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_21___})}.service--building-fontains.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_21___})}.service--dewatering{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_22___})}.service--dewatering.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_22___})}.service--watering{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_23___})}.service--watering.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_23___})}.service--landscaping{background-size:auto 120% !important;background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${___CSS_LOADER_URL_REPLACEMENT_24___})}.service--landscaping.service--checked{background-size:cover !important;background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(${___CSS_LOADER_URL_REPLACEMENT_24___})}.gradient-bg{background:linear-gradient(180deg, #0984E2 0%, rgba(255, 255, 255, 0.54) 151.82%)}.notifications{position:fixed;right:15px;bottom:15px;z-index:100;display:flex;flex-direction:column;align-items:flex-end}.notifications__item{display:flex;align-items:center;border:1px solid;border-radius:7px;border-color:#d1d5db;background-color:#f3f4f6;max-width:600px;min-height:70px;padding:12px 16px 12px 14px;box-shadow:0px 5px 20px rgba(0,0,0,.25)}.notifications__item:not(:last-child){margin-bottom:15px}.notifications__item.warning{background-color:#f4f0e6;color:#d29718}.notifications__item.success{background-color:#e7f0e8;color:#76ca66}.notifications__item.error{background-color:#eddcdd;color:#ba0000}.notifications__item.info{background-color:#dce6f2;color:#649dff}.notifications__img{margin-right:13px;width:45px;height:45px}.notifications__text{margin-right:15px;font-size:16px;font-weight:400;line-height:24px}.notifications__btn{position:relative;display:block;width:24px;height:24px;margin-right:0;margin-left:auto}.notifications__btn::before,.notifications__btn::after{content:"";position:absolute;top:11px;left:3px;width:18px;height:2px;transform:rotate(45deg)}.warning .notifications__btn::before,.warning .notifications__btn::after{background-color:#d29718}.error .notifications__btn::before,.error .notifications__btn::after{background-color:#ba0000}.info .notifications__btn::before,.info .notifications__btn::after{background-color:#649dff}.success .notifications__btn::before,.success .notifications__btn::after{background-color:#76ca66}.notifications__btn::after{transform:rotate(-45deg)}.notifications__btn:hover{opacity:.6}.notifications__btn:active,.notifications__btn:focus{opacity:.8}@keyframes wink{0%{transform:scale(1);opacity:1}50%{transform:scale(1.15);opacity:.4}100%{transform:scale(1);opacity:1}}.header{position:relative}.header__bg{position:absolute;top:0;left:0;right:0;z-index:-1;background-image:url(${___CSS_LOADER_URL_REPLACEMENT_25___});background-position:left bottom;background-repeat:repeat-x;background-size:auto 575px;width:100vw;height:565px}.header__top{display:flex;justify-content:flex-start;align-items:center;padding-top:53px;padding-bottom:51px}.header__burger{flex-shrink:0;margin-right:102px;border:none;width:40px;height:28px}.header__burger svg{stroke:#fff;transition:stroke .2s ease-in-out}.header__burger:hover svg{stroke:#89bcf6}.header__logo{padding-left:90px;width:147px;height:64px;font-family:"Open Sans";font-style:normal;font-weight:600;font-size:32px;line-height:44px;color:#fff;cursor:pointer}.header__contacts{display:flex;justify-content:flex-end;align-items:center;margin-left:auto}.header__contacts--socials{display:flex;justify-content:flex-start;align-items:center;margin-right:133px}.header__contacts--socials .contact-social{display:inline-block;border-radius:30%;width:41px;height:42px;overflow:hidden}.header__contacts--socials .contact-social:not(:last-child){margin-right:40px}.header__contacts--socials .contact-social:hover{animation:wink .2s ease-in-out}.header__contacts--socials .contact-social svg{fill:#fff}.header__contacts--phones{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;margin-right:82px}.header__contacts--phones :not(:last-child){margin-bottom:14px}.header__contacts--phones .contact-phone{display:flex;align-items:center;height:20px;width:210px;font-family:"Montserrat";font-style:normal;font-weight:600;font-size:18px;line-height:22px;color:#fff}.header__contacts--phones .contact-phone svg{margin-bottom:0;margin-right:14px}.header__contacts--phones .contact-phone:hover svg{animation:wink .2s ease-in-out}.header__contacts--btn{background-color:rgba(0,0,0,0);border:3px solid #46ffad;border-radius:10px;width:241px;height:56px;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:16px;line-height:20px;letter-spacing:.02em;color:#fff;transition:background-color .2s ease-in-out,border-color .2s ease-in-out}.header__contacts--btn:focus,.header__contacts--btn:hover{background-color:#89bcf6;border-color:#89bcf6}.header__main{display:grid;grid-template-columns:45% 1fr;grid-template-areas:"title photo" "menu photo" "calculate photo";grid-gap:0 40px}.header__title{grid-area:title;min-height:153px;font-family:"Open Sans";font-style:normal;font-weight:600;font-size:40px;line-height:54px;letter-spacing:.02em;color:#fff}.header__menu{grid-area:menu}.header__calculate{grid-area:calculate}.header__photo{grid-area:photo;display:flex;justify-content:flex-end;align-items:flex-start;padding-top:25px;overflow:hidden;width:100%;height:100%}.header__photo-img{width:100%;border-radius:10px}.header__icon{position:absolute;bottom:-115px;right:75px;width:145px;height:169px}.menu{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;margin-bottom:135px}.menu__item{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;width:127px;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:13px;line-height:16px;text-align:center;letter-spacing:.02em;color:#000}.menu__item-icon{position:relative;margin-bottom:22px;border-radius:10px;box-sizing:border-box;width:104px;height:104px;background-size:104px 104px;background-position:center center;transition:border-width .1s linear}.menu__item-icon--border{position:absolute;top:0;left:0;border:0 solid rgba(0,0,0,0);border-radius:10px;width:100%;height:100%}.menu__item-icon--border-selected{border-width:5px;border-color:#fff}.menu__item-icon--border:focus,.menu__item-icon--border:hover{border-width:5px;border-color:#fff}.calculate{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;margin-right:100px}.calculate__params{display:grid;grid-template-columns:repeat(3, 1fr);grid-template-rows:repeat(2, 1fr);gap:45px;margin-bottom:55px}.calculate__param{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start}.calculate__label{margin-bottom:19px;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:16px;line-height:20px;letter-spacing:.02em;color:#000}.calculate__input{padding-bottom:10px;background-color:rgba(0,0,0,0);border:none;border-bottom:1px solid #000}.calculate__btn{margin-bottom:53px;width:276px;height:51px}.services{padding-top:135px;overflow-y:auto}.services__list{display:flex;justify-content:stretch;align-items:stretch;margin-bottom:135px}.services__container{overflow-y:auto}.services__title{margin-bottom:85px}.service{position:relative;display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;flex:1 1 0px;padding:57px 30px 46px;background-size:cover;background-position:center center;background-repeat:no-repeat;border-radius:10px;height:504px;max-width:456px;transition:flex-basis .2s ease-in-out,padding .2s ease-in-out,opacity .2s ease-in-out;cursor:pointer}.service:not(:last-child){margin-right:28px}.service:focus:not(.service--checked),.service:hover:not(.service--checked){opacity:.8}.service--checked{padding-left:45px;padding-right:45px;flex-basis:456px}.service--checked .service__title{font-weight:700;font-size:20px;color:#fff}.service--checked .service__text{visibility:visible}.service--checked .service__btn{visibility:visible}.service__title{margin-bottom:20px;height:80px;font-family:"Montserrat";font-style:normal;font-weight:600;font-size:17px;line-height:133%;letter-spacing:.06em;color:#000;transition:font-weight .2s ease-in-out,font-size .2s ease-in-out,color .2s ease-in-out}.service__text{margin-bottom:auto;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:15px;line-height:18px;letter-spacing:.02em;color:#fff;visibility:hidden;transition:visibility .2s ease-in-out}.service__btn{padding-left:28px;padding-right:28px;min-height:44px;visibility:hidden}.features{position:relative;padding:107px 0 274px}.features__gradient{right:0}.features__title{margin-bottom:113px}.features-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3, 1fr);background-color:#d4ebff}.feature{display:flex;justify-content:stretch;align-items:flex-start;padding-top:62px;padding-left:75px;padding-right:150px;border:1px solid #0984e2;min-height:245px}.feature__icon{display:flex;justify-content:flex-end;align-items:flex-start;flex-grow:0;flex-shrink:0;margin-right:20px;width:37px;height:37px}.feature__title{margin-bottom:33px;font-family:"Montserrat";font-style:normal;font-weight:500;font-size:25px;line-height:30px;letter-spacing:.02em;color:#000}.feature__descr{font-family:"Montserrat";font-style:normal;font-weight:400;font-size:16px;line-height:20px;letter-spacing:.02em;color:#000}.feature__border-right-up-dot{position:absolute !important;top:-7px;right:-7px;border-radius:50%;border:none;background-color:#0085ff;width:12px;height:12px}.projects{position:relative;padding:107px 0 135px;margin-bottom:135px}.projects__gradient{left:0}.projects__title{margin-bottom:85px}.projects__swiper{position:relative}.projects__navigation{position:absolute !important;top:calc(50% - 38px);right:0;display:flex;flex-direction:column}.projects__navigation-btn{display:inline-flex;align-items:center;justify-content:flex-start;width:48px;height:26px}.projects__navigation-btn svg{stroke:#000;transition:stroke .2s ease-in-out}.projects__navigation-btn:not(:last-child){margin-bottom:24px}.projects__navigation-btn:last-child{margin-left:4px}.projects__navigation-btn:focus:not(.swiper-button-disabled) svg,.projects__navigation-btn:hover:not(.swiper-button-disabled) svg{stroke:#7effc6}.projects__navigation-btn.swiper-button-disabled{opacity:.5 !important}.projects__pagination{position:absolute !important;top:0 !important;left:0 !important;display:flex;flex-direction:column;justify-content:center;height:100%;width:100px !important}.projects__pagination .swiper-pagination-bullet{margin-bottom:24px !important;background-color:#fff !important;border-radius:0;opacity:1;width:41px;height:3px}.projects__pagination .swiper-pagination-bullet-active{background-color:#7effc6 !important;width:79px}.project{display:flex;justify-content:center;align-items:stretch;width:100%;height:100%}.project__img{height:663px;width:1413px;object-fit:cover}.about{padding-bottom:179px}.about__title{margin-bottom:85px;font-family:Open Sans;font-size:40px;font-weight:600;line-height:54px;letter-spacing:.02em;text-align:left}.about__content{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr;gap:100px}.about__text-wrapper{padding-top:54px}.about__text{margin-bottom:15px;font-family:Montserrat;font-size:15px;font-weight:400;line-height:18px;letter-spacing:0em;text-align:left}.about__photo{max-width:906px;max-height:522px}.about__icon{position:absolute !important;bottom:-37px;left:0;width:227px;height:153px}.question-wrapper{position:relative;display:flex;justify-content:center;align-items:center;margin-bottom:135px;background:url(${___CSS_LOADER_URL_REPLACEMENT_26___}) no-repeat center center/cover;min-height:802px;width:100%}.question-wrapper-darken{position:absolute !important;top:0;left:0;bottom:0;right:0;z-index:0;background-color:#000;opacity:.4;height:100%}.question{display:flex;flex-direction:column;align-items:flex-start;padding:47px 45px 65px 64px;border-radius:16px;background-color:#d4ebff;opacity:86%;max-width:695px;height:532px}.question__title{margin-bottom:61px;font-family:Montserrat;font-size:30px;line-height:37px;letter-spacing:.02em;color:#000}.question__title--special{font-weight:600;color:#0085ff}.question__input{padding:0;padding-bottom:15px;border:none;border-bottom:1px solid #fff;background-color:rgba(0,0,0,0);max-width:298px;width:100%;min-height:33px}.question__input:not(:last-child){margin-bottom:63px}.question__input:last-child{margin-bottom:65px}.question__btn{padding-left:41px;padding-right:41px;min-height:54px;font-family:Montserrat;font-size:18px;font-weight:500;line-height:22px;letter-spacing:.02em}.contacts{padding-bottom:135px}.contacts__title{margin-bottom:85px}.contacts__subtitle{margin-bottom:68px;font-family:Montserrat;font-size:22px;font-weight:500;line-height:27px;letter-spacing:.02em}.contacts__wrapper{display:grid;grid-template-columns:1fr 1fr}.contacts__phones{margin-bottom:50px}.contacts__socials{display:flex;justify-content:flex-start;align-items:center}.contacts__social{display:inline-block;border-radius:30%;width:41px;height:42px;overflow:hidden}.contacts__social:not(:last-child){margin-right:30px}.contacts__social:hover{animation:wink .2s ease-in-out}.contacts__social svg{fill:#0984e2}.contacts__map{width:100%;height:478px}.contacts__wrapper{display:flex;justify-content:space-between;margin-right:171px}.contacts__content{display:grid;grid-template-columns:1fr 1fr;align-items:center}.contact--phone{display:flex;margin-bottom:20px}.contact__value{flex-grow:0;flex-shrink:0;margin-right:24px;width:170px;font-family:"Montserrat";font-style:normal;font-weight:400;font-size:18px;line-height:22px;letter-spacing:.02em;color:#000}.contact__text{font-family:Open Sans;font-size:16px;font-weight:600;line-height:22px;letter-spacing:0em}.schedule__text{flex-grow:0;flex-shrink:0;margin-right:24px;margin-bottom:20px;font-family:"Montserrat";font-style:normal;font-weight:400;font-size:18px;line-height:22px;letter-spacing:.02em;color:#000}`, ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2252,6 +2254,14 @@ module.exports = __webpack_require__.p + "img\\logo.66acf00d3e4e216a2ae0.png";
 
 /***/ }),
 
+/***/ 4054:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img\\photo-question.b6307e8c891bf7d8c6e0.jpg";
+
+/***/ }),
+
 /***/ 8260:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -3361,8 +3371,8 @@ function elementHeaderBackground() {
 }
 ;// CONCATENATED MODULE: ./src/js/elements/elementContainer.js
 
-function elementContainer(elements) {
-  return el('.container', elements);
+function elementContainer(elements, className) {
+  return el(`.container.container--${className}`, elements);
 }
 // EXTERNAL MODULE: ./node_modules/svg-baker-runtime/browser-symbol.js
 var browser_symbol = __webpack_require__(7854);
@@ -3572,6 +3582,28 @@ var swiper_projects_next_symbol = new (browser_symbol_default())({
 });
 var swiper_projects_next_result = browser_sprite_build_default().add(swiper_projects_next_symbol);
 /* harmony default export */ const swiper_projects_next = (swiper_projects_next_symbol);
+;// CONCATENATED MODULE: ./src/assets/icons/contacts/vk.svg
+
+
+var vk_symbol = new (browser_symbol_default())({
+  "id": "vk",
+  "use": "vk-usage",
+  "viewBox": "0 0 41 43",
+  "content": "<symbol xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 41 43\" id=\"vk\"><path d=\"M2.882 3.63C0 6.563 0 11.285 0 20.727v1.669c0 9.442 0 14.163 2.882 17.096s7.521 2.933 16.798 2.933h1.64c9.277 0 13.916 0 16.798-2.933C41 36.56 41 31.838 41 22.396v-1.67c0-9.441 0-14.163-2.882-17.096S30.598.697 21.32.697h-1.64c-9.277 0-13.916 0-16.798 2.933Zm4.037 9.76h4.68c.154 7.963 3.605 11.336 6.338 12.031V13.39h4.408v6.867c2.7-.295 5.535-3.425 6.492-6.868h4.407a13.373 13.373 0 0 1-2.11 4.966 13.115 13.115 0 0 1-3.886 3.693 13.528 13.528 0 0 1 4.43 3.588 13.814 13.814 0 0 1 2.591 5.123h-4.851a8.603 8.603 0 0 0-2.616-4.19 8.364 8.364 0 0 0-4.457-2.017v6.207h-.53c-9.344 0-14.674-6.52-14.896-17.37Z\" /></symbol>"
+});
+var vk_result = browser_sprite_build_default().add(vk_symbol);
+/* harmony default export */ const vk = (vk_symbol);
+;// CONCATENATED MODULE: ./src/assets/icons/contacts/whatsapp.svg
+
+
+var whatsapp_symbol = new (browser_symbol_default())({
+  "id": "whatsapp",
+  "use": "whatsapp-usage",
+  "viewBox": "0 0 41 42",
+  "content": "<symbol xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 41 42\" id=\"whatsapp\"><path d=\"M20.5 8.656c-6.653 0-12.062 5.408-12.071 12.062 0 2.279.64 4.502 1.848 6.415l.284.458-1.217 4.447 4.567-1.198.439.265a12.03 12.03 0 0 0 6.14 1.684h.01c6.644 0 12.2-5.409 12.2-12.062 0-3.221-1.392-6.25-3.67-8.53a11.97 11.97 0 0 0-8.53-3.541Zm7.093 17.242c-.302.85-1.748 1.62-2.444 1.72-1.153.174-2.05.083-4.347-.906-3.633-1.574-6.013-5.235-6.196-5.473-.183-.238-1.482-1.967-1.482-3.752 0-1.784.933-2.663 1.272-3.03a1.32 1.32 0 0 1 .97-.457c.238 0 .485 0 .695.01.22.009.522-.083.815.622.302.723 1.025 2.507 1.116 2.69.092.184.156.394.028.632-.696 1.391-1.437 1.336-1.062 1.977 1.4 2.407 2.8 3.24 4.933 4.31.366.183.577.156.787-.091.21-.238.906-1.062 1.144-1.419.238-.366.485-.302.815-.183.33.12 2.114.998 2.48 1.18.366.184.604.275.695.422.083.174.083.906-.22 1.748ZM36.607.346H4.393A4.394 4.394 0 0 0 0 4.739v32.214a4.394 4.394 0 0 0 4.393 4.393h32.214A4.394 4.394 0 0 0 41 36.953V4.739A4.394 4.394 0 0 0 36.607.346ZM20.491 35.233a14.5 14.5 0 0 1-6.937-1.767L5.857 35.49l2.06-7.523a14.462 14.462 0 0 1-1.94-7.257c.008-8 6.515-14.506 14.514-14.506 3.88 0 7.523 1.51 10.268 4.256 2.736 2.745 4.384 6.387 4.384 10.268 0 7.999-6.654 14.506-14.652 14.506Z\" /></symbol>"
+});
+var whatsapp_result = browser_sprite_build_default().add(whatsapp_symbol);
+/* harmony default export */ const whatsapp = (whatsapp_symbol);
 ;// CONCATENATED MODULE: ./src/js/constants.js
 
 
@@ -3608,7 +3640,10 @@ var swiper_projects_next_result = browser_sprite_build_default().add(swiper_proj
 
 
 
+
+
 const DOCTITLE = 'BSE';
+const constants_REPONAME = 'PoolsBSE';
 const PAGES = [{
   name: 'unknown',
   title: 'Страница не найдена'
@@ -3736,9 +3771,78 @@ const SWIPERS = [{
   btnSvgPrev: swiper_projects_prev,
   btnSvgNext: swiper_projects_next
 }];
+const PARAMS = [{
+  id: 'length',
+  name: 'length',
+  caption: 'Длина бассейна',
+  placeholder: 'например, 5 метров',
+  type: 'number'
+}, {
+  id: 'depth',
+  name: 'depth',
+  caption: 'Глубина бассейна',
+  placeholder: 'например, 1.5 метра',
+  type: 'number'
+}, {
+  id: 'width',
+  name: 'width',
+  caption: 'Ширина бассейна',
+  placeholder: 'например, 6 метров',
+  type: 'number'
+}, {
+  id: 'city',
+  name: 'city',
+  caption: 'Город',
+  placeholder: 'Москва, Уфа',
+  type: 'text'
+}, {
+  id: 'phone',
+  name: 'phone',
+  caption: 'Номер телефона',
+  placeholder: '+7 (911) 642-32-99',
+  type: 'tel'
+}];
+const CONTACTS = [{
+  id: 1,
+  value: '+7 (111) 123-45-55',
+  text: '',
+  type: 'tel',
+  target: '_self'
+}, {
+  id: 2,
+  value: '+7 (222) 321-23-55',
+  text: 'Сочи',
+  type: 'tel',
+  target: '_self'
+}, {
+  id: 3,
+  value: '+7 (333) 456-78-22',
+  text: 'Севастополь',
+  type: 'tel',
+  target: '_self'
+}, {
+  id: 4,
+  value: 'https://whatsapp.com',
+  text: 'WhatsApp',
+  type: 'link',
+  target: '_blank',
+  svg: whatsapp
+}, {
+  id: 5,
+  value: 'https://vk.com',
+  text: 'VK',
+  type: 'link',
+  target: '_blank',
+  svg: vk
+}];
 ;// CONCATENATED MODULE: ./src/js/utils.js
 
 
+
+// ! добавление к имени страницы исходного репозитория проекта! ОБЯЗАТЕЛЬНО ИСПОЛЬЗОВАТЬ в router.navigate!!!
+function getPagePath(page) {
+  return `/${REPONAME}/${page.trim()}`;
+}
 function getMenuItem(id) {
   return MENU_ITEMS.find(value => value.id === id);
 }
@@ -3750,6 +3854,12 @@ function getProjectItem(id) {
 }
 function getSwiperItem(id) {
   return SWIPERS.find(item => item.id === id);
+}
+function getParamItem(id) {
+  return PARAMS.find(item => item.id === id);
+}
+function getContactItem(id) {
+  return CONTACTS.find(item => item.id === id);
 }
 
 // поиск данных страницы по имени
@@ -3826,57 +3936,16 @@ function elementLogo() {
   logo.addEventListener('click', openPageMain);
   return logo;
 }
-;// CONCATENATED MODULE: ./src/assets/icons/contacts/whatsapp.svg
-
-
-var whatsapp_symbol = new (browser_symbol_default())({
-  "id": "whatsapp",
-  "use": "whatsapp-usage",
-  "viewBox": "0 0 41 42",
-  "content": "<symbol xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 41 42\" id=\"whatsapp\"><path fill=\"#fff\" d=\"M20.5 8.656c-6.653 0-12.062 5.408-12.071 12.062 0 2.279.64 4.502 1.848 6.415l.284.458-1.217 4.447 4.567-1.198.439.265a12.03 12.03 0 0 0 6.14 1.684h.01c6.644 0 12.2-5.409 12.2-12.062 0-3.221-1.392-6.25-3.67-8.53a11.97 11.97 0 0 0-8.53-3.541Zm7.093 17.242c-.302.85-1.748 1.62-2.444 1.72-1.153.174-2.05.083-4.347-.906-3.633-1.574-6.013-5.235-6.196-5.473-.183-.238-1.482-1.967-1.482-3.752 0-1.784.933-2.663 1.272-3.03a1.32 1.32 0 0 1 .97-.457c.238 0 .485 0 .695.01.22.009.522-.083.815.622.302.723 1.025 2.507 1.116 2.69.092.184.156.394.028.632-.696 1.391-1.437 1.336-1.062 1.977 1.4 2.407 2.8 3.24 4.933 4.31.366.183.577.156.787-.091.21-.238.906-1.062 1.144-1.419.238-.366.485-.302.815-.183.33.12 2.114.998 2.48 1.18.366.184.604.275.695.422.083.174.083.906-.22 1.748ZM36.607.346H4.393A4.394 4.394 0 0 0 0 4.739v32.214a4.394 4.394 0 0 0 4.393 4.393h32.214A4.394 4.394 0 0 0 41 36.953V4.739A4.394 4.394 0 0 0 36.607.346ZM20.491 35.233a14.5 14.5 0 0 1-6.937-1.767L5.857 35.49l2.06-7.523a14.462 14.462 0 0 1-1.94-7.257c.008-8 6.515-14.506 14.514-14.506 3.88 0 7.523 1.51 10.268 4.256 2.736 2.745 4.384 6.387 4.384 10.268 0 7.999-6.654 14.506-14.652 14.506Z\" /></symbol>"
-});
-var whatsapp_result = browser_sprite_build_default().add(whatsapp_symbol);
-/* harmony default export */ const whatsapp = (whatsapp_symbol);
-;// CONCATENATED MODULE: ./src/assets/icons/contacts/vk.svg
-
-
-var vk_symbol = new (browser_symbol_default())({
-  "id": "vk",
-  "use": "vk-usage",
-  "viewBox": "0 0 41 43",
-  "content": "<symbol xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 41 43\" id=\"vk\"><path fill=\"#fff\" d=\"M2.882 3.63C0 6.563 0 11.285 0 20.727v1.669c0 9.442 0 14.163 2.882 17.096s7.521 2.933 16.798 2.933h1.64c9.277 0 13.916 0 16.798-2.933C41 36.56 41 31.838 41 22.396v-1.67c0-9.441 0-14.163-2.882-17.096S30.598.697 21.32.697h-1.64c-9.277 0-13.916 0-16.798 2.933Zm4.037 9.76h4.68c.154 7.963 3.605 11.336 6.338 12.031V13.39h4.408v6.867c2.7-.295 5.535-3.425 6.492-6.868h4.407a13.373 13.373 0 0 1-2.11 4.966 13.115 13.115 0 0 1-3.886 3.693 13.528 13.528 0 0 1 4.43 3.588 13.814 13.814 0 0 1 2.591 5.123h-4.851a8.603 8.603 0 0 0-2.616-4.19 8.364 8.364 0 0 0-4.457-2.017v6.207h-.53c-9.344 0-14.674-6.52-14.896-17.37Z\" /></symbol>"
-});
-var vk_result = browser_sprite_build_default().add(vk_symbol);
-/* harmony default export */ const vk = (vk_symbol);
 ;// CONCATENATED MODULE: ./src/js/elements/elementSocialLink.js
 
 
-
-
-function getSocial(id) {
-  switch (id) {
-    case 'whatsapp':
-      return {
-        name: 'WhatsApp',
-        href: 'https://whatsapp.com',
-        svg: whatsapp
-      };
-    case 'vk':
-      return {
-        name: 'vk',
-        href: 'https://vk.com',
-        svg: vk
-      };
-    default:
-      return undefined;
-  }
-}
-function elementSocialLink(id) {
-  const social = getSocial(id);
+function elementSocialLink(id, className) {
+  const social = getContactItem(id);
   const link = el('a.contact-social.icon-bg', {
-    href: social.href,
-    target: '_blank'
+    href: social.value,
+    target: social.target
   });
+  link.classList.add(className);
   link.innerHTML = getSvgHtml(social.svg);
   return link;
 }
@@ -3910,13 +3979,18 @@ function elementPhoneLink(phone) {
 
 
 
+
 function panelHeaderTop() {
   // бургер
   const burger = elementHeaderBurger();
   const logo = elementLogo();
 
   // соцсети
-  const socials = el('.header__contacts--socials', [elementSocialLink('whatsapp'), elementSocialLink('vk')]);
+  const socials = el('.header__contacts--socials');
+  CONTACTS.filter(item => item.type === 'link').forEach(item => {
+    const link = elementSocialLink(item.id, 'header__contact');
+    mount(socials, link);
+  });
 
   // телефоны
   const phones = el('.header__contacts--phones', [elementPhoneLink('+7 (918) 910-65-55'), elementPhoneLink('+7 (978) 934-45-55')]);
@@ -4010,49 +4084,9 @@ function elementMenuIconsList() {
 }
 ;// CONCATENATED MODULE: ./src/js/elements/elementCalculateParam.js
 
-function getParam(id) {
-  switch (id) {
-    case 'length':
-      return {
-        name: 'length',
-        caption: 'Длина бассейна',
-        placeholder: 'например, 5 метров',
-        type: 'number'
-      };
-    case 'depth':
-      return {
-        name: 'depth',
-        caption: 'Глубина бассейна',
-        placeholder: 'например, 1.5 метра',
-        type: 'number'
-      };
-    case 'width':
-      return {
-        name: 'width',
-        caption: 'Ширина бассейна',
-        placeholder: 'например, 6 метров',
-        type: 'number'
-      };
-    case 'city':
-      return {
-        name: 'city',
-        caption: 'Город',
-        placeholder: 'Москва, Уфа',
-        type: 'text'
-      };
-    case 'phone':
-      return {
-        name: 'phone',
-        caption: 'Номер телефона',
-        placeholder: '+7 (911) 642-32-99',
-        type: 'tel'
-      };
-    default:
-      return undefined;
-  }
-}
+
 function elementCalculateParam(id) {
-  const param = getParam(id);
+  const param = getParamItem(id);
   const label = el('label.calculate__label', param.caption);
   label.setAttribute('for', `calculate-${param.name}`);
   const input = el(`input.calculate__input#calculate-${param.name}`);
@@ -4063,11 +4097,11 @@ function elementCalculateParam(id) {
 ;// CONCATENATED MODULE: ./src/js/elements/elementCalculateParams.js
 
 
-const paramsNames = ['length', 'depth', 'width', 'city', 'phone'];
+
 function elementCalculateParams() {
   const params = el('.calculate__params');
-  paramsNames.forEach(value => {
-    const param = elementCalculateParam(value);
+  PARAMS.forEach(value => {
+    const param = elementCalculateParam(value.id);
     mount(params, param);
   });
   const btn = el('button.btn.calculate__btn', 'Рассчитать стоимость');
@@ -4147,7 +4181,7 @@ function serviceCardKeyPress(e) {
   expandServiceCard(e, this);
 }
 function elementServices() {
-  const list = el('.services');
+  const list = el('.services__list');
   MENU_ITEMS.forEach(item => {
     const card = elementServiceCard(item.id, item.checked);
     card.classList.add('services__card');
@@ -4206,11 +4240,11 @@ function elementSubtitleLeft(text) {
 
 
 
-
 function panelMainServices() {
   const container = elementContainer([elementSubtitleServices('Наши услуги'), elementServices()]);
   container.classList.add('container--services');
-  return el('.main__services', [container]);
+  container.classList.add('services');
+  return container;
 }
 ;// CONCATENATED MODULE: ./src/js/elements/elementFeatureItem.js
 
@@ -13239,8 +13273,207 @@ function panelMainAbout() {
   const content = el('.about__content', [text, photo, icon]);
   return el('.container.container--about.about', [title, content]);
 }
+;// CONCATENATED MODULE: ./src/js/elements/elementQuestionBlock.js
+
+function elementQuestionBlock() {
+  const title = el('.question__title');
+  title.innerHTML = 'Задайте вопрос нашим специалистам и получите <span class="question__title--special">профессиональную консультацию!</span>';
+  const inputQuestionText = el(`input.question__input#question-text`);
+  inputQuestionText.placeholder = 'Задайте вопрос';
+  inputQuestionText.type = 'text';
+  const inputQuestionPhone = el(`input.question__input#question-phone`);
+  inputQuestionPhone.placeholder = '+7 (911) 642-32-99';
+  inputQuestionPhone.type = 'tel';
+  const btn = el('button.btn.question__btn', 'Получить консультацию');
+  return el('.question', [title, inputQuestionText, inputQuestionPhone, btn]);
+}
+;// CONCATENATED MODULE: ./src/js/panels/panelMainQuestion.js
+
+
+function panelMainQuestion() {
+  const darken = el('.question-bg-darken');
+  const question = elementQuestionBlock();
+  const container = el('.question-wrapper', [darken, question]);
+  return container;
+}
+;// CONCATENATED MODULE: ./src/js/elements/elementContact.js
+
+
+function getContactHref(contact) {
+  switch (contact.type.trim().toLowerCase()) {
+    case 'tel':
+      return `tel:${getPhoneNumber(contact.value)}`;
+    case 'email':
+      return `email:${contact.value}`;
+    default:
+      return contact.value;
+  }
+}
+function getAdditionalClass(contact) {
+  switch (contact.type.trim().toLowerCase()) {
+    case 'tel':
+      return 'contact--phone';
+    case 'email':
+      return 'contact--email';
+    case 'link':
+      return 'contact--link';
+    default:
+      return '';
+  }
+}
+function elementContact(id, className) {
+  const contact = getContactItem(id);
+  const additionalClass = getAdditionalClass(contact);
+  const link = el('a.contact__value', {
+    href: getContactHref(contact),
+    target: contact.target
+  }, contact.value);
+  const text = el('.contact__text', contact.text);
+  return el(`.contact.${additionalClass}.${className}`, [link, text]);
+}
+;// CONCATENATED MODULE: ./src/js/panels/panelContacts.js
+
+
+
+
+function panelContacts() {
+  const linksTitle = el('h3.contacts__subtitle.links__title', 'Соц-сети и телефон');
+  let link;
+  // ? телефоны
+  const phones = el('.contacts__phones');
+  CONTACTS.filter(item => item.type === 'tel').forEach(item => {
+    link = elementContact(item.id, 'contacts__phone');
+    mount(phones, link);
+  });
+  // ? соцсети
+  const socials = el('.contacts__socials');
+  CONTACTS.filter(item => item.type === 'link').forEach(item => {
+    const link = elementSocialLink(item.id, 'contacts__social');
+    mount(socials, link);
+  });
+  return el('.contacts__links.links', [linksTitle, phones, socials]);
+}
+;// CONCATENATED MODULE: ./src/js/panels/panelSchedule.js
+
+function panelSchedule() {
+  const title = el('h3.contacts__subtitle.schedule__title', 'Режим работы');
+  const days = el('p.schedule__text.schedule__text--days', 'Понедельник-Воскресенье');
+  const time = el('p.schedule__text.schedule__text--time', '9:00-21:00');
+  const content = el('.schedule__info', [days, time]);
+  return el('.schedule', [title, content]);
+}
+;// CONCATENATED MODULE: ./node_modules/ymaps/dist/ymaps.esm.js
+var ymaps$1 = {
+  load: function load() {
+    var src = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '//api-maps.yandex.ru/2.1/?lang=en_RU';
+
+    var getNsParamValue = function getNsParamValue() {
+      var results = src.match(/[\\?&]ns=([^&#]*)/);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+    if (!this.promise) {
+      this.promise = new Promise(function (resolve, reject) {
+        var scriptElement = document.createElement('script');
+        scriptElement.onload = resolve;
+        scriptElement.onerror = reject;
+        scriptElement.type = 'text/javascript';
+        scriptElement.src = src;
+        document.body.appendChild(scriptElement);
+      }).then(function () {
+        var ns = getNsParamValue();
+
+        if (ns && ns !== 'ymaps') {
+          (0, eval)("var ymaps = ".concat(ns, ";"));
+        }
+
+        return new Promise(function (resolve) {
+          return ymaps.ready(resolve);
+        });
+      });
+    }
+
+    return this.promise;
+  }
+};
+
+/* harmony default export */ const ymaps_esm = (ymaps$1);
+
+;// CONCATENATED MODULE: ./src/assets/img/map-point.png
+const map_point_namespaceObject = __webpack_require__.p + "img\\map-point.917518b1fa98e74f9b78.png";
+;// CONCATENATED MODULE: ./src/js/elements/elementMap.js
+
+
+
+function elementMap() {
+  const map = el('div.contacts__map', {
+    id: 'map'
+  });
+  if (!map) return;
+  ymaps_esm.load('https://api-maps.yandex.ru/2.1/?apikey=10f41f56-5d23-4a7f-8a67-38e70dc4e622&lang=ru_RU').then(maps => {
+    maps.ready(async () => {
+      const myMap = new maps.Map(map.id, {
+        center: [54.79538, 56.058593],
+        zoom: 15,
+        controls: ['searchControl', 'zoomControl']
+      });
+
+      // myMap.behaviors.disable('scrollZoom');
+
+      // maps.geoObjects.removeAll();
+      let myPoints = [{
+        lat: 54.796527,
+        lon: 56.058781
+      }];
+      myPoints.forEach(point => {
+        const placemark = new maps.Placemark([point.lat, point.lon], {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: map_point_namespaceObject,
+          // ! не подтягивается новая иконка
+          // Размеры метки.
+          iconImageSize: [30, 42],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -38]
+        });
+        myMap.geoObjects.add(placemark);
+      });
+    });
+  }).catch(error => console.log('Ошибка загрузки Яндекс-карт', error));
+
+  // // ! тест - изображения корректно выводится
+  // const placemarkBlock = el('img.placemark');
+  // placemarkBlock.setAttribute('src', placemarkIcon);
+
+  return el('.maps', [/*placemarkBlock,*/map]);
+}
+;// CONCATENATED MODULE: ./src/js/panels/panelMainContacts.js
+
+
+
+
+
+
+function panelMainContacts() {
+  const title = elementSubtitleLeft('Наши контакты');
+  title.classList.add('contacts__title');
+  const links = panelContacts();
+  const schedule = panelSchedule();
+  const contacts = el('.contacts__wrapper', [links, schedule]);
+  const map = elementMap();
+  const content = el('.contacts__content', [contacts, map]);
+  const container = elementContainer([title, content], 'contacts');
+  container.classList.add('contacts');
+  return container;
+}
 ;// CONCATENATED MODULE: ./src/js/pages/createPageMain.js
 // import { router } from '../routing';
+// import { getPagePath } from '../utils';
+
+
 
 
 
@@ -13255,7 +13488,7 @@ function panelMainAbout() {
 function createPageMain() {
   // const btn = el('button.btn-unknown', 'НАЖМИ МЕНЯ');
   // btn.addEventListener('click', () => {
-  //   router.navigate('/abcdefg');
+  // router.navigate(getPagePath('/abcdefg'));
   // });
   // ? шапка
   const background = elementHeaderBackground();
@@ -13263,7 +13496,7 @@ function createPageMain() {
   const header = el('header.header', [background, container]);
 
   // ? тело
-  const main = el('main.main', [panelMainServices(), panelMainFeatures(), panelMainProjects(), panelMainAbout()]);
+  const main = el('main.main', [panelMainServices(), panelMainFeatures(), panelMainProjects(), panelMainAbout(), panelMainQuestion(), panelMainContacts()]);
 
   // ? страница
   const page = el('.page', [header, main]);
@@ -13288,8 +13521,9 @@ function createPage(name) {
 ;// CONCATENATED MODULE: ./src/js/routing.js
 
 
+
 const routing_router = new (navigo_min_default())('/');
-routing_router.on('/PoolsBSE/', () => createPage('main'))
+routing_router.on(`${constants_REPONAME}`, () => createPage('main'))
 // .on('/page/:id', (data) => {
 //   // ? страница с параметрами
 //   mainApp.innerHTML = '';
