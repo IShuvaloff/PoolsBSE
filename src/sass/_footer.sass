@@ -1,0 +1,88 @@
+.footer
+  position: relative
+  padding-top: 103px
+  padding-bottom: 83px
+  height: 466px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: -1
+    background: url(./assets/img/bg-wave.jpg) right top / auto 436px repeat-x
+    width: 100%
+    transform: rotate(180deg)
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+  &__logo-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100%
+  &__logo
+    margin-bottom: 68px
+  &__social:not(:last-child)
+    margin-right: 30px
+  &__menu
+    width: 510px
+  &__menu-list
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    height: 200px
+  &__menu-item
+    font-family: Montserrat
+    font-size: 15px
+    font-weight: 500
+    line-height: 50px
+    vertical-align: middle
+    letter-spacing: 0.02em
+    color: #FFFFFF
+  &__contacts
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    &--phones
+      width: 209px
+  &__places
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__towns
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__town
+    font-family: Montserrat
+    font-size: 15px
+    font-weight: 500
+    line-height: 18px
+    letter-spacing: 0.02em
+    color: #fff
+    &:not(:last-child)
+      margin-bottom: 20px
+  &__schedule
+    .schedule__text
+      font-family: 'Montserrat'
+      font-size: 15px
+      font-weight: 500
+      line-height: 18px
+      letter-spacing: 0.02em
+      color: #fff
+  &__copyright
+    text-align: center
+    color: #fff
+    opacity: 0.8 // TODO! может быть лучше убрать, когда шрифт Montserrat подтянется
+
+.container--footer
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: stretch
+  min-height: 100%

@@ -42,5 +42,5 @@ export default function elementMenuIconItem(id) {
   const itemText = el('div', item.caption);
 
   // ? итоговый компонент
-  return el('.menu__item', [itemIcon, itemText]);
+  return el('li.menu__item', [itemIcon, itemText]);
 }

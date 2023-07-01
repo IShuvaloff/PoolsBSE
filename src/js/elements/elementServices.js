@@ -36,6 +36,8 @@ function serviceCardKeyPress(e) {
 export default function elementServices() {
   const list = el('.services__list');
   MENU_ITEMS.forEach((item) => {
+    if (item.onlyNavList) return;
+
     const card = elementServiceCard(item.id, item.checked);
     card.classList.add('services__card');
     card.addEventListener('click', expandServiceCard);

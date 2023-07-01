@@ -32,17 +32,6 @@
     &:hover
       svg
         stroke: #89bcf6
-  &__logo
-    padding-left: 90px
-    width: 147px
-    height: 64px
-    font-family: 'Open Sans'
-    font-style: normal
-    font-weight: 600
-    font-size: 32px
-    line-height: 44px
-    color: #FFFFFF
-    cursor: pointer
   &__contacts
     display: flex
     justify-content: flex-end
@@ -54,59 +43,10 @@
       align-items: center
       margin-right: 133px
       .contact-social
-        display: inline-block
-        border-radius: 30%
-        width: 41px
-        height: 42px
-        overflow: hidden
         &:not(:last-child)
           margin-right: 40px
-        &:hover
-          animation: wink 0.2s ease-in-out
-        svg
-          fill: #fff
     &--phones
-      display: flex
-      flex-direction: column
-      justify-content: center
-      align-items: flex-start
       margin-right: 82px
-      :not(:last-child)
-        margin-bottom: 14px
-      .contact-phone
-        display: flex
-        align-items: center
-        height: 20px
-        width: 210px
-        font-family: 'Montserrat'
-        font-style: normal
-        font-weight: 600
-        font-size: 18px
-        line-height: 22px
-        color: #FFFFFF
-        svg
-          margin-bottom: 0
-          margin-right: 14px
-        &:hover
-          svg
-            animation: wink 0.2s ease-in-out
-    &--btn
-      background-color: transparent
-      border: 3px solid #46FFAD
-      border-radius: 10px
-      width: 241px
-      height: 56px
-      font-family: 'Montserrat'
-      font-style: normal
-      font-weight: 500
-      font-size: 16px
-      line-height: 20px
-      letter-spacing: 0.02em
-      color: #FFFFFF
-      transition: background-color .2s ease-in-out, border-color .2s ease-in-out
-      &:focus, &:hover
-        background-color: #89bcf6
-        border-color: #89bcf6
   &__main
     display: grid
     grid-template-columns: 45% 1fr

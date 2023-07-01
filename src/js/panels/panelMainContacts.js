@@ -11,8 +11,12 @@ export default function panelMainContacts() {
   title.classList.add('contacts__title');
 
   const links = panelContacts();
-  const schedule = panelSchedule();
-  const contacts = el('.contacts__wrapper', [links, schedule]);
+  const schedule = panelSchedule('contacts');
+  const scheduleWrapper = el('.schedule-wrapper', [
+    el('h3.contacts__subtitle.schedule__title', 'Режим работы'),
+    schedule,
+  ]);
+  const contacts = el('.contacts__wrapper', [links, scheduleWrapper]);
 
   const map = elementMap();
 

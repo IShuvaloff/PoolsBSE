@@ -15,6 +15,8 @@ import panelMainProjects, {
 import panelMainAbout from '../panels/panelMainAbout';
 import panelMainQuestion from '../panels/panelMainQuestion';
 import panelMainContacts from '../panels/panelMainContacts';
+import panelFooterTop from '../panels/panelFooterTop';
+import elementCopyright from '../elements/elementCopyright';
 
 export default function createPageMain() {
   // const btn = el('button.btn-unknown', 'НАЖМИ МЕНЯ');
@@ -40,8 +42,15 @@ export default function createPageMain() {
     panelMainContacts(),
   ]);
 
+  // ? футер
+  const containerFooter = elementContainer(
+    [panelFooterTop(), elementCopyright('footer')],
+    'footer'
+  );
+  const footer = el('footer.footer', [containerFooter]);
+
   // ? страница
-  const page = el('.page', [header, main]);
+  const page = el('.page', [header, main, footer]);
 
   updatePageContent(page);
   projectsRunSwiper();
