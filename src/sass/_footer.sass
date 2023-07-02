@@ -36,13 +36,13 @@
     flex-wrap: wrap
     height: 200px
   &__menu-item
-    font-family: Montserrat
+    font-family: $font-primary
     font-size: 15px
     font-weight: 500
     line-height: 50px
     vertical-align: middle
     letter-spacing: 0.02em
-    color: #FFFFFF
+    color: $cl-secondary-1
   &__contacts
     display: flex
     flex-direction: column
@@ -59,26 +59,26 @@
     flex-direction: column
     justify-content: space-between
   &__town
-    font-family: Montserrat
+    font-family: $font-primary
     font-size: 15px
     font-weight: 500
     line-height: 18px
     letter-spacing: 0.02em
-    color: #fff
+    color: $cl-secondary-1
     &:not(:last-child)
       margin-bottom: 20px
   &__schedule
     .schedule__text
-      font-family: 'Montserrat'
+      font-family: $font-primary
       font-size: 15px
       font-weight: 500
       line-height: 18px
       letter-spacing: 0.02em
-      color: #fff
+      color: $cl-secondary-1
   &__copyright
     text-align: center
-    color: #fff
-    opacity: 0.8 // TODO! может быть лучше убрать, когда шрифт Montserrat подтянется
+    color: $cl-secondary-1
+    opacity: 0.8
 
 .container--footer
   display: flex

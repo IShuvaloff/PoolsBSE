@@ -25,7 +25,7 @@
       width: 48px
       height: 26px
       svg
-        stroke: #000
+        stroke: $cl-primary
         transition: stroke .2s ease-in-out
       &:not(:last-child)
         margin-bottom: 24px
@@ -33,7 +33,7 @@
         margin-left: 4px
       &:focus:not(.swiper-button-disabled), &:hover:not(.swiper-button-disabled)
         svg
-          stroke: #7EFFC6
+          stroke: $cl-secondary-5
     &-btn.swiper-button-disabled
       opacity: 0.5 !important
   &__pagination
@@ -47,13 +47,13 @@
     width: 100px !important
     .swiper-pagination-bullet
       margin-bottom: 24px !important
-      background-color: #fff !important
+      background-color: $cl-secondary-1 !important
       border-radius: 0
       opacity: 1
       width: 41px
       height: 3px
       &-active
-        background-color: #7EFFC6 !important
+        background-color: $cl-secondary-5 !important
         width: 79px
 
 .project

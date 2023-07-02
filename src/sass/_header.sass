@@ -25,11 +25,11 @@
     width: 40px
     height: 28px
     svg
-      stroke: #FFFFFF
+      stroke: $cl-secondary-1
       transition: stroke .2s ease-in-out
     &:hover
       svg
-        stroke: #89bcf6
+        stroke: $cl-secondary-4
   &__contacts
     display: flex
     justify-content: flex-end
@@ -53,13 +53,13 @@
   &__title
     grid-area: title
     min-height: 153px
-    font-family: 'Open Sans'
+    font-family: $font-secondary
     font-style: normal
     font-weight: 600
     font-size: 40px
     line-height: 54px
     letter-spacing: 0.02em
-    color: #FFFFFF
+    color: $cl-secondary-1
   &__menu
     grid-area: menu
   &__calculate
@@ -95,14 +95,14 @@
     justify-content: flex-start
     align-items: center
     width: 127px
-    font-family: 'Montserrat'
+    font-family: $font-primary
     font-style: normal
     font-weight: 500
     font-size: 13px
     line-height: 16px
     text-align: center
     letter-spacing: 0.02em
-    color: #000000
+    color: $cl-primary
     &-icon
       position: relative
       margin-bottom: 22px
@@ -123,10 +123,10 @@
         height: 100%
         &-selected
           border-width: 5px
-          border-color: #ffffff
+          border-color: $cl-secondary-1
         &:focus, &:hover
           border-width: 5px
-          border-color: #ffffff
+          border-color: $cl-secondary-1
 
 .calculate
   display: flex
@@ -147,18 +147,18 @@
     align-items: flex-start
   &__label
     margin-bottom: 19px
-    font-family: 'Montserrat'
+    font-family: $font-primary
     font-style: normal
     font-weight: 500
     font-size: 16px
     line-height: 20px
     letter-spacing: 0.02em
-    color: #000000
+    color: $cl-primary
   &__input
     padding-bottom: 10px
     background-color: transparent
     border: none
-    border-bottom: 1px solid #000000
+    border-bottom: 1px solid $cl-primary
   &__btn
     margin-bottom: 53px
     width: 276px
