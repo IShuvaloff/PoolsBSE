@@ -47,7 +47,7 @@
       margin-right: 82px
   &__main
     display: grid
-    grid-template-columns: 45% 1fr
+    grid-template-columns: 770px 1fr
     grid-template-areas: "title photo" "menu photo" "calculate photo"
     grid-gap: 0 40px
   &__title
@@ -159,7 +159,100 @@
     background-color: transparent
     border: none
     border-bottom: 1px solid $cl-primary
+    font-family: Montserrat
+    font-size: 14px
+    font-weight: 400
+    line-height: 17px
+    letter-spacing: 0.02em
   &__btn
     margin-bottom: 53px
     width: 276px
     height: 51px
+
+@media (max-width: 1399.98px)
+  .header
+    &__burger
+      margin-right: 70px
+    &__contacts
+      &--phones, &--socials
+        display: none
+    &__main
+      grid-template-columns: 1fr
+      grid-template-areas: "title" "menu" "calculate"
+    &__photo
+      display: none
+    &__calculate
+      align-items: flex-start
+      margin-right: 0
+    &__icon
+      bottom: -131px
+      right: 24px
+      width: 56px
+
+  .calculate
+    &__params
+      gap: 45px 80px
+
+  .menu
+    flex-wrap: nowrap
+    width: 100%
+
+@media (max-width: 1023.98px)
+  .header
+    &__top
+      justify-content: space-between
+      padding-bottom: 70px
+    &__contacts
+      margin-left: 20px
+    &__title
+      min-height: 130px
+
+  .calculate
+    &__input
+      max-width: 175px
+
+  .menu
+    justify-content: space-between
+    &__item
+      flex-shrink: 1
+      width: 105px
+
+@media (max-width: 767.98px)
+  .header
+    &__bg
+      top: auto
+      bottom: 20px
+      &::before
+        content: ''
+        position: absolute
+        top: -500px
+        left: 0
+        right: 0
+        bottom: 100px
+        background-color: $cl-secondary-3
+    &__calculate
+      display: none
+    &__top
+      padding-bottom: 38px
+    &__title
+      margin-bottom: 38px
+      min-height: 0
+
+  .menu
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 25px 40px
+    &__item
+      width: 100%
+
+@media (max-width: 575.98px)
+  .header
+    &__contacts
+      display: none
+    &__icon
+      bottom: -148px
+      width: 31px
+
+  .menu
+    grid-template-columns: 1fr 1fr
+    gap: 25px 30px

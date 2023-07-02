@@ -25,11 +25,14 @@ export default function createPageMain() {
   // });
   // ? шапка
   const background = elementHeaderBackground();
-  const container = elementContainer([
-    panelHeaderTop(),
-    panelHeaderMain(),
-    elementIcon('swimming-pool', 'header'),
-  ]);
+  const container = elementContainer(
+    [
+      panelHeaderTop(),
+      panelHeaderMain(),
+      elementIcon('swimming-pool', 'header'),
+    ],
+    'header'
+  );
   const header = el('header.header', [background, container]);
 
   // ? тело
