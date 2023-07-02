@@ -19,9 +19,7 @@
   display: flex
   justify-content: stretch
   align-items: flex-start
-  padding-top: 62px
-  padding-left: 75px
-  padding-right: 150px
+  padding: 60px 150px 60px 75px
   border: 1px solid $cl-secondary-3
   min-height: 245px
   &__icon
@@ -59,3 +57,57 @@
     background-color: $cl-secondary-3
     width: 12px
     height: 12px
+
+@media (max-width: 1919.98px)
+  .features
+    &__title
+      text-align: right
+
+  .feature
+    padding: 50px
+
+@media (max-width: 1399.98px)
+  .features
+    margin-bottom: 135px
+    padding-top: 72px
+    padding-bottom: 135px
+    &__title
+      margin-bottom: 72px
+      padding-left: 30%
+
+  .features-grid
+    grid-template-columns: 1fr
+
+  .feature
+    min-height: 210px
+    &__border-right-up-dot
+      display: none
+
+@media (max-width: 1023.98px)
+  .feature
+    min-height: 245px
+
+@media (max-width: 575.98px)
+  .features
+    &__gradient
+      width: 80%
+    &__title
+      padding-left: 20%
+      font-size: 26px
+      line-height: 35px
+
+  .feature
+    padding: 21px
+    min-height: 230px
+    &__title
+      margin-bottom: 21px
+      font-size: 19px
+      line-height: 23px
+      letter-spacing: normal
+    &__descr
+      font-size: 13px
+      line-height: 16px
+      margin-left: -40px
+    &__icon
+      width: 30px
+      height: 30px

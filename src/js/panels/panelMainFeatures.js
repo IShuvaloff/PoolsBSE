@@ -11,7 +11,7 @@ export default function panelMainFeatures() {
   const grid = elementFeaturesGrid();
   grid.classList.add('features__grid');
 
-  const container = el('.container.container--features', [grid]);
+  const container = el('.container.container--features', [title, grid]);
 
-  return el('.main__features.features', [gradient, title, container]);
+  return el('.main__features.features', [gradient, container]);
 }
