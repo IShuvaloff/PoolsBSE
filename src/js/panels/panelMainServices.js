@@ -1,14 +1,14 @@
 import elementServices from '../elements/elementServices';
 import { elementSubtitleServices } from '../elements/elementSubtitle';
 import elementContainer from '../elements/elementContainer';
+import { el } from 'redom';
 
 export default function panelMainServices() {
-  const container = elementContainer([
+  const containerTitle = elementContainer([
     elementSubtitleServices('Наши услуги'),
-    elementServices(),
   ]);
-  container.classList.add('container--services');
-  container.classList.add('services');
+  const containerPhotos = elementContainer([elementServices()], 'services');
+  containerPhotos.classList.add('services');
 
-  return container;
+  return el('.services-wrapper', [containerTitle, containerPhotos]);
 }

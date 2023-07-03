@@ -1,11 +1,14 @@
-.services
+.services-wrapper
+  margin-bottom: 135px
   padding-top: 135px
-  overflow-y: auto
+
+.services
   &__list
     display: flex
     justify-content: stretch
     align-items: stretch
-    margin-bottom: 135px
+    padding-bottom: 85px
+    overflow-y: auto
   &__container
     overflow-y: auto
   &__title
@@ -17,17 +20,16 @@
   flex-direction: column
   justify-content: flex-start
   align-items: flex-start
-  flex: 1 1 0px
+  flex: 1 0 210px
   padding: 57px 30px 46px
   background-size: cover
   background-position: center center
   background-repeat: no-repeat
   border-radius: 10px
   height: 504px
-  max-width: 456px
+  max-width: 415px
   transition: flex-basis .2s ease-in-out, padding .2s ease-in-out, opacity .2s ease-in-out
   cursor: pointer
-  // filter: blur(7.5px)
   &:not(:last-child)
     margin-right: 28px
   &:focus:not(&--checked), &:hover:not(&--checked) // осветлять при наведении мышкой, но если только он уже не развернут (checked)
@@ -35,7 +37,7 @@
   &--checked
     padding-left: 45px
     padding-right: 45px
-    flex-basis: 456px
+    flex-basis: 415px
     .service__title
       font-weight: 700
       font-size: 20px
@@ -71,3 +73,30 @@
     padding-right: 28px
     min-height: 44px
     visibility: hidden
+
+@media (max-width: 1399.98px)
+  .services-wrapper
+    padding-top: 118px
+
+  .services
+    &__title
+      display: none
+
+@media (max-width: 767.98px)
+  .services-wrapper
+    padding-top: 92px
+
+@media (max-width: 575.98px)
+  .services-wrapper
+    margin-bottom: 105px
+
+  .services
+    &__list
+      padding-bottom: 65px
+
+  .service
+    flex-basis: 80%
+    padding-right: 15px
+    padding-left: 15px
+    &__title
+      font-size: 15px

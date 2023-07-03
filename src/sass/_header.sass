@@ -192,6 +192,8 @@
   .calculate
     &__params
       gap: 45px 80px
+    &__btn
+      margin-bottom: 36px
 
   .menu
     flex-wrap: nowrap
@@ -221,7 +223,7 @@
   .header
     &__bg
       top: auto
-      bottom: 20px
+      bottom: 124px
       &::before
         content: ''
         position: absolute
@@ -230,13 +232,16 @@
         right: 0
         bottom: 100px
         background-color: $cl-secondary-3
-    &__calculate
-      display: none
     &__top
       padding-bottom: 38px
     &__title
       margin-bottom: 38px
       min-height: 0
+
+  .calculate
+    align-items: center
+    &__params
+      display: none
 
   .menu
     display: grid
