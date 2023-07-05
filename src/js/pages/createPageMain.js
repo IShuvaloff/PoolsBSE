@@ -10,7 +10,7 @@ import { el } from 'redom';
 import panelMainServices from '../panels/panelMainServices';
 import panelMainFeatures from '../panels/panelMainFeatures';
 import panelMainProjects, {
-  projectsRunSwiper,
+  startSwiperSliderSynchro,
 } from '../panels/panelMainProjects';
 import panelMainAbout from '../panels/panelMainAbout';
 import panelMainQuestion from '../panels/panelMainQuestion';
@@ -56,5 +56,7 @@ export default function createPageMain() {
   const page = el('.page', [header, main, footer]);
 
   updatePageContent(page);
-  projectsRunSwiper();
+
+  // ! запуск свайпера на странице и подвязка на него слайдера
+  startSwiperSliderSynchro();
 }

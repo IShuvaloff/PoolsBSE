@@ -4,6 +4,7 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin'); // ! д�
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin'); // ! установка иконки favicon
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin'); // ! для извлечения данных из созданного спрайта
 const path = require('path'); // ! глобальный системный путь к корневой папке (может различаться между разными ОС)
+// const webpack = require('webpack');
 
 // ! источник входных файлов .js и других
 const entry = [
@@ -50,6 +51,11 @@ const plugins = [
 
   // ? работа с SVG-спрайтом
   new SpriteLoaderPlugin(),
+
+  // // ? для подключения кастомного noUISlider
+  // new webpack.ProvidePlugin({
+  //   noUiSlider: 'nouislider',
+  // }),
 ];
 
 // ! обработка файлов проекта

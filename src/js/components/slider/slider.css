@@ -1,0 +1,48 @@
+:root {
+  /* значения по умолчанию */
+  --sliderHeight: 15px;
+  --sliderBorderRadius: 0;
+  --sliderBgColor: #000;
+  --handleHeight: 15px;
+  --handleWidth: calc(100% / 7);
+  --handleBorderRadius: 0;
+  --handleBgColor: #0984E2;
+}
+
+/* настройки слайдера */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: var(--sliderHeight);
+  border-radius: var(--sliderBorderRadius);
+  background: var(--sliderBgColor);
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+/* настройки при наведении мышью */
+.slider:hover {
+  opacity: 1;
+}
+
+/* настройки бегунка для всех браузеров, кроме Firefox */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--handleWidth);
+  height: var(--handleHeight);
+  border-radius: var(--handleBorderRadius);
+  background: var(--handleBgColor);
+  cursor: pointer;
+}
+
+/* настройки бегунка для Firefox */
+.slider::-moz-range-thumb {
+  width: var(--handleWidth);
+  height: var(--handleHeight);
+  border-radius: var(--handleBorderRadius);
+  background: var(--handleBgColor);
+  cursor: pointer;
+}

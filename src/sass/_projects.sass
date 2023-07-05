@@ -1,8 +1,8 @@
 .projects
   position: relative
   padding: 107px 0 135px
-  margin-bottom: 135px
-  *:not(.gradient)
+  margin-bottom: 75px
+  *:not(.gradient, .slider *)
     position: relative
     z-index: 2
   &__gradient
@@ -11,7 +11,7 @@
     margin-bottom: 85px
   &__swiper
     position: relative
-    // margin-bottom: 135px
+    margin-bottom: 50px
   &__navigation
     position: absolute !important
     top: calc(50% - 38px)
@@ -55,6 +55,8 @@
       &-active
         background-color: $cl-secondary-5 !important
         width: 79px
+  &__slider-container
+    display: none
 
 .project
   display: flex
@@ -66,3 +68,45 @@
     height: 663px
     width: 1413px
     object-fit: cover
+
+@media (max-width: 1919.98px)
+  .projects
+    &__title
+      text-align: left
+    &__wrapper
+      padding-left: 114px
+    &__navigation
+      left: 0
+      top: auto
+      bottom: 0
+
+@media (max-width: 1399.98px)
+  .projects
+    margin-bottom: 135px
+    padding-top: 72px
+    padding-bottom: 135px
+    &__title
+      margin-bottom: 72px
+      padding-right: 30%
+
+@media (max-width: 767.98px)
+  .projects
+    &__wrapper
+      padding-left: inherit
+    &__navigation
+      display: none
+    &__pagination
+      display: none
+    &__slider-container
+      display: flex
+
+  .project
+    &__img
+      height: 333px
+
+@media (max-width: 575.98px)
+  .projects
+    padding-bottom: 84px
+    &__title
+      font-size: 26px
+      line-height: 35px

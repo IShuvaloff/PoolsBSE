@@ -70,3 +70,15 @@ export function getPhoneNumber(phone) {
 export function isOdd(num) {
   return num % 2;
 }
+
+// произвести чтение и сохранение величины экрана
+export function saveWindowSize() {
+  sessionStorage.setItem('screenWidth', window.innerWidth);
+  sessionStorage.setItem('screenHeight', window.innerHeight);
+}
+export function getWindowSize() {
+  return {
+    width: sessionStorage.getItem('screenWidth'),
+    height: sessionStorage.getItem('screenHeight'),
+  };
+}

@@ -50,6 +50,7 @@
   "dependencies": {
     "navigo": "^8.11.1",
     "normalize.css": "^8.0.1",
+    "nouislider": "^15.7.1",
     "redom": "^3.29.1",
     "swiper": "^9.4.1",
     "ymaps": "^0.2.1"

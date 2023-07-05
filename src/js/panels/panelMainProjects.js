@@ -7,11 +7,14 @@ import 'swiper/css/pagination';
 import { PROJECTS } from '../constants';
 import elementProject from '../elements/elementProject';
 import { getSvgHtml, getSwiperItem } from '../utils';
+import elementSlider from '../elements/elementSlider';
+import Slider from '../components/slider/slider';
 
-export function projectsRunSwiper() {
+function projectsRunSwiper() {
   return new Swiper('.projects__swiper', {
     loop: false,
     modules: [Navigation, Pagination, Scrollbar],
+    spaceBetween: 115,
     pagination: {
       el: '.projects__pagination',
       // type: 'progressbar',
@@ -27,6 +30,35 @@ export function projectsRunSwiper() {
     scrollbar: {
       el: '.projects__scrollbar',
     },
+    on: {
+      slideChange: (swiper) => {
+        console.log(`Новый код слайда: ${swiper.activeIndex}`);
+      },
+    },
+  });
+}
+
+function projectsRunSlider() {
+  return new Slider('projects-slider', {
+    minValue: 1,
+    maxValue: PROJECTS.length,
+    currentValue: 1,
+  });
+}
+
+// ! запускать только тогда, когда полностью готов DOM!
+export function startSwiperSliderSynchro() {
+  const projectsSwiper = projectsRunSwiper();
+  const projectsSlider = projectsRunSlider();
+
+  // подвинуть ползунок на слайдере
+  projectsSwiper.on('slideChange', (swiper) => {
+    projectsSlider.setValue(swiper.activeIndex + 1);
+  });
+
+  // изменить слайд в свайпере ---- можно взять on.change для уменьшения числа обращений
+  projectsSlider.on('input', () => {
+    projectsSwiper.slideTo(projectsSlider.getValue() - 1);
   });
 }
 
@@ -82,7 +114,14 @@ export default function panelMainProjects() {
     scrollbar,
   ]);
 
-  const container = el('.container.container--projects', [title, swiper]);
+  // ? все для слайдера
+  const slider = elementSlider('projects');
+
+  const container = el('.container.container--projects', [
+    title,
+    swiper,
+    slider,
+  ]);
 
   return el('.main__projects.projects', [gradient, container]);
 }
