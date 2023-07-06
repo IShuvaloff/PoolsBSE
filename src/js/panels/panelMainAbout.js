@@ -28,7 +28,7 @@ export default function panelMainAbout() {
     ),
   ]);
 
-  const photo = elementPhoto(photoAbout);
+  const photo = elementPhoto(photoAbout, 'about');
 
   const icon = elementIcon('chairs', 'about');
 
