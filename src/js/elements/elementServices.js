@@ -1,27 +1,9 @@
 import { el, mount } from 'redom';
-// import Swiper, { Scrollbar } from 'swiper';
-// import 'swiper/css';
-// import 'swiper/css/scrollbar';
 import { MENU_ITEMS } from '../constants';
 import elementServiceCard from '../elements/elementServiceCard';
 import '../components/slider/slider';
 import elementSlider from './elementSlider';
 import Slider from '../components/slider/slider';
-
-// export function runElementServicesFunctions() {
-//   // Swiper.use([Scrollbar]);
-//   new Swiper('.services__swiper', {
-//     slidesPerGroup: 1,
-//     slidesPerView: 3,
-//     autoHeight: false,
-//     modules: [Scrollbar],
-//     scrollbar: {
-//       el: '.services__swiper-scrollbar',
-//       draggable: true,
-//       hide: false,
-//     },
-//   });
-// }
 
 function expandServiceCard({ event, card, execSliderEvent = true }) {
   event?.preventDefault();
@@ -67,7 +49,7 @@ export function startServicesSliderSynchro() {
       expandServiceCard({ card, execSliderEvent: false });
     },
   });
-  currentCard.scrollIntoView(scrollOptions);
+  // currentCard.scrollIntoView(scrollOptions); // -----> не стоит запускать, т.к. при первой загрузке страницы идет отмотка вниз к этому блоку!
 
   // ! обратную синхронизацию смотри в функции expandServiceCard
 }

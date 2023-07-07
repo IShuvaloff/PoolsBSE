@@ -18,12 +18,16 @@ import panelMainContacts from '../panels/panelMainContacts';
 import panelFooterTop from '../panels/panelFooterTop';
 import elementCopyright from '../elements/elementCopyright';
 import { startServicesSliderSynchro } from '../elements/elementServices';
+import panelBurgerMenu from '../panels/panelBurgerMenu';
 
 export default function createPageMain() {
   // const btn = el('button.btn-unknown', 'НАЖМИ МЕНЯ');
   // btn.addEventListener('click', () => {
   // router.navigate(getPagePath('/abcdefg'));
   // });
+  // ? бургер-меню
+  const burgerMenu = panelBurgerMenu();
+
   // ? шапка
   const background = elementHeaderBackground();
   const container = elementContainer(
@@ -54,7 +58,7 @@ export default function createPageMain() {
   const footer = el('footer.footer', [containerFooter]);
 
   // ? страница
-  const page = el('.page', [header, main, footer]);
+  const page = el('.page', [burgerMenu, header, main, footer]);
 
   updatePageContent(page);
 

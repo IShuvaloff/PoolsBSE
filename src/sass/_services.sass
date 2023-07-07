@@ -17,6 +17,8 @@
     margin-bottom: 85px
   // &__slider
   //   height: 5px !important
+  &__slider-container
+      visibility: hidden
 
 .service
   position: relative
@@ -77,6 +79,11 @@
     padding-right: 28px
     min-height: 44px
     visibility: hidden
+
+@media (max-width: 1919.98px)
+  .services
+    &__slider-container
+      visibility: visible
 
 @media (max-width: 1399.98px)
   .services-wrapper

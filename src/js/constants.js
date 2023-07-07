@@ -114,7 +114,7 @@ export const MENU_ITEMS = [
     id: 'watering',
     name: 'watering',
     caption: 'Системы авто полива',
-    captionShort: 'Системы автополив',
+    captionShort: 'Системы автополива',
     descr: 'Установка автоматических систем полива для вашего сада',
     svg: watering,
     photoMain: photoWatering,

@@ -1,7 +1,7 @@
 import { el, mount } from 'redom';
 import { CONTACTS } from '../constants';
 import elementContact from '../elements/elementContact';
-import elementSocialLink from '../elements/elementSocialLink';
+import panelSocials from './panelSocials';
 
 export default function panelContacts() {
   const linksTitle = el(
@@ -16,11 +16,7 @@ export default function panelContacts() {
     mount(phones, link);
   });
   // ? соцсети
-  const socials = el('.contacts__socials');
-  CONTACTS.filter((item) => item.type === 'link').forEach((item) => {
-    const link = elementSocialLink(item.id, 'contacts__social');
-    mount(socials, link);
-  });
+  const socials = panelSocials('contacts');
 
   return el('.contacts__links.links', [linksTitle, phones, socials]);
 }
