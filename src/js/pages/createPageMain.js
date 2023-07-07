@@ -17,6 +17,7 @@ import panelMainQuestion from '../panels/panelMainQuestion';
 import panelMainContacts from '../panels/panelMainContacts';
 import panelFooterTop from '../panels/panelFooterTop';
 import elementCopyright from '../elements/elementCopyright';
+import { startServicesSliderSynchro } from '../elements/elementServices';
 
 export default function createPageMain() {
   // const btn = el('button.btn-unknown', 'НАЖМИ МЕНЯ');
@@ -56,6 +57,9 @@ export default function createPageMain() {
   const page = el('.page', [header, main, footer]);
 
   updatePageContent(page);
+
+  // ! запуск слайдера для списка услуг
+  startServicesSliderSynchro();
 
   // ! запуск свайпера на странице и подвязка на него слайдера
   startSwiperSliderSynchro();
