@@ -14,12 +14,17 @@ export function panelBurgerMenuClose() {
   document
     .querySelector(`.${CLASS_NAME}`)
     ?.classList?.remove(`${CLASS_NAME}--visible`);
+
+  // TODO! включить скролл страницы
 }
 
 export default function panelBurgerMenu() {
+  const closeBtn = elementCloseBtn(CLASS_NAME);
+  closeBtn.addEventListener('click', panelBurgerMenuClose);
+
   const container = el(`.${CLASS_NAME}-container`, [
     el(`.${CLASS_NAME}`, [
-      elementCloseBtn(CLASS_NAME),
+      closeBtn,
       elementLogo(CLASS_NAME),
       panelNavMenu(CLASS_NAME, true),
       panelSocials(CLASS_NAME),
@@ -32,6 +37,7 @@ export default function panelBurgerMenu() {
     // console.log(e.target);
     // console.log('текущий контейнер: ');
     // console.log(e.currentTarget);
+    e.preventDefault();
     if (e.target === e.currentTarget) {
       panelBurgerMenuClose();
     }

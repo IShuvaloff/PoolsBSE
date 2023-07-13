@@ -22,10 +22,60 @@
   left: max(-100%, -367px)
   bottom: 0
   z-index: 11
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  padding-top: 88px
+  padding-left: 62px
+  padding-right: 62px
   max-width: 367px
   width: 100%
   background-color: $cl-secondary-1
   transition: left .2s ease-in-out
   &--visible
     left: 0
+  &__logo
+    align-self: center
+    margin-bottom: 66px
+    color: $cl-secondary-3
+  &__menu
+    margin-bottom: 46px
+  &__menu-item
+    margin-bottom: 30px
+    font-family: $font-primary
+    font-size: 16px
+    font-weight: 500
+    line-height: 20px
+    letter-spacing: 0em
+    text-align: left
+    &:focus, &:hover
+      color: $cl-secondary-3
+  &__contacts--socials
+    margin-bottom: 46px
+  &__contact
+    svg
+      fill: $cl-secondary-3
+  &--btn
+    color: $cl-primary
 
+.btn__close
+  position: absolute
+  top: 30px
+  right: 30px
+  display: flex
+  justify-content: center
+  align-items: center
+  border: none
+  background-color: transparent
+  width: 20px
+  height: 20px
+  &:focus, &:hover
+    background-color: transparent
+
+@media (max-width: 1023.98px)
+  .burger-menu
+    padding-left: 49px
+    padding-right: 49px
+
+// TODO! настроить стили для маленьких экранов

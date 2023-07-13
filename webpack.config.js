@@ -104,9 +104,9 @@ const modules = (env) => ({
       test: /\.css$/i,
       use: [
         // 'style-loader', // #4... (Creates `style` nodes from JS strings)
-        env.prod ? MiniCssExtractPlugin.loader : 'style-loader', // ! #4... (создает минифицированный блок стилей в отдельном файле .css для development)
-        'css-loader', // ! #3... (Translates CSS into CommonJS)
-        'postcss-loader', // ! #2... (добавляет пост-обработку для разных браузеров)
+        env.prod ? MiniCssExtractPlugin.loader : 'style-loader', // ! #3... (создает минифицированный блок стилей в отдельном файле .css для development)
+        'css-loader', // ! #2... (Translates CSS into CommonJS)
+        'postcss-loader', // ! #1... (добавляет пост-обработку для разных браузеров)
       ],
     },
     {
