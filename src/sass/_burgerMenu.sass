@@ -33,49 +33,87 @@
   width: 100%
   background-color: $cl-secondary-1
   transition: left .2s ease-in-out
+  overflow-y: auto
+  overflow-x: hidden
   &--visible
     left: 0
   &__logo
+    flex-shrink: 0
     align-self: center
     margin-bottom: 66px
     color: $cl-secondary-3
   &__menu
+    flex-shrink: 0
     margin-bottom: 46px
   &__menu-item
-    margin-bottom: 30px
     font-family: $font-primary
     font-size: 16px
     font-weight: 500
     line-height: 20px
     letter-spacing: 0em
     text-align: left
+    &:not(:last-child)
+      margin-bottom: 30px
     &:focus, &:hover
       color: $cl-secondary-3
   &__contacts--socials
     margin-bottom: 46px
+  &__phones
+    flex-shrink: 0
+    justify-content: flex-start
+    margin-bottom: 0
+    height: 0
+    opacity: 0
+    visibility: hidden
+    overflow: hidden
+    transition: height .2s ease-in-out, opacity .5s ease-in-out, visibility .7s ease-in-out, margin-bottom .2s ease-in-out
+  &__phone
+    font-weight: 500
+    color: $cl-secondary-3
+    svg
+      fill: $cl-secondary-3
   &__contact
     svg
       fill: $cl-secondary-3
   &--btn
+    flex-shrink: 0
     color: $cl-primary
+    max-width: 226px
+    width: 100%
+    height: 56px
 
-.btn__close
-  position: absolute
-  top: 30px
-  right: 30px
-  display: flex
-  justify-content: center
-  align-items: center
-  border: none
-  background-color: transparent
-  width: 20px
-  height: 20px
-  &:focus, &:hover
-    background-color: transparent
+@media (max-width: 1399.98px)
+  .burger-menu
+    &__phones
+      margin-bottom: 46px
+      height: auto
+      opacity: 1
+      visibility: visible
 
 @media (max-width: 1023.98px)
   .burger-menu
     padding-left: 49px
     padding-right: 49px
+    max-width: 335px
 
 // TODO! настроить стили для маленьких экранов
+@media (max-width: 767.98px)
+  .burger-menu
+    padding: 74px 17px 24px 24px
+    max-width: 214px
+    &__logo
+      margin-bottom: 40px
+      width: auto
+    &__menu
+      margin-bottom: 40px
+    &__menu-item
+      font-size: 13px
+      line-height: 16px
+      &:not(:last-child)
+        margin-bottom: 25px
+    &__contacts--socials
+      margin-bottom: 40px
+    &__phones
+      margin-bottom: 40px
+    &--btn
+      height: 52px

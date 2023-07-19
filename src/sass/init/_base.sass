@@ -1,11 +1,15 @@
 body
   background-color: $cl-secondary-1
+  overflow-x: hidden
 
 .container
   position: relative
   margin: 0 auto
   padding: 0 100px
   max-width: 1920px
+
+.not-scrolling
+  overflow: hidden
 
 .gradient
   position: absolute
@@ -49,6 +53,22 @@ body
   &:focus, &:hover
     background-color: $cl-secondary-4
     border-color: $cl-secondary-4
+  &__close
+    position: absolute
+    top: 30px
+    right: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: none
+    background-color: transparent
+    width: 20px
+    height: 20px
+    &:focus, &:hover
+      background-color: transparent
+    svg
+      stroke: $cl-primary
+      stroke-width: 3px
 
 .icon-logo
   display: flex
@@ -95,6 +115,7 @@ body
       margin-bottom: 0
       margin-right: 14px
       height: 100%
+      fill: $cl-secondary-1
     &:hover
       svg
         animation: wink 0.2s ease-in-out

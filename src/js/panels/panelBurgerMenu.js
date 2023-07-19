@@ -4,6 +4,7 @@ import elementLogo from '../elements/elementLogo';
 import elementOrderCall from '../elements/elementOrderCall';
 import panelNavMenu from './panelNavMenu';
 import panelSocials from './panelSocials';
+import panelPhones from './panelPhones';
 
 const CLASS_NAME = 'burger-menu';
 
@@ -15,7 +16,8 @@ export function panelBurgerMenuClose() {
     .querySelector(`.${CLASS_NAME}`)
     ?.classList?.remove(`${CLASS_NAME}--visible`);
 
-  // TODO! включить скролл страницы
+  // ? включить скролл страницы
+  document.body.classList.remove('not-scrolling');
 }
 
 export default function panelBurgerMenu() {
@@ -28,6 +30,7 @@ export default function panelBurgerMenu() {
       elementLogo(CLASS_NAME),
       panelNavMenu(CLASS_NAME, true),
       panelSocials(CLASS_NAME),
+      panelPhones(CLASS_NAME),
       elementOrderCall(CLASS_NAME),
     ]),
   ]);
@@ -37,11 +40,13 @@ export default function panelBurgerMenu() {
     // console.log(e.target);
     // console.log('текущий контейнер: ');
     // console.log(e.currentTarget);
-    e.preventDefault();
+
     if (e.target === e.currentTarget) {
       panelBurgerMenuClose();
     }
   });
+
+  // TODO! добавить обработчики нажатия на кнопки меню
 
   return container;
 }

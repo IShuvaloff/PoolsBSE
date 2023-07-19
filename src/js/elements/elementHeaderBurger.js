@@ -12,7 +12,8 @@ function openBurgerMenu(e) {
   burgerMenuContainer.classList.add('burger-menu-container--visible');
   burgerMenu.classList.add('burger-menu--visible');
 
-  // TODO! отключить скролл страницы
+  // ? отключить скролл страницы
+  document.body.classList.add('not-scrolling');
 }
 
 export default function elementHeaderBurger() {
