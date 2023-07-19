@@ -100,7 +100,6 @@ export function closeModal() {
 
   // ? включить скролл страницы (ЕСЛИ НЕ ОТКРЫТО БУРГЕР-МЕНЮ)
   const menu = document.querySelector('.burger-menu--visible');
-  console.log(menu);
   if (!menu) {
     document.body.classList.remove('not-scrolling');
   }

@@ -2,6 +2,12 @@ body
   background-color: $cl-secondary-1
   overflow-x: hidden
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus
+  outline: none
+
 .container
   position: relative
   margin: 0 auto
@@ -9,7 +15,8 @@ body
   max-width: 1920px
 
 .not-scrolling
-  overflow: hidden
+  height: 100vh
+  overflow-y: hidden !important
 
 .gradient
   position: absolute
