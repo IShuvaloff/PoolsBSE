@@ -19,6 +19,7 @@ import panelFooterTop from '../panels/panelFooterTop';
 import elementCopyright from '../elements/elementCopyright';
 import { startServicesSliderSynchro } from '../elements/elementServices';
 import panelBurgerMenu from '../panels/panelBurgerMenu';
+import panelDialog from '../panels/panelDialog';
 
 export default function createPageMain() {
   // const btn = el('button.btn-unknown', 'НАЖМИ МЕНЯ');
@@ -27,6 +28,21 @@ export default function createPageMain() {
   // });
   // ? бургер-меню
   const burgerMenu = panelBurgerMenu();
+
+  // ? диалог
+  const dialog = panelDialog({
+    title:
+      'Запишитесь на замер с сайта и получите скидку до 50% на проектирование',
+    titleSpecialPatterns: [{ from: 40, to: 52 }],
+    inputs: [
+      { id: 'service', placeholder: 'Вид услуги' },
+      { id: 'request', placeholder: 'Записаться на замер' },
+      { id: 'address', placeholder: 'Адрес' },
+      { id: 'phone', placeholder: '+7 (123) 456-78-90' },
+    ],
+    btnText: 'Записаться на замер',
+    className: 'order-request',
+  });
 
   // ? шапка
   const background = elementHeaderBackground();
@@ -58,7 +74,7 @@ export default function createPageMain() {
   const footer = el('footer.footer', [containerFooter]);
 
   // ? страница
-  const page = el('.page', [burgerMenu, header, main, footer]);
+  const page = el('.page', [burgerMenu, dialog, header, main, footer]);
 
   updatePageContent(page);
 

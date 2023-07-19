@@ -1,0 +1,101 @@
+.dialog-container
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: black
+    filter: opacity(30%)
+    opacity: 0
+    transition: opacity .2s ease-in-out
+  &--visible
+    z-index: 20
+    &::before
+      opacity: 1
+    .dialog
+      opacity: 1
+
+.dialog
+  display: flex
+  flex-direction: column
+  margin: 33px
+  padding: 64px
+  border-radius: 16px
+  background-color: $cl-secondary-6
+  opacity: 0
+  max-width: 660px
+  max-height: 571px
+  width: 100%
+  // height: 100%
+  z-index: 30
+  transition: opacity .2s ease-in-out
+  &__title
+    margin-bottom: 60px
+    font-family: $font-primary
+    font-size: 30px
+    line-height: 37px
+    letter-spacing: 0.02em
+    color: $cl-primary
+    &--special
+      font-weight: 600
+      color: $cl-secondary-3
+  &__content
+    display: grid
+    grid-template-rows: 1fr 1fr
+    grid-template-columns: 1fr 1fr
+    gap: 63px
+    margin-bottom: 60px
+  &__input
+    padding: 0
+    padding-bottom: 15px
+    border: none
+    border-bottom: 1px solid $cl-secondary-1
+    background-color: transparent
+    max-width: 234px
+    width: 100%
+    min-height: 33px
+    font-family: $font-primary
+    font-size: 15px
+    font-weight: 400
+    line-height: 18px
+    letter-spacing: 0.02em
+  &__btn
+    margin-top: auto
+    max-width: 295px
+    width: 100%
+    height: 54px
+
+@media (max-width: 1023.98px)
+  .dialog
+    padding: 48px
+    &__title
+      margin-bottom: 45px
+    &__content
+      gap: 45px
+      margin-bottom: 45px
+
+@media (max-width: 575.98px)
+  .dialog
+    padding: 32px
+    &__title
+      margin-bottom: 30px
+      font-size: 19px
+      line-height: 23px
+    &__content
+      grid-template-columns: 1fr
+      gap: 30px
+      margin-bottom: 30px
+    &__input
+      max-width: inherit
+      font-size: 13px
+      line-height: 16px

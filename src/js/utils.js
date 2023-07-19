@@ -82,3 +82,26 @@ export function getWindowSize() {
     height: sessionStorage.getItem('screenHeight'),
   };
 }
+
+// модальное окно
+export function showModal() {
+  document
+    .getElementById('dialog-container')
+    .classList.add('dialog-container--visible');
+
+  // ? отключить скролл страницы
+  document.body.classList.add('not-scrolling');
+}
+
+export function closeModal() {
+  document
+    .getElementById('dialog-container')
+    .classList.remove('dialog-container--visible');
+
+  // ? включить скролл страницы (ЕСЛИ НЕ ОТКРЫТО БУРГЕР-МЕНЮ)
+  const menu = document.querySelector('.burger-menu--visible');
+  console.log(menu);
+  if (!menu) {
+    document.body.classList.remove('not-scrolling');
+  }
+}
