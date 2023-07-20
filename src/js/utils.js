@@ -90,7 +90,7 @@ export function showModal() {
     .classList.add('dialog-container--visible');
 
   // ? отключить скролл страницы
-  document.body.classList.add('not-scrolling');
+  document.getElementById('app').classList.add('not-scrolling');
 }
 
 export function closeModal() {
@@ -101,6 +101,6 @@ export function closeModal() {
   // ? включить скролл страницы (ЕСЛИ НЕ ОТКРЫТО БУРГЕР-МЕНЮ)
   const menu = document.querySelector('.burger-menu--visible');
   if (!menu) {
-    document.body.classList.remove('not-scrolling');
+    document.getElementById('app').classList.remove('not-scrolling');
   }
 }

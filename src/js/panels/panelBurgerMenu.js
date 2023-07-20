@@ -17,7 +17,7 @@ export function panelBurgerMenuClose() {
     ?.classList?.remove(`${CLASS_NAME}--visible`);
 
   // ? включить скролл страницы
-  document.body.classList.remove('not-scrolling');
+  document.getElementById('app').classList.remove('not-scrolling');
 }
 
 export default function panelBurgerMenu() {

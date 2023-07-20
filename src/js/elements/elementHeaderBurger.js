@@ -13,7 +13,7 @@ function openBurgerMenu(e) {
   burgerMenu.classList.add('burger-menu--visible');
 
   // ? отключить скролл страницы
-  document.body.classList.add('not-scrolling');
+  document.getElementById('app').classList.add('not-scrolling');
 }
 
 export default function elementHeaderBurger() {
