@@ -9,6 +9,7 @@
   display: flex
   justify-content: center
   align-items: center
+  padding: 33px
   &::before
     content: ''
     position: absolute
@@ -30,15 +31,15 @@
 .dialog
   display: flex
   flex-direction: column
-  margin: 33px
+  // margin: 33px
   padding: 64px
   border-radius: 16px
   background-color: $cl-secondary-6
   opacity: 0
   max-width: 660px
-  max-height: 571px
+  max-height: min(571px, 100%)
+  overflow-y: auto
   width: 100%
-  // height: 100%
   z-index: 30
   transition: opacity .2s ease-in-out
   &__title
@@ -77,8 +78,11 @@
     max-width: 295px
     width: 100%
     height: 54px
+    min-height: 46px
 
 @media (max-width: 1023.98px)
+  .dialog-container
+    padding: 23px
   .dialog
     padding: 48px
     &__title
@@ -88,6 +92,8 @@
       margin-bottom: 45px
 
 @media (max-width: 575.98px)
+  .dialog-container
+    padding: 15px
   .dialog
     padding: 32px
     &__title
@@ -102,3 +108,15 @@
       max-width: inherit
       font-size: 13px
       line-height: 16px
+
+@media (max-height: 600px)
+  .dialog
+    padding-top: 24px
+    padding-bottom: 24px
+    &__title
+      margin-bottom: 30px
+      font-size: 19px
+      line-height: 23px
+    &__content
+      gap: 30px
+      margin-bottom: 30px
