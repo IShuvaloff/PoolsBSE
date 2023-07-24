@@ -1,11 +1,10 @@
 import { el } from 'redom';
 import { router } from '../routing';
-import { REPONAME } from '../constants';
 import { panelBurgerMenuClose } from '../panels/panelBurgerMenu';
 
 function openPageMain() {
   panelBurgerMenuClose();
-  router.navigate(`${REPONAME}`);
+  router.navigate('/');
 }
 
 export default function elementLogo(className) {

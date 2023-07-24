@@ -2,10 +2,11 @@ import Navigo from 'navigo';
 import createPage from './pages/createPage';
 import { REPONAME } from './constants';
 
-const router = new Navigo('/');
+const router = new Navigo(`/${REPONAME}`);
 
 router
-  .on(`${REPONAME}`, () => createPage('main'))
+  .on('/', () => createPage('main'))
+  .on('/pools/', () => createPage('pools'))
   // .on('/page/:id', (data) => {
   //   // ? страница с параметрами
   //   mainApp.innerHTML = '';

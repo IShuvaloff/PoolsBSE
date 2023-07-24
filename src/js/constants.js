@@ -39,6 +39,7 @@ import contactWA from '../assets/icons/contacts/whatsapp.svg';
 
 export const DOCTITLE = 'BSE';
 export const REPONAME = 'PoolsBSE';
+const TITLE = 'Строительство бассейнов и водоемов под ключ';
 
 export const PAGES = [
   {
@@ -47,7 +48,11 @@ export const PAGES = [
   },
   {
     name: 'main',
-    title: 'Строительство бассейнов и водоемов под ключ',
+    title: TITLE,
+  },
+  {
+    name: 'pools',
+    title: `${TITLE} - Бассейны`,
   },
 ];
 

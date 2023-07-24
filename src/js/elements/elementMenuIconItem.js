@@ -1,6 +1,7 @@
 import { el, mount } from 'redom';
 import { getMenuItem, getSvgHtml } from '../utils';
 import { updateHeaderPhoto } from './elementHeaderPhoto';
+import { router } from '../routing';
 
 function updateHeaderMenuSelected(el) {
   const classSelected = 'menu__item-icon--border-selected';
@@ -18,6 +19,7 @@ function updateHeaderTitleSelected(id) {
 
 function menuIconClicked() {
   // TODO! либо сделать переход на новую страницу, т.е. перерисовать целиком страницу и выставить фокус на нужном меню, либо обновить страницу по частям
+  router.navigate(this.id);
 
   updateHeaderMenuSelected(this);
   updateHeaderPhoto(this.id);
