@@ -3697,12 +3697,16 @@ var whatsapp_result = browser_sprite_build_default().add(whatsapp_symbol);
 
 const DOCTITLE = 'BSE';
 const constants_REPONAME = 'PoolsBSE';
+const TITLE = 'Строительство бассейнов и водоемов под ключ';
 const PAGES = [{
   name: 'unknown',
   title: 'Страница не найдена'
 }, {
   name: 'main',
-  title: 'Строительство бассейнов и водоемов под ключ'
+  title: TITLE
+}, {
+  name: 'pools',
+  title: `${TITLE} - Бассейны`
 }];
 const MENU_ITEMS = [{
   id: 'main',
@@ -4201,10 +4205,9 @@ function panelBurgerMenu() {
 
 
 
-
 function openPageMain() {
   panelBurgerMenuClose();
-  routing_router.navigate(`${constants_REPONAME}`);
+  routing_router.navigate('/');
 }
 function elementLogo(className) {
   const logo = el(`.icon-logo.${className}__logo`, 'BSE');
@@ -4273,6 +4276,7 @@ function updateHeaderPhoto(id) {
 
 
 
+
 function updateHeaderMenuSelected(el) {
   const classSelected = 'menu__item-icon--border-selected';
   document.querySelectorAll('.menu__item-icon--border').forEach(item => {
@@ -4287,7 +4291,7 @@ function updateHeaderTitleSelected(id) {
 }
 function menuIconClicked() {
   // TODO! либо сделать переход на новую страницу, т.е. перерисовать целиком страницу и выставить фокус на нужном меню, либо обновить страницу по частям
-
+  routing_router.navigate(this.id);
   updateHeaderMenuSelected(this);
   updateHeaderPhoto(this.id);
   updateHeaderTitleSelected(this.id);
@@ -14030,7 +14034,78 @@ function createPageMain() {
   // ! запуск свайпера на странице и подвязка на него слайдера
   startSwiperSliderSynchro();
 }
+;// CONCATENATED MODULE: ./src/js/pages/createPagePools.js
+
+
+
+// import { startServicesSliderSynchro } from '../elements/elementServices';
+
+// import { startSwiperSliderSynchro } from '../panels/panelMainProjects';
+
+
+
+
+
+
+
+function createPagePools() {
+  const burgerMenu = panelBurgerMenu();
+
+  // ? диалог
+  const dialog = panelDialog({
+    title: 'Запишитесь на замер с сайта и получите скидку до 50% на проектирование',
+    titleSpecialPatterns: [{
+      from: 40,
+      to: 52
+    }],
+    inputs: [{
+      id: 'service',
+      placeholder: 'Вид услуги'
+    }, {
+      id: 'request',
+      placeholder: 'Записаться на замер'
+    }, {
+      id: 'address',
+      placeholder: 'Адрес'
+    }, {
+      id: 'phone',
+      placeholder: '+7 (123) 456-78-90'
+    }],
+    btnText: 'Записаться на замер',
+    className: 'order-request'
+  });
+
+  // ? шапка
+  const background = elementHeaderBackground();
+  const container = elementContainer([panelHeaderTop(), panelHeaderMain(), elementIcon('swimming-pool', 'header')], 'header');
+  const header = el('header.header', [background, container]);
+
+  // ? тело
+  // const main = el('main.main', [
+  //   panelMainServices(),
+  //   panelMainFeatures(),
+  //   panelMainProjects(),
+  //   panelMainAbout(),
+  //   panelMainQuestion(),
+  //   panelMainContacts(),
+  // ]);
+
+  // ? футер
+  const containerFooter = elementContainer([panelFooterTop(), elementCopyright('footer')], 'footer');
+  const footer = el('footer.footer', [containerFooter]);
+
+  // ? страница
+  const page = el('.page', [burgerMenu, dialog, header, footer]);
+  updatePageContent(page);
+
+  // // ! запуск слайдера для списка услуг
+  // startServicesSliderSynchro();
+
+  // // ! запуск свайпера на странице и подвязка на него слайдера
+  // startSwiperSliderSynchro();
+}
 ;// CONCATENATED MODULE: ./src/js/pages/createPage.js
+
 
 
 
@@ -14041,6 +14116,9 @@ function createPage(name) {
     case 'main':
       createPageMain();
       break;
+    case 'pools':
+      createPagePools();
+      break;
     default:
       createPageUnknown();
   }
@@ -14049,8 +14127,8 @@ function createPage(name) {
 
 
 
-const routing_router = new (navigo_min_default())('/');
-routing_router.on(`${constants_REPONAME}`, () => createPage('main'))
+const routing_router = new (navigo_min_default())(`/${constants_REPONAME}`);
+routing_router.on('/', () => createPage('main')).on('/pools/', () => createPage('pools'))
 // .on('/page/:id', (data) => {
 //   // ? страница с параметрами
 //   mainApp.innerHTML = '';
