@@ -1,6 +1,6 @@
 import { el } from 'redom';
 import burger from '../../assets/icons/menu-burger.svg';
-import { getSvgHtml } from '../utils';
+import { getSvgHtml, setPageScrollingOff } from '../utils';
 
 function openBurgerMenu(e) {
   e.preventDefault();
@@ -13,7 +13,7 @@ function openBurgerMenu(e) {
   burgerMenu.classList.add('burger-menu--visible');
 
   // ? отключить скролл страницы
-  document.getElementById('app').classList.add('not-scrolling');
+  setPageScrollingOff();
 }
 
 export default function elementHeaderBurger() {

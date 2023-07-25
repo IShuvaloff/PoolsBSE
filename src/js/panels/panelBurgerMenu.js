@@ -5,6 +5,7 @@ import elementOrderCall from '../elements/elementOrderCall';
 import panelNavMenu from './panelNavMenu';
 import panelSocials from './panelSocials';
 import panelPhones from './panelPhones';
+import { setPageScrollingOn } from '../utils';
 
 const CLASS_NAME = 'burger-menu';
 
@@ -17,7 +18,7 @@ export function panelBurgerMenuClose() {
     ?.classList?.remove(`${CLASS_NAME}--visible`);
 
   // ? включить скролл страницы
-  document.getElementById('app').classList.remove('not-scrolling');
+  setPageScrollingOn();
 }
 
 export default function panelBurgerMenu() {

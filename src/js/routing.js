@@ -1,13 +1,18 @@
 import Navigo from 'navigo';
 import createPage from './pages/createPage';
 import { REPONAME } from './constants';
-import { setPageScrollingOn } from './utils';
+import { panelBurgerMenuClose } from './panels/panelBurgerMenu';
 
 const router = new Navigo(`/${REPONAME}`);
 
 router
   .on('/', () => createPage('main'))
-  .on('/pools/', () => createPage('pools'))
+  .on('/pools', () => createPage('pools'))
+  .on('/artificial', () => createPage('artificial'))
+  .on('/fontains', () => createPage('fontains'))
+  .on('/dewatering', () => createPage('dewatering'))
+  .on('/watering', () => createPage('watering'))
+  .on('/landscaping', () => createPage('landscaping'))
   // .on('/page/:id', (data) => {
   //   // ? страница с параметрами
   //   mainApp.innerHTML = '';
@@ -25,6 +30,6 @@ export function openPage(pageName) {
 
   const route = `/${page === 'main' ? '' : page}`;
 
-  setPageScrollingOn();
+  panelBurgerMenuClose();
   router.navigate(route);
 }

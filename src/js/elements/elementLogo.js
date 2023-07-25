@@ -1,10 +1,10 @@
 import { el } from 'redom';
-import { router } from '../routing';
+import { openPage } from '../routing';
 import { panelBurgerMenuClose } from '../panels/panelBurgerMenu';
 
 function openPageMain() {
   panelBurgerMenuClose();
-  router.navigate('/');
+  openPage('main');
 }
 
 export default function elementLogo(className) {

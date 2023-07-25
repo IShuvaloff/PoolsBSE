@@ -1,7 +1,7 @@
 import { el, mount } from 'redom';
 import { getMenuItem, getSvgHtml } from '../utils';
 import { updateHeaderPhoto } from './elementHeaderPhoto';
-import { router } from '../routing';
+import { openPage } from '../routing';
 
 export function updateHeaderMenu(pageName) {
   const menuItem = document.getElementById(pageName);
@@ -29,7 +29,7 @@ function updateHeaderTitleSelected(id) {
 
 function menuIconClicked() {
   // ? либо сделать переход на новую страницу, т.е. перерисовать целиком страницу и выставить фокус на нужном меню:
-  router.navigate(this.id);
+  openPage(this.id);
 
   // ? либо обновить страницу по частям
   // updateHeaderMenuSelected(this);

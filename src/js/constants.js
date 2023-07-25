@@ -54,6 +54,26 @@ export const PAGES = [
     name: 'pools',
     title: `${TITLE} - Бассейны`,
   },
+  {
+    name: 'artificial',
+    title: `${TITLE} - Водоёмы`,
+  },
+  {
+    name: 'fontains',
+    title: `${TITLE} - Фонтаны`,
+  },
+  {
+    name: 'dewatering',
+    title: `${TITLE} - Водоотведение`,
+  },
+  {
+    name: 'watering',
+    title: `${TITLE} - Системы автополива`,
+  },
+  {
+    name: 'landscaping',
+    title: `${TITLE} - Ландшафтный дизайн`,
+  },
 ];
 
 export const MENU_ITEMS = [

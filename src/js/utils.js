@@ -10,7 +10,7 @@ import {
 } from './constants';
 import { MENU_ITEMS } from './constants';
 
-// ! добавление к имени страницы исходного репозитория проекта! ОБЯЗАТЕЛЬНО ИСПОЛЬЗОВАТЬ в router.navigate!!!
+// добавление к имени страницы исходного репозитория проекта
 export function getPagePath(page) {
   return `/${REPONAME}/${page.trim()}`;
 }
