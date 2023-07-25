@@ -9,7 +9,6 @@ import createPageLandscaping from './createPageLandscaping';
 import createPageArtificial from './createPageArtificial';
 
 export default function createPage(name) {
-  console.log(name);
   updateDocumentTitle(name);
 
   switch (name) {
