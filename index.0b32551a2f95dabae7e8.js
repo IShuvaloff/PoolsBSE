@@ -3991,12 +3991,20 @@ function getWindowSize() {
   };
 }
 
+// включить/отключить прокрутку страницы
+function setPageScrollingOff() {
+  document.getElementById('app').classList.add('not-scrolling');
+}
+function setPageScrollingOn() {
+  document.getElementById('app').classList.remove('not-scrolling');
+}
+
 // модальное окно
 function showModal() {
   document.getElementById('dialog-container').classList.add('dialog-container--visible');
 
   // ? отключить скролл страницы
-  document.getElementById('app').classList.add('not-scrolling');
+  setPageScrollingOff();
 }
 function closeModal() {
   document.getElementById('dialog-container').classList.remove('dialog-container--visible');
@@ -4004,7 +4012,7 @@ function closeModal() {
   // ? включить скролл страницы (ЕСЛИ НЕ ОТКРЫТО БУРГЕР-МЕНЮ)
   const menu = document.querySelector('.burger-menu--visible');
   if (!menu) {
-    document.getElementById('app').classList.remove('not-scrolling');
+    setPageScrollingOn();
   }
 }
 ;// CONCATENATED MODULE: ./src/js/elements/elementIcon.js
@@ -4085,13 +4093,13 @@ function elementOrderCall(className) {
 ;// CONCATENATED MODULE: ./src/js/elements/elementNavMenuItem.js
 
 
+
 function elementNavMenuItem(id, showShortNames, className) {
   const item = getMenuItem(id);
   if (!item) return;
-  const link = el('a.menu-item__link', showShortNames ? item.captionShort : item.caption);
-  link.setAttribute('href', `/${id === 'main' ? '' : id}`); // не создавать отдельную страницу /main, а идти на главную
-  link.setAttribute('data-navigo', '');
-  return el(`li.menu-item.${className}__menu-item`, [link]);
+  const link = el(`li.menu-item.${className}__menu-item`, [showShortNames ? item.captionShort : item.caption]);
+  link.addEventListener('click', () => openPage(id));
+  return link;
 }
 ;// CONCATENATED MODULE: ./src/js/panels/panelNavMenu.js
 
@@ -4199,9 +4207,6 @@ function panelBurgerMenu() {
       panelBurgerMenuClose();
     }
   });
-
-  // TODO! добавить обработчики нажатия на кнопки меню
-
   return container;
 }
 ;// CONCATENATED MODULE: ./src/js/elements/elementLogo.js
@@ -4288,8 +4293,6 @@ function updateHeaderMenu(pageName) {
   updateHeaderTitleSelected(pageName);
 }
 function updateHeaderMenuSelected(el) {
-  console.log('updateHeaderMenuSelected');
-  console.log(el);
   const classSelected = 'menu__item-icon--border-selected';
   document.querySelectorAll('.menu__item-icon--border').forEach(item => {
     item.classList.remove(classSelected);
@@ -14151,6 +14154,7 @@ function createPage(name) {
 
 
 
+
 const routing_router = new (navigo_min_default())(`/${constants_REPONAME}`);
 routing_router.on('/', () => createPage('main')).on('/pools/', () => createPage('pools'))
 // .on('/page/:id', (data) => {
@@ -14161,6 +14165,13 @@ routing_router.on('/', () => createPage('main')).on('/pools/', () => createPage(
 // })
 .on('*', () => createPage('unknown')).resolve();
 
+function openPage(pageName) {
+  const page = pageName.trim();
+  if (!page) return;
+  const route = `/${page === 'main' ? '' : page}`;
+  setPageScrollingOn();
+  routing_router.navigate(route);
+}
 ;// CONCATENATED MODULE: ./src/index.js
 
 
