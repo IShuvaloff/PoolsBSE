@@ -1,16 +1,15 @@
 import { el } from 'redom';
 import { getMenuItem } from '../utils';
+import { openPage } from '../routing';
 
 export default function elementNavMenuItem(id, showShortNames, className) {
   const item = getMenuItem(id);
   if (!item) return;
 
-  const link = el(
-    'a.menu-item__link',
-    showShortNames ? item.captionShort : item.caption
-  );
-  link.setAttribute('href', `/${id === 'main' ? '' : id}`); // не создавать отдельную страницу /main, а идти на главную
-  link.setAttribute('data-navigo', '');
+  const link = el(`li.menu-item.${className}__menu-item`, [
+    showShortNames ? item.captionShort : item.caption,
+  ]);
+  link.addEventListener('click', () => openPage(id));
 
-  return el(`li.menu-item.${className}__menu-item`, [link]);
+  return link;
 }

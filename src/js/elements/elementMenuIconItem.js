@@ -13,8 +13,6 @@ export function updateHeaderMenu(pageName) {
 }
 
 function updateHeaderMenuSelected(el) {
-  console.log('updateHeaderMenuSelected');
-  console.log(el);
   const classSelected = 'menu__item-icon--border-selected';
   document.querySelectorAll('.menu__item-icon--border').forEach((item) => {
     item.classList.remove(classSelected);

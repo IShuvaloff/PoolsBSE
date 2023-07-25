@@ -46,7 +46,5 @@ export default function panelBurgerMenu() {
     }
   });
 
-  // TODO! добавить обработчики нажатия на кнопки меню
-
   return container;
 }

@@ -83,6 +83,14 @@ export function getWindowSize() {
   };
 }
 
+// включить/отключить прокрутку страницы
+export function setPageScrollingOff() {
+  document.getElementById('app').classList.add('not-scrolling');
+}
+export function setPageScrollingOn() {
+  document.getElementById('app').classList.remove('not-scrolling');
+}
+
 // модальное окно
 export function showModal() {
   document
@@ -90,7 +98,7 @@ export function showModal() {
     .classList.add('dialog-container--visible');
 
   // ? отключить скролл страницы
-  document.getElementById('app').classList.add('not-scrolling');
+  setPageScrollingOff();
 }
 
 export function closeModal() {
@@ -101,6 +109,6 @@ export function closeModal() {
   // ? включить скролл страницы (ЕСЛИ НЕ ОТКРЫТО БУРГЕР-МЕНЮ)
   const menu = document.querySelector('.burger-menu--visible');
   if (!menu) {
-    document.getElementById('app').classList.remove('not-scrolling');
+    setPageScrollingOn();
   }
 }

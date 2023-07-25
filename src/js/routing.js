@@ -1,6 +1,7 @@
 import Navigo from 'navigo';
 import createPage from './pages/createPage';
 import { REPONAME } from './constants';
+import { setPageScrollingOn } from './utils';
 
 const router = new Navigo(`/${REPONAME}`);
 
@@ -17,3 +18,13 @@ router
   .resolve();
 
 export { router };
+
+export function openPage(pageName) {
+  const page = pageName.trim();
+  if (!page) return;
+
+  const route = `/${page === 'main' ? '' : page}`;
+
+  setPageScrollingOn();
+  router.navigate(route);
+}
