@@ -14,5 +14,5 @@ export default function elementHeaderPhoto(id) {
 
 export function updateHeaderPhoto(id) {
   const img = document.querySelector('.header__photo-img');
-  img.setAttribute('src', getPhoto(id));
+  img?.setAttribute('src', getPhoto(id));
 }

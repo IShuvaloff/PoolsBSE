@@ -11,6 +11,7 @@ import elementIcon from '../elements/elementIcon';
 import elementHeaderBackground from '../elements/elementHeaderBackground';
 import panelDialog from '../panels/panelDialog';
 import panelBurgerMenu from '../panels/panelBurgerMenu';
+import { updateHeaderMenu } from '../elements/elementMenuIconItem';
 
 export default function createPagePools() {
   const burgerMenu = panelBurgerMenu();
@@ -63,6 +64,10 @@ export default function createPagePools() {
   const page = el('.page', [burgerMenu, dialog, header, footer]);
 
   updatePageContent(page);
+
+  // ! обновить отдельные компоненты меню
+  // ? обновить кнопки и шапку
+  updateHeaderMenu('pools');
 
   // // ! запуск слайдера для списка услуг
   // startServicesSliderSynchro();
