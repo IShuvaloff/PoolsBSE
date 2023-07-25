@@ -29,6 +29,7 @@ export function openPage(pageName) {
   if (!page) return;
 
   const route = `/${page === 'main' ? '' : page}`;
+  console.log(route);
 
   panelBurgerMenuClose();
   router.navigate(route);
