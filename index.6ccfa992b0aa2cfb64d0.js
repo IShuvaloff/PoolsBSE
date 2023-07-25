@@ -4088,7 +4088,10 @@ function elementOrderCall(className) {
 function elementNavMenuItem(id, showShortNames, className) {
   const item = getMenuItem(id);
   if (!item) return;
-  return el(`li.menu-item.${className}__menu-item`, [showShortNames ? item.captionShort : item.caption]);
+  const link = el('a.menu-item__link', showShortNames ? item.captionShort : item.caption);
+  link.setAttribute('href', `/${id === 'main' ? '' : id}`); // не создавать отдельную страницу /main, а идти на главную
+  link.setAttribute('data-navigo', '');
+  return el(`li.menu-item.${className}__menu-item`, [link]);
 }
 ;// CONCATENATED MODULE: ./src/js/panels/panelNavMenu.js
 
@@ -4270,14 +4273,23 @@ function elementHeaderPhoto(id) {
 }
 function updateHeaderPhoto(id) {
   const img = document.querySelector('.header__photo-img');
-  img.setAttribute('src', getPhoto(id));
+  img?.setAttribute('src', getPhoto(id));
 }
 ;// CONCATENATED MODULE: ./src/js/elements/elementMenuIconItem.js
 
 
 
 
+function updateHeaderMenu(pageName) {
+  const menuItem = document.getElementById(pageName);
+  if (!menuItem) return;
+  updateHeaderMenuSelected(menuItem);
+  updateHeaderPhoto(pageName);
+  updateHeaderTitleSelected(pageName);
+}
 function updateHeaderMenuSelected(el) {
+  console.log('updateHeaderMenuSelected');
+  console.log(el);
   const classSelected = 'menu__item-icon--border-selected';
   document.querySelectorAll('.menu__item-icon--border').forEach(item => {
     item.classList.remove(classSelected);
@@ -4286,22 +4298,29 @@ function updateHeaderMenuSelected(el) {
 }
 function updateHeaderTitleSelected(id) {
   const title = document.querySelector('.header__title');
+  if (!title) return;
   const text = `Предлагаем для вас<br>${getMenuItem(id)?.caption}`;
   title.innerHTML = text;
 }
 function menuIconClicked() {
-  // TODO! либо сделать переход на новую страницу, т.е. перерисовать целиком страницу и выставить фокус на нужном меню, либо обновить страницу по частям
+  // ? либо сделать переход на новую страницу, т.е. перерисовать целиком страницу и выставить фокус на нужном меню:
   routing_router.navigate(this.id);
-  updateHeaderMenuSelected(this);
-  updateHeaderPhoto(this.id);
-  updateHeaderTitleSelected(this.id);
+
+  // ? либо обновить страницу по частям
+  // updateHeaderMenuSelected(this);
+  // updateHeaderPhoto(this.id);
+  // updateHeaderTitleSelected(this.id);
 }
+
 function elementMenuIconItem(id) {
   const item = getMenuItem(id);
   if (!item) return;
 
+  // console.log(router.getCurrentLocation());
+
   // ? иконка с возможностью выделения
   const itemIcon = el(`.menu__item-icon.icon-bg.icon-${item.name}`);
+  if (!itemIcon) return;
   itemIcon.innerHTML = getSvgHtml(item.svg);
   const itemIconBorder = el(`.menu__item-icon--border#${id}`);
   itemIconBorder.tabIndex = '0';
@@ -14048,6 +14067,7 @@ function createPageMain() {
 
 
 
+
 function createPagePools() {
   const burgerMenu = panelBurgerMenu();
 
@@ -14097,6 +14117,10 @@ function createPagePools() {
   // ? страница
   const page = el('.page', [burgerMenu, dialog, header, footer]);
   updatePageContent(page);
+
+  // ! обновить отдельные компоненты меню
+  // ? обновить кнопки и шапку
+  updateHeaderMenu('pools');
 
   // // ! запуск слайдера для списка услуг
   // startServicesSliderSynchro();
