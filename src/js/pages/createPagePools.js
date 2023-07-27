@@ -5,6 +5,7 @@ import panelHeader from '../panels/panelHeader';
 import panelDialogCallOrder from '../panels/panelDialogCallOrder';
 import panelBurgerMenu from '../panels/panelBurgerMenu';
 import { updateHeaderMenu } from '../elements/elementMenuIconItem';
+import panelPoolsTypes from '../panels/panelPoolsTypesCards';
 
 export default function createPagePools() {
   const burgerMenu = panelBurgerMenu();
@@ -16,7 +17,7 @@ export default function createPagePools() {
   const header = panelHeader();
 
   // ? тело
-  const main = el('main.main', 'ПОСТРОЙКА БАССЕЙНОВ');
+  const main = el('main.main', [panelPoolsTypes()]);
 
   // ? футер
   const footer = panelFooter();

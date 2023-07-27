@@ -7,6 +7,7 @@ import {
   REPONAME,
   PARAMS,
   CONTACTS,
+  POOL_TYPES,
 } from './constants';
 import { MENU_ITEMS } from './constants';
 
@@ -37,6 +38,10 @@ export function getParamItem(id) {
 
 export function getContactItem(id) {
   return CONTACTS.find((item) => item.id === id);
+}
+
+export function getPoolType(id) {
+  return POOL_TYPES.find((item) => item.id === id);
 }
 
 // поиск данных страницы по имени

@@ -36,6 +36,12 @@ import iconBtnProjPrev from '../assets/icons/projects/swiper-projects-prev.svg';
 import iconBtnProjNext from '../assets/icons/projects/swiper-projects-next.svg';
 import contactVK from '../assets/icons/contacts/vk.svg';
 import contactWA from '../assets/icons/contacts/whatsapp.svg';
+import poolConcrete from '../assets/img/photos/pool-types/pool-concrete.jpg';
+import poolScutal from '../assets/img/photos/pool-types/pool-scutal.jpg';
+import poolNonchlorine from '../assets/img/photos/pool-types/pool-nonchlorine.jpg';
+import poolWireframe from '../assets/img/photos/pool-types/pool-wireframe.jpg';
+import poolComposite from '../assets/img/photos/pool-types/pool-composite.jpg';
+import poolSpa from '../assets/img/photos/pool-types/pool-spa.jpg';
 
 export const DOCTITLE = 'BSE';
 export const REPONAME = 'PoolsBSE';
@@ -227,6 +233,85 @@ export const PROJECTS = [
   { id: 'pool-5', photo: projectPool5 },
   { id: 'pool-6', photo: projectPool6 },
   { id: 'pool-7', photo: projectPool7 },
+];
+
+export const POOL_TYPES = [
+  {
+    id: 'concrete',
+    title: 'Бетонные бассейны',
+    description:
+      'Бетонный бассейн предоставляет большой простор для дизайнера (любые размеры и форма). У него имеются конструктивные преимущества, одно из главных – опора для плиты перекрытия пола.',
+    features: [
+      'Любые размеры и формы',
+      'Долгий срок службы',
+      'Возможность установки дополнительного оборудования',
+    ],
+    photo: poolConcrete,
+  },
+  {
+    id: 'scutal',
+    title: 'Сборно-щитовые бассейны',
+    description:
+      'Сборный бассейн – это наружный каркас из металлических или пластиковых щитов и выстиланной пленкой внутри. Всесезонный морозостойкий бассейн, который можно использовать зимой или законсервировать.',
+    features: [
+      'Простота в монтаже и демонтаже',
+      'Неприхотливость в уходе',
+      'Легкость в обслуживании',
+      'Ремонтопригодность',
+    ],
+    photo: poolScutal,
+  },
+  {
+    id: 'nonchlorine',
+    title: 'Безхлорные бассейны',
+    description:
+      'Безхлорный бассейн - бассейн, в котором применяются альтернативные методы регулярной очистки воды, например активным кислородом, озонированием, обработкой ультрафиолетом и др.',
+    features: [
+      'Любые размеры и формы',
+      'Неприхотливость в уходе',
+      'Легкость в обслуживании',
+    ],
+    photo: poolNonchlorine,
+  },
+  {
+    id: 'composite',
+    title: 'Композитные бассейны',
+    description:
+      'Композитный бассейн — это готовая легкая и тонкая (до 30 мм) чаша, состоящая из 6-9 слоев разных материалов, которые равномерно распределяют между собой статическую и динамическую нагрузки.',
+    features: [
+      'Устойчивость к влиянию атмосферной среды',
+      'Практически любая комплектация.',
+      'Легкость в обслуживании',
+      'Ремонтопригодность',
+    ],
+    photo: poolComposite,
+  },
+  {
+    id: 'wireframe',
+    title: 'Каркасные бассейны',
+    description:
+      'Каркасный бассейн - это быстровозводимая конструкция из металлического или пластикового каркаса - стержневой или листовой - и ПВХ чаши. Чаша крепится к каркасу специальной фурнитурой.',
+    features: [
+      'Устойчивость к повреждениям',
+      'Любые размеры и формы',
+      'Устойчивость к перепадам температур',
+      'Не самая высокая цена',
+    ],
+    photo: poolWireframe,
+  },
+  {
+    id: 'spa',
+    title: 'Спа',
+    description:
+      'Гидромассажный бассейн - это бассейн, оснащенный регулируемой системой подогрева и характеризующийся замкнутым циклом очистки воды. Широко применяются для терапевтического воздействия на тело человека.',
+    features: [
+      'Простота эксплуатации',
+      'Легкость ухода за водой',
+      'Надежность и долговечность',
+      'Высокоэффективный массаж',
+    ],
+    photo: poolSpa,
+  },
 ];
 
 export const SWIPERS = [

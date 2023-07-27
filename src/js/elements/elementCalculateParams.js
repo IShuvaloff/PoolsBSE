@@ -10,6 +10,7 @@ export default function elementCalculateParams() {
   });
 
   const btn = el('button.btn.calculate__btn', 'Рассчитать стоимость');
+  btn.setAttribute('type', 'button');
 
-  return el('.header__calculate calculate', [params, btn]);
+  return el('form.header__calculate calculate', [params, btn]);
 }

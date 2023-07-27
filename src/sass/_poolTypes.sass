@@ -1,0 +1,34 @@
+.pool-types
+  padding-top: 85px
+  &__title
+    margin-bottom: 85px
+    text-align: left
+  &__list
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: auto
+    gap: 50px 80px
+    // margin-bottom: 320px
+  &__card
+    display: flex
+    flex-direction: column
+    justify-content: stretch
+    height: 100%
+
+@media (max-width: 1399.98px)
+  .pool-types
+    &__list
+      grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 1023.98px)
+  .pool-types
+    padding-top: 72px
+    &__title
+      margin-bottom: 72px
+    &__list
+      gap: 30px
+
+@media (max-width: 767.98px)
+  .pool-types
+    &__list
+      grid-template-columns: 1fr

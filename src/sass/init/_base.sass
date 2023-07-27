@@ -172,6 +172,101 @@ button:focus
   line-height: 16px
   letter-spacing: 0em
 
+.item-check
+  display: flex
+  align-items: center
+  &__icon
+    flex-shrink: 0
+    flex-grow: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 18px
+    width: 21px
+    height: 21px
+  &__text
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+
+.card
+  border-radius: 10px
+  min-height: 521px
+  max-width: 521px
+  overflow: hidden
+  &__header
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    // height: 385px
+  &__photo
+    position: relative
+  &__text-wrapper
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 4
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 20px
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: 3
+      background-color: rgba(0, 0, 0, 0.5)
+      border-radius: 10px 10px 0 0
+      opacity: 0
+      transition: opacity .2s ease-in-out
+    &:hover
+      .card__text
+        opacity: 1
+      &::after
+        opacity: 1
+  &__text
+    position: relative
+    z-index: 4
+    font-size: 17px
+    font-weight: 500
+    line-height: 21px
+    letter-spacing: 0.02em
+    color: $cl-secondary-1
+    text-align: center
+    opacity: 0
+    transition: opacity .2s ease-in-out
+  &__content
+    flex-grow: 1
+    flex-shrink: 1
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 30px 50px
+    background-color: $cl-secondary-8
+    opacity: 0.8
+  &__title
+    margin-bottom: 76px
+    font-size: 26px
+    font-weight: 500
+    line-height: 32px
+    letter-spacing: 0.02em
+  &__features
+    margin-bottom: 30px
+  &__feature
+    &:not(:last-child)
+      margin-bottom: 30px
+  &__btn
+    margin-top: auto
+    padding: 5px 10px
+    min-width: 265px
+    min-height: 48px
+
 // ! кастомный слайдер
 .slider-container
   display: flex
@@ -186,9 +281,21 @@ button:focus
     height: 10px !important
     width: 30% !important
 
-@media (max-width: 1399px)
+@media (max-width: 1399.98px)
   .container
     padding: 0 24px
+
+@media (max-width: 1023.98px)
+  .card
+    &__title
+      margin-bottom: 45px
+    &__feature
+      &:not(:last-child)
+        margin-bottom: 18px
+    &__content
+      padding: 20px
+    &__btn
+      width: 100%
 
 @media (max-width: 767.98px)
   .icon-logo
@@ -212,6 +319,15 @@ button:focus
   .gradient
     width: 80%
 
+  .card
+    width: 100%
+    max-width: inherit
+    &__photo
+      width: 100%
+      height: 400px
+      object-fit: cover
+
+
 @media (max-width: 575.98px)
   .icon-logo
     width: auto
@@ -219,3 +335,23 @@ button:focus
   .subtitle
     font-size: 26px
     line-height: 35px
+
+  .item-check
+    &__icon
+      margin-right: 15px
+      width: 18px
+      height: 18px
+    &__text
+      font-size: 13px
+      line-height: 16px
+
+  .card
+    &__photo
+      height: 250px
+    &__title
+      margin-bottom: 30px
+    &__text
+      font-size: 13px
+      line-height: 16px
+    &__btn
+      min-width: inherit
