@@ -16,7 +16,10 @@ export default function createPageDewatering() {
   const header = panelHeader();
 
   // ? тело
-  const main = el('main.main', 'СИСТЕМЫ ВОДООТВЕДЕНИЯ');
+  const main = el(
+    'main.main.main--dewatering',
+    el('.container', 'ИНФОРМАЦИЯ О СИСТЕМАХ ВОДООТВЕДЕНИЯ...')
+  );
 
   // ? футер
   const footer = panelFooter();

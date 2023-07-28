@@ -25,7 +25,7 @@ export default function createPageMain() {
   const header = panelHeader();
 
   // ? тело
-  const main = el('main.main', [
+  const main = el('main.main.main--main', [
     panelMainServices(),
     panelMainFeatures(),
     panelMainProjects('main'),

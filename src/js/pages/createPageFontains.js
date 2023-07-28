@@ -16,7 +16,10 @@ export default function createPageFontains() {
   const header = panelHeader();
 
   // ? тело
-  const main = el('main.main', 'ВОЗВЕДЕНИЕ ФОНТАНОВ');
+  const main = el(
+    'main.main.main--fontains',
+    el('.container', 'ИНФОРМАЦИЯ О ВОЗВЕДЕНИИ ФОНТАНОВ...')
+  );
 
   // ? футер
   const footer = panelFooter();

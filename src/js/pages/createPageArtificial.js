@@ -16,7 +16,10 @@ export default function createPageArtificial() {
   const header = panelHeader();
 
   // ? тело
-  const main = el('main.main', 'СООРУЖЕНИЕ ИСКУССТВЕННЫХ ВОДОЁМОВ');
+  const main = el(
+    'main.main.main--artificial',
+    el('.container', 'ИНФОРМАЦИЯ О СООРУЖЕНИИ ИСКУССТВЕННЫХ ВОДОЁМОВ...')
+  );
 
   // ? футер
   const footer = panelFooter();

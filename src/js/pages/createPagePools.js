@@ -21,7 +21,7 @@ export default function createPagePools() {
   const header = panelHeader();
 
   // ? тело
-  const main = el('main.main', [
+  const main = el('main.main.main--pools', [
     panelPoolsTypes(),
     panelPoolsAbout(),
     panelMainProjects('pools'),

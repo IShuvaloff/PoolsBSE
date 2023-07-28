@@ -74,5 +74,5 @@ export default function elementServices() {
 
   const sliderElement = elementSlider('services');
 
-  return el('.services-wrapper', [list, sliderElement]);
+  return el('.services', [list, sliderElement]);
 }

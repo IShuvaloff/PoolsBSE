@@ -16,7 +16,10 @@ export default function createPageWatering() {
   const header = panelHeader();
 
   // ? тело
-  const main = el('main.main', 'СОЗДАНИЕ СИСТЕМ АВТОПОЛИВА');
+  const main = el(
+    'main.main.main--watering',
+    el('.container', 'ИНФОРМАЦИЯ О СОЗДАНИИ СИСТЕМ АВТОПОЛИВА...')
+  );
 
   // ? футер
   const footer = panelFooter();

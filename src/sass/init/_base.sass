@@ -36,6 +36,11 @@ button:focus
 
 .main
   background-color: $cl-secondary-7
+  // ! временная мера, пока страницы не заполнены нужными блоками
+  &--artificial, &--fontains, &--dewatering, &--watering, &--landscaping, &--unknown
+    padding: 20px 0
+    font-weight: 600
+    font-size: 20px
 
 .subtitle
   text-align: center
@@ -329,7 +334,6 @@ button:focus
       width: 100%
       height: 400px
       object-fit: cover
-
 
 @media (max-width: 575.98px)
   .icon-logo

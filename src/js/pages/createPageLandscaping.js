@@ -16,7 +16,10 @@ export default function createPageLandscaping() {
   const header = panelHeader();
 
   // ? тело
-  const main = el('main.main', 'ЛАНДШАФТНЫЙ ДИЗАЙН');
+  const main = el(
+    'main.main.main--landscaping',
+    el('.container', 'ИНФОРМАЦИЯ О ЛАНДШАФТНОМ ДИЗАЙНЕ...')
+  );
 
   // ? футер
   const footer = panelFooter();
