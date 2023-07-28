@@ -28,7 +28,7 @@ export default function createPageMain() {
   const main = el('main.main', [
     panelMainServices(),
     panelMainFeatures(),
-    panelMainProjects(),
+    panelMainProjects('main'),
     panelMainAbout(),
     panelMainQuestion(),
     panelMainContacts(),

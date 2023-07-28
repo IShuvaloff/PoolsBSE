@@ -3,7 +3,6 @@ import { getMenuItem } from '../utils';
 import { openPage } from '../routing';
 
 function clickServiceInfo() {
-  console.log(this);
   openPage(this.dataset.serviceId);
 }
 

@@ -12,6 +12,8 @@
     grid-template-rows: 1fr
     gap: 100px
   &__text-wrapper
+    position: relative
+    z-index: 2
     padding-top: 54px
   &__text
     margin-bottom: 15px
@@ -22,14 +24,31 @@
     letter-spacing: 0em
     text-align: left
   &__photo
+    position: relative
+    z-index: 2
     max-width: 906px
     max-height: 522px
+    &--backside
+      position: absolute
+      top: 200px
+      right: 0
+      z-index: 1 !important
+      display: flex
+      justify-content: flex-end
+      max-width: inherit
+      max-height: inherit
+      width: 66%
+      height: auto
+      img
+        object-fit: cover
   &__icon
     position: absolute !important
     bottom: -37px
     left: 0
     width: 227px
     height: 153px
+  &--pools
+    margin-bottom: 0
 
 @media (max-width: 1919.98px)
   .about
@@ -41,6 +60,8 @@
 @media (max-width: 1399.98px)
   .about
     margin-bottom: 135px
+    &--pools
+      margin-bottom: 0
     &__content
       grid-template-columns: 1fr
       gap: 85px
@@ -51,6 +72,8 @@
       img
         object-fit: cover !important
         width: 100%
+      &--backside
+        opacity: 0
     &__icon
       bottom: -127px
       width: 127px

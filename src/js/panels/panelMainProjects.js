@@ -80,11 +80,16 @@ function swiperBtn(type, svg) {
   return btn;
 }
 
-export default function panelMainProjects() {
+export default function panelMainProjects(pageName) {
   const gradient = el('.gradient.gradient-bg.projects__gradient');
 
   const title = elementSubtitleLight('Выполненные проекты');
   title.classList.add('main__projects-title', 'projects__title');
+
+  if (['pools'].includes(pageName)) {
+    title.classList.remove('subtitle--light');
+    title.classList.add('subtitle--left');
+  }
 
   const wrapper = el('.swiper-wrapper.projects__wrapper');
   PROJECTS.forEach((item) => {
@@ -96,6 +101,9 @@ export default function panelMainProjects() {
   const swiperItem = getSwiperItem('projects');
 
   const pagination = el('.projects__pagination');
+  if (['pools'].includes(pageName)) {
+    pagination.classList.add('projects__pagination--pools');
+  }
 
   const btnPrev = swiperBtn('prev', swiperItem.btnSvgPrev);
   const btnNext = swiperBtn('next', swiperItem.btnSvgNext);
@@ -123,5 +131,10 @@ export default function panelMainProjects() {
     slider,
   ]);
 
-  return el('.main__projects.projects', [gradient, container]);
+  const pageContent = [container];
+  if (['main'].includes(pageName)) {
+    pageContent.unshift(gradient);
+  }
+
+  return el('.main__projects.projects', pageContent);
 }

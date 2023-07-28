@@ -6,6 +6,10 @@ import panelDialogCallOrder from '../panels/panelDialogCallOrder';
 import panelBurgerMenu from '../panels/panelBurgerMenu';
 import { updateHeaderMenu } from '../elements/elementMenuIconItem';
 import panelPoolsTypes from '../panels/panelPoolsTypesCards';
+import panelPoolsAbout from '../panels/panelPoolsAbout';
+import panelMainProjects, {
+  startSwiperSliderSynchro,
+} from '../panels/panelMainProjects';
 
 export default function createPagePools() {
   const burgerMenu = panelBurgerMenu();
@@ -17,7 +21,11 @@ export default function createPagePools() {
   const header = panelHeader();
 
   // ? тело
-  const main = el('main.main', [panelPoolsTypes()]);
+  const main = el('main.main', [
+    panelPoolsTypes(),
+    panelPoolsAbout(),
+    panelMainProjects('pools'),
+  ]);
 
   // ? футер
   const footer = panelFooter();
@@ -30,4 +38,7 @@ export default function createPagePools() {
   // ! обновить отдельные компоненты меню
   // ? обновить кнопки и шапку
   updateHeaderMenu('pools');
+
+  // ! запуск свайпера на странице и подвязка на него слайдера
+  startSwiperSliderSynchro();
 }
