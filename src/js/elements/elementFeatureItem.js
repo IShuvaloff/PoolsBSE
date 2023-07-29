@@ -21,3 +21,16 @@ export default function elementFeatureItem(id, drawRightUpDot = false) {
 
   return card;
 }
+
+const Button = {
+  tagName: 'btn',
+  init(btn) {
+    btn.addEventListener('click', () => {
+      btn.textContent++;
+    });
+  },
+
+  getAll(container = document.body) {
+    return container.getElementsByTagName(this.tagName);
+  },
+};
