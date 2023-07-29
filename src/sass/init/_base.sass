@@ -106,6 +106,9 @@ button
   line-height: 44px
   color: $cl-secondary-1
   cursor: pointer
+  transition: transform .2s ease-in-out
+  &:focus, &:hover
+    transform: scale(1.05)
 
 .socials
   a:not(:last-child)
@@ -118,7 +121,7 @@ button
     width: 41px
     height: 42px
     overflow: hidden
-    &:hover
+    &:focus, &:hover
       animation: wink 0.2s ease-in-out
     svg
       fill: $cl-secondary-1
@@ -139,7 +142,7 @@ button
       margin-right: 14px
       height: 100%
       fill: $cl-secondary-1
-    &:hover
+    &:focus, &:hover
       svg
         animation: wink 0.2s ease-in-out
     &:not(:last-child)

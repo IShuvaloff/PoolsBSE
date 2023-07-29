@@ -29,7 +29,7 @@
     svg
       stroke: $cl-secondary-1
       transition: stroke .2s ease-in-out
-    &:hover
+    &:focus, &:hover
       svg
         stroke: $cl-secondary-4
   &__contacts
@@ -123,6 +123,7 @@
         border-radius: 10px
         width: 100%
         height: 100%
+        transition: border-width .2s ease-in-out, border-color .2s ease-in-out
         &-selected
           border-width: 5px
           border-color: $cl-secondary-1
