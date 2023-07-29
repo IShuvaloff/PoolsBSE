@@ -1,4 +1,5 @@
 import { el } from 'redom';
+import Button from '../components/Button/button';
 
 export default function elementQuestionBlock() {
   const title = el('.question__title');
@@ -13,7 +14,10 @@ export default function elementQuestionBlock() {
   inputQuestionPhone.placeholder = '+7 (911) 642-32-99';
   inputQuestionPhone.type = 'tel';
 
-  const btn = el('button.btn.question__btn', 'Получить консультацию');
+  const btn = new Button({
+    classNames: ['btn', 'question__btn'],
+    caption: 'Получить консультацию',
+  });
 
   return el('.question', [title, inputQuestionText, inputQuestionPhone, btn]);
 }

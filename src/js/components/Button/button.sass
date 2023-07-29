@@ -1,0 +1,33 @@
+$btn-color-black: black
+$btn-color-grey: grey
+$btn-color-lightgrey: lightgrey
+$btn-color-white: white
+
+.button
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  padding: 10px
+  border: 3px solid $btn-color-grey
+  border-radius: 10px
+  background-color: $btn-color-grey
+  font-family: Arial, Verdana, sans-serif
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 22px
+  letter-spacing: 0.02em
+  color: $btn-color-black
+  transition: background-color .2s ease-in-out, border-color .2s ease-in-out
+  &--transparent
+    background-color: transparent
+  &:focus, &:hover
+    background-color: $btn-color-lightgrey
+    border-color: $btn-color-lightgrey
+  svg
+    fill: $btn-color-black
+    stroke: $btn-color-black
+    stroke-width: 3px
+    height: 100%
+    width: 100%

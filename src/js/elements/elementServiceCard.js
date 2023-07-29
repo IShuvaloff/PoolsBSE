@@ -1,6 +1,7 @@
 import { el } from 'redom';
 import { getMenuItem } from '../utils';
 import { openPage } from '../routing';
+import Button from '../components/Button/button';
 
 function clickServiceInfo() {
   openPage(this.dataset.serviceId);
@@ -22,12 +23,12 @@ export default function elementServiceCard(id, checked = false) {
 
   const text = el('.service__text', item.descr);
 
-  const btn = el(
-    `button.btn.service__btn.service__btn--${item.id}`,
-    'Подробнее'
-  );
+  const btn = new Button({
+    classNames: ['btn', 'service__btn', `service__btn--${item.id}`],
+    caption: 'Подробнее',
+    callbackClick: clickServiceInfo,
+  });
   btn.dataset.serviceId = item.id;
-  btn.addEventListener('click', clickServiceInfo);
 
   const card = el(`.service.service--${item.name}`, [title, text, btn]);
   card.tabIndex = '0';

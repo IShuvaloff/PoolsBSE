@@ -1,10 +1,11 @@
 import { el, mount } from 'redom';
 import { closeModal } from '../utils';
+import Button from '../components/Button/button';
 
 export default function panelDialog({
   title,
-  titleSpecialPatterns = [],
-  inputs = [],
+  titleSpecialPatterns = [], // ! массив объектов {from, to}, со стартовым и конечным индексами символов в title, которые следует выделить
+  inputs = [], // ! массив объектов {id, placeholder} для создания инпутов
   btnText = '',
   className = '',
 }) {
@@ -34,7 +35,10 @@ export default function panelDialog({
     mount(content, input);
   });
 
-  const btn = el(`button.btn.dialog__btn`, btnText);
+  const btn = new Button({
+    classNames: ['btn', 'dialog__btn'],
+    caption: btnText,
+  });
 
   const dialog = el(`.dialog.${className}`, [titleElement, content, btn]);
 

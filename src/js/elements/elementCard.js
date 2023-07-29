@@ -1,6 +1,7 @@
 import { el, mount } from 'redom';
 import { getPoolType } from '../utils';
 import elementListItemCheck from '../elements/elementListItemCheck';
+import Button from '../components/Button/button';
 
 export default function elementCard(id, className) {
   const card = getPoolType(id);
@@ -18,7 +19,10 @@ export default function elementCard(id, className) {
     const point = elementListItemCheck(item, 'card__feature');
     mount(list, point);
   });
-  const btn = el('button.btn.card__btn', 'Рассчитать стоимость');
+  const btn = new Button({
+    classNames: ['btn', 'card__btn'],
+    caption: 'Рассчитать стоимость',
+  });
   const content = el('.card__content', [title, list, btn]);
 
   return el(`.card.${className}__card`, [header, content]);

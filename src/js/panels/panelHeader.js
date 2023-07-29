@@ -4,6 +4,7 @@ import elementHeaderBackground from '../elements/elementHeaderBackground';
 import elementIcon from '../elements/elementIcon';
 import panelHeaderMain from './panelHeaderMain';
 import panelHeaderTop from './panelHeaderTop';
+import '../../sass/_header.sass';
 
 export default function panelHeader() {
   const background = elementHeaderBackground();

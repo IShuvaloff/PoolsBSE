@@ -59,40 +59,39 @@ button:focus
     color: $cl-secondary-1
     text-align: left
 
-.btn
-  border: 3px solid $cl-secondary-5
-  border-radius: 10px
-  background-color: $cl-secondary-5
-  font-family: $font-primary
-  font-style: normal
-  font-weight: 500
-  font-size: 18px
-  line-height: 22px
+// ! управление стилями компонентов - СТИЛЬ ДОЛЖЕН БЫТЬ СОСТАВНОЙ!
+button
+  &.btn
+    border-color: $cl-secondary-5
+    background-color: $cl-secondary-5
+    font-family: $font-primary
+    color: $cl-primary
+    &:focus, &:hover
+      background-color: $cl-secondary-4
+      border-color: $cl-secondary-4
+    &__close
+      position: absolute
+      top: 30px
+      right: 30px
+      padding: 0
+      border: none
+      background-color: transparent
+      width: 20px
+      height: 20px
+      &:focus, &:hover
+        background-color: transparent
+
+.btn-call-order.btn
+  background-color: transparent
+  width: 241px
+  min-height: 56px
+  font-size: 16px
+  line-height: 20px
   letter-spacing: 0.02em
-  color: $cl-primary
-  transition: background-color .2s ease-in-out, border-color .2s ease-in-out
+  color: $cl-secondary-1
   &:focus, &:hover
     background-color: $cl-secondary-4
     border-color: $cl-secondary-4
-  &__close
-    position: absolute
-    top: 30px
-    right: 30px
-    display: flex
-    justify-content: center
-    align-items: center
-    border: none
-    background-color: transparent
-    width: 20px
-    height: 20px
-    &:focus, &:hover
-      background-color: transparent
-    svg
-      fill: $cl-primary
-      stroke: $cl-primary
-      stroke-width: 3px
-      height: 100%
-      width: 100%
 
 .icon-logo
   display: flex
@@ -145,24 +144,6 @@ button:focus
         animation: wink 0.2s ease-in-out
     &:not(:last-child)
       margin-bottom: 18px
-
-.btn-call-order
-  background-color: transparent
-  border: 3px solid $cl-secondary-5
-  border-radius: 10px
-  width: 241px
-  height: 56px
-  font-family: $font-primary
-  font-style: normal
-  font-weight: 500
-  font-size: 16px
-  line-height: 20px
-  letter-spacing: 0.02em
-  color: $cl-secondary-1
-  transition: background-color .2s ease-in-out, border-color .2s ease-in-out
-  &:focus, &:hover
-    background-color: $cl-secondary-4
-    border-color: $cl-secondary-4
 
 .phones
   display: flex
@@ -269,7 +250,7 @@ button:focus
   &__feature
     &:not(:last-child)
       margin-bottom: 30px
-  &__btn
+  &__btn.btn
     margin-top: auto
     padding: 5px 10px
     min-width: 265px
@@ -302,7 +283,7 @@ button:focus
         margin-bottom: 18px
     &__content
       padding: 20px
-    &__btn
+    &__btn.btn
       width: 100%
 
 @media (max-width: 767.98px)
@@ -315,9 +296,10 @@ button:focus
     &-phone
       font-size: 15px
 
-  .btn-call-order
+  .btn-call-order.btn
+    max-width: 100%
     width: 184px
-    height: 50px
+    min-height: 50px
     font-size: 14px
 
   .copyright
@@ -360,5 +342,5 @@ button:focus
     &__text
       font-size: 13px
       line-height: 16px
-    &__btn
+    &__btn.btn
       min-width: inherit
